@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>01</title>
+  </head>
+  <!---------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------->
+  <body>
+
+
+    <!-------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg">
+      <!-- <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./src/img/brand/brand2.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <a href="./index.html">
+        <button class="btn btn-primary">
+          ⬅︎
+        </button>
+      </a>
+    </nav>
+    <!-------------------------------------------------------------------------------->
+    <section id="detailPage">
+        <div class="container">
+        <div class="product row">
+            <div class="productImg col-12 col-md-7">
+                <img class="pdImg" src="" alt="">
+            </div>
+            <div class="productInfo col-12 col-md-5">
+                <dl>
+                    <dt>
+                        <h4 class="pdName">
+                        제품명
+                        </h4>
+                    </dt>
+                    <dd class="info pdDiscript">
+                        제품 소개
+                    </dd>
+                    <!-- <dd class="review">
+                        <span>
+                        ⭐️ 0.0
+                        </span>
+                        <span>
+                          <a href="#review">📝 0 리뷰</a>
+                        </span>
+                    </dd> -->
+                    <dd class="badgeGroup">
+                        <span class="badge sale">특가</span>
+                        <span class="badge send">무료배송</span>
+                    </dd>
+                    <dd class="shipment">
+                      <div class="info1">
+                        hello
+                        <!-- <span class="shi">11/30(수)</span> -->
+                        <!-- <span>도착예정 <span class="point">83%</span></span> -->
+                      </div>
+                      <div class="info2">
+                        <span>✓ 지역별 차등배송비</span>
+                        <span>✓ 제주도/도서산간 5,000원</span>
+                      </div>
+                    </dd>
+                    <dd class="price">
+                        <span class="sale pdSale">
+                        00%
+                        </span>
+                        <span class="pdPrice">
+                        000
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="detail" class="row">
+          <iframe id="pdDetail" src="./"
+          style="width: 100%; height: 100%; border: 0; padding: 0"></iframe>
+        </div>
+        <!-- <div id="review" class="row">
+          hello
+        </div> -->
+    </div>
+    </section>
+    <div class="purchase">
+        <button id="copyBtn"  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="copyText()">구매하기</button>
+    </div>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <dl>
+              <dt>
+                구매 메시지가 “복사“되었습니다!<br>
+                <span class="highlight">똑비 대화창에 “붙여넣기"</span>를<br>
+                통해 보내주세요!
+              </dt>
+              <dd>
+                혹은 상품 화면을 캡쳐해서<br>
+                보내주셔도 됩니다.
+              </dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+            <!-- <button type="button" class="btn btn-primary">구매하기</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!------------------------------------ SCRIPT ---------------------------------------------->
+    <script type="" src="./script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      //document.getElementById("copyBtn").click();
+      //console.log("key : " + window.localStorage.getItem("pdIndex"));
+
+      import {Data} from './data.js';
+      detailOnload(Data, window.localStorage.getItem("pdIndex"));
+      
+    </script>
+    <!------------------------------------ SCRIPT ---------------------------------------------->
+  </body>
+</html>

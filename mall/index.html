@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>똑비 몰</title>
+
+  </head>
+  <!---------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------->
+  <body>
+
+
+    <!-------------------------------------------------------------------------------->
+    <!-- <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./src/img/brand/brand2.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-------------------------------------------------------------------------------->
+    <section id="Product">
+      <div class="container">
+        <div class="row">
+          <div class="msg  col-12">
+            <dl class="">
+              <img src="./src/img/illust/ill1.png" alt="">
+              <dt>
+                안녕하세요, <br>
+                똑비 전용몰입니다!
+              </dt>
+              <dd>
+                똑비가 직접 발로 뛰며 업체 선정 후,<br>
+                똑비 회원에게만 특가로 제공하는 <br>
+                똑똑한 제품입니다.
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div id="categoryList" class="category">
+              <button onclick="categoryFilter(0)" class="btn on">전체 상품</button>
+              <button onclick="categoryFilter(1)" class="btn">🍖 수산&정육</button>
+              <button onclick="categoryFilter(2)" class="btn">🍇 과일</button>
+              <button onclick="categoryFilter(3)" class="btn">🧃 건강식품</button>
+            </div>
+          </div>
+        </div>
+        <div id="pdList" class="row">
+        <!-------------------------------------------------------------------------------->
+
+          <!--0-->
+          <a class="product col-12 col-md-4" href="./">
+            <div class="pdDockLabel">
+              ⭐️ 똑비라벨 
+            </div>
+            <div class="wrap">
+              <div class="productImg">
+                <img class="pdImg" src="./src/img/product/0.png" alt="">
+              </div>
+              <div class="productInfo">
+                <dl>
+                  <dt>
+                    <h4 class="pdName">
+                      제품명
+                    </h4>
+                  </dt>
+                  <dd class="info pdDiscript">
+                    제품 소개
+                  </dd>
+                  <!-- <dd class="review">
+                    <span>
+                      ⭐️ 4.6
+                    </span>
+                    <span>
+                      130 리뷰
+                    </span>
+                  </dd> -->
+                  <dd class="badgeGroup">
+                    
+                  </dd>
+                  <dd class="price">
+                    <span class="sale pdSale">
+                      00%
+                    </span>
+                    <span class="pdPrice">
+                      0000
+                    </span>
+                  </dd>
+                  
+                </dl>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+
+    
+    
+
+
+
+
+
+    <!------------------------------------ SCRIPT ---------------------------------------------->
+    <script type="" src="./script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      import {Data} from './data.js';
+      mainOnload(Data);
+    </script>
+    <!------------------------------------ SCRIPT ---------------------------------------------->
+  </body>
+</html>

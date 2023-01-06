@@ -1,93 +1,229 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-    
+
     <!-- Map CSS -->
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
+
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
+
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    
+
     <!-- Title -->
-    <title>Landkit</title>
-    <meta property="og:title" content="똑비" />
+    <title>똑비 회원가입</title>
+    <meta property="og:title" content="똑비 회원가입" />
     <!-- <meta property="og:type" content="video.movie" /> -->
-    <meta property="og:url" content="https://rabbitoad.web.app" />
+    <meta property="og:url" content="https://www.ddokbi.com/signup" />
     <meta property="og:image" content="assets/img/ogImg.png" />
-    <meta property="og:description" 
-      content="시니어 라이프의 소소한 니즈, 똑똑한 비서 똑비에게" />
-  </head>
-  <body>
+    <meta property="og:description" content="시니어 라이프의 소소한 니즈, 똑똑한 비서 똑비에게" />
+</head>
 
-    <!-- CONTENT -->
-    <section class="section-border border-primary">
-      <div class="container d-flex flex-column">
-        <div class="row align-items-center justify-content-center gx-0 min-vh-100">
-          <div class="col-12 col-md-5 col-lg-4 py-8 py-md-11">
+<body>
 
-            <!-- Heading -->
-            <h1 class="mb-0 fw-bold text-center">
-              Sign up
-            </h1>
+    <!-- MODALS -->
 
-            <!-- Text -->
-            <p class="mb-6 text-center text-muted">
-              Simplify your workflow in minutes.
-            </p>
 
-            <!-- Form -->
-            <form class="mb-6">
+    <!-- NAVBAR -->
+    <nav id="navBar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
 
-              <!-- Email -->
-              <div class="form-group">
-                <label class="form-label" for="email">
-                  Email Address
-                </label>
-                <input type="email" class="form-control" id="email" placeholder="name@address.com">
-              </div>
+            <!-- Brand -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/img/brand3.png" class="navbar-brand-img" alt="...">
+            </a>
 
-              <!-- Password -->
-              <div class="form-group mb-5">
-                <label class="form-label" for="password">
-                  Password
-                </label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
-              </div>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <!-- Submit -->
-              <button class="btn w-100 btn-primary" type="submit">
-                Sign up
-              </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
 
-            </form>
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
 
-            <!-- Text -->
-            <p class="mb-0 fs-sm text-center text-muted">
-              Already have an account? <a href="signin.html">Log in</a>.
-            </p>
+                <!-- Navigation -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#main2">서비스</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#main3">팀원</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#main4">후기 & FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#bottom">제휴 및 문의</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup">회원가입</a>
+                    </li>
+                </ul>
+                <!-- E R A S E D -->
 
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
+                <!-- Button -->
+                <a class="navbar-btn btn btn-sm btn-primary ms-auto" href="https://pf.kakao.com/_xhslVb/chat"
+                    target="_blank">
+                    똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+    <div style="height:88px"></div>
+    <iframe src="https://rabbitoad-signup.web.app/" title="회원가입" width="100%" height="1200px"></iframe>
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="./assets/img/brand.png" alt="..." class="footer-brand img-fluid mb-2">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <h6 class="fw-bold text-uppercase text-gray-700">
+                                회사명
+                            </h6>
+                            <h6 class="text-reset">주식회사 토끼와 두꺼비</h6>
+                        </li>
+                        <li class="mb-3">
+                            <h6 class="fw-bold text-uppercase text-gray-700">
+                                대표자
+                            </h6>
+                            <h6 class="text-reset">함동수</h6>
+                        </li>
+                        <li class="mb-3">
+                            <h6 class="fw-bold text-uppercase text-gray-700">
+                                사업자 등록번호
+                            </h6>
+                            <h6 class="text-reset">402-88-02634</h6>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <h6 class="fw-bold text-uppercase text-gray-700">
+                                주소
+                            </h6>
+                            <h6 class="text-reset">서울특별시 서대문구 경기대로 11길 26-6, 2층 (충정로2가, 우진빌딩)</h6>
+                        </li>
+                        <li class="mb-3">
+                            <h6 class="fw-bold text-uppercase text-gray-700">
+                                전화번호
+                            </h6>
+                            <h6 class="text-reset">02-392-0530</h6>
+                        </li>
+                        <li class="mb-3">
+                            <h6 class="fw-bold text-uppercase text-gray-700">
+                              이메일
+                            </h6>
+                            <h6 class="text-reset">info@rabbitoad.com</h6>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+
+                    <!-- Heading -->
+                    <h6 class="fw-bold text-uppercase text-gray-700">
+                        메뉴
+                    </h6>
+
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li class="mb-3">
+                            <a href="/#main2" class="text-reset">
+                                서비스
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="/#main3" class="text-reset">
+                                팀원
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="/#main4" class="text-reset">
+                                후기
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="/#bottom" class="text-reset">
+                                제휴 및 문의
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <!-- Heading -->
+                    <h6 class="fw-bold text-uppercase text-gray-700">
+                        똑비
+                    </h6>
+
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li class="mb-3">
+                            <a href="/signup" class="text-reset">
+                                회원가입
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="https://pf.kakao.com/_xhslVb/chat" class="text-reset">
+                                똑비 이용하기
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="https://rabbitoad.github.io/policies/ddokbi/privacy.txt" class="text-reset" target="_blank">
+                              개인정보 처리방침
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a href="https://rabbitoad.github.io/policies/ddokbi/service.txt" class="text-reset" target="_blank">
+                              서비스 이용약관
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </footer>
 
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
+
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
-    
+
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+    <script type="text/javascript">
+      //const func = require('../js/user.js');
+      //import{checkRadioA} from '../js/user.js';
+    </script>
 
-  </body>
+</body>
+
 </html>
