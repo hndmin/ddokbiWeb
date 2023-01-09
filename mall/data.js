@@ -1,5 +1,232 @@
 var pdData = [
   {   
+    "category" : "주류",  
+    "name" : "와인킹 추천세트 2호",
+      "ddockBiLabel" : false,
+      "discript" : "로스바스코스 샤도네이 + 로제",
+      "sale" : "",
+      "price" : "35,900원",
+      "link" : "https://notioniframe.com/notion/2acjvv59okb",
+      "shipment" : "당일 발송 혹은 배송일자 지정",
+      "badge" : [
+        {
+          "name" : "인터넷 최저가",
+          "color" : "#12e25f",
+          "show" : true
+        },
+        {
+          "name" : "기업(단체)구매 환영",
+          "color" : "#ff4f4f",
+          "show" : true
+        },
+        {
+          "name" : "무료배송",
+          "color" : "#b3b3b3",
+          "show" : false
+        },
+        {
+          "name" : "고급 선물박스",
+          "color" : "#fdff00",
+          "show" : true
+        }
+      ]
+    },
+    {   
+      "category" : "주류",  
+      "name" : "와인킹 추천세트 3호",
+        "ddockBiLabel" : false,
+        "discript" : "무똥까데 루즈 + 쇼비뇽 블랑",
+        "sale" : "",
+        "price" : "45,900원",
+        "link" : "https://notioniframe.com/notion/i3xxgck0cf",
+        "shipment" : "당일 발송 혹은 배송일자 지정",
+        "badge" : [
+          {
+            "name" : "인터넷 최저가",
+            "color" : "#12e25f",
+            "show" : true
+          },
+          {
+            "name" : "기업(단체)구매 환영",
+            "color" : "#ff4f4f",
+            "show" : true
+          },
+          {
+            "name" : "무료배송",
+            "color" : "#b3b3b3",
+            "show" : false
+          },
+          {
+            "name" : "고급 선물박스",
+            "color" : "#fdff00",
+            "show" : true
+          }
+        ]
+      },
+      {   
+        "category" : "주류",  
+        "name" : "크레망 골든블랑 세트 2호",
+          "ddockBiLabel" : false,
+          "discript" : "골든블랑 4스타 로제 + 아크릴 글래스 2개",
+          "sale" : "",
+          "price" : "67,900원",
+          "link" : "https://notioniframe.com/notion/1ww5w4w8f2o",
+          "shipment" : "당일 발송 혹은 배송일자 지정",
+          "badge" : [
+            {
+              "name" : "인터넷 최저가",
+              "color" : "#12e25f",
+              "show" : true
+            },
+            {
+              "name" : "기업(단체)구매 환영",
+              "color" : "#ff4f4f",
+              "show" : true
+            },
+            {
+              "name" : "무료배송",
+              "color" : "#b3b3b3",
+              "show" : false
+            },
+            {
+              "name" : "고급 선물박스",
+              "color" : "#fdff00",
+              "show" : true
+            }
+          ]
+        },
+        {   
+          "category" : "주류",  
+          "name" : "와인킹 추천 세트 5호",
+            "ddockBiLabel" : false,
+            "discript" : "로스바스코스 크로마스 까르미네르 + 까로 이만까야",
+            "sale" : "",
+            "price" : "71,900원",
+            "link" : "https://notioniframe.com/notion/1z13n46p0sv",
+            "shipment" : "당일 발송 혹은 배송일자 지정",
+            "badge" : [
+              {
+                "name" : "인터넷 최저가",
+                "color" : "#12e25f",
+                "show" : true
+              },
+              {
+                "name" : "기업(단체)구매 환영",
+                "color" : "#ff4f4f",
+                "show" : true
+              },
+              {
+                "name" : "무료배송",
+                "color" : "#b3b3b3",
+                "show" : false
+              },
+              {
+                "name" : "고급 선물박스",
+                "color" : "#fdff00",
+                "show" : true
+              }
+            ]
+          },
+          //////////////////////////
+          {   
+            "category" : "수산&정육",  
+            "name" : "투뿔 한우구이세트 1.1kg",
+              "ddockBiLabel" : false,
+              "discript" : "한우++ 등심 550g + 채끝 550g",
+              "sale" : "",
+              "price" : "109,000원",
+              "link" : "https://notioniframe.com/notion/200aw8ybfop",
+              "shipment" : "당일 발송 혹은 배송일자 지정",
+              "badge" : [
+                {
+                  "name" : "최고급 명품 1++ 등급",
+                  "color" : "#14efe3",
+                  "show" : true
+                },
+                {
+                  "name" : "기업(단체)구매 환영",
+                  "color" : "#ff4f4f",
+                  "show" : true
+                },
+                {
+                  "name" : "무료배송",
+                  "color" : "#b3b3b3",
+                  "show" : false
+                },
+                {
+                  "name" : "진공패킹포장",
+                  "color" : "#fdff00",
+                  "show" : true
+                }
+              ]
+            },
+            {   
+              "category" : "수산&정육",  
+              "name" : "투뿔 한우구이세트 1.5kg",
+                "ddockBiLabel" : false,
+                "discript" : "한우++ 등심 500g + 채끝 500g + 갈비살 500g",
+                "sale" : "",
+                "price" : "219,000원",
+                "link" : "https://notioniframe.com/notion/24xa6d9r6ox",
+                "shipment" : "당일 발송 혹은 배송일자 지정",
+                "badge" : [
+                  {
+                    "name" : "최고급 명품 1++ 등급",
+                    "color" : "#14efe3",
+                    "show" : true
+                  },
+                  {
+                    "name" : "기업(단체)구매 환영",
+                    "color" : "#ff4f4f",
+                    "show" : true
+                  },
+                  {
+                    "name" : "무료배송",
+                    "color" : "#b3b3b3",
+                    "show" : false
+                  },
+                  {
+                    "name" : "진공패킹포장",
+                    "color" : "#fdff00",
+                    "show" : true
+                  }
+                ]
+              },
+              {   
+                "category" : "수산&정육",  
+                "name" : "투뿔 한우구이세트 2kg",
+                  "ddockBiLabel" : false,
+                  "discript" : "한우++ 등심 500g + 채끝 500g + 갈비살 500g + 살치살 500g",
+                  "sale" : "",
+                  "price" : "329,000원",
+                  "link" : "https://notioniframe.com/notion/20yts9oe65f",
+                  "shipment" : "당일 발송 혹은 배송일자 지정",
+                  "badge" : [
+                    {
+                      "name" : "최고급 명품 1++ 등급",
+                      "color" : "#14efe3",
+                      "show" : true
+                    },
+                    {
+                      "name" : "기업(단체)구매 환영",
+                      "color" : "#ff4f4f",
+                      "show" : true
+                    },
+                    {
+                      "name" : "무료배송",
+                      "color" : "#b3b3b3",
+                      "show" : false
+                    },
+                    {
+                      "name" : "진공패킹포장",
+                      "color" : "#fdff00",
+                      "show" : true
+                    }
+                  ]
+                },
+            
+    ///////////////////////////
+  {   
     "category" : "수산&정육",  
     "name" : "수림정 보리굴비 10미",
       "ddockBiLabel" : false,

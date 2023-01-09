@@ -151,6 +151,15 @@ function categoryFilter(x){
         }
       }
       break;
+      case 4:
+        for(i=0; i<pdDataLen; i++){
+          if(pdData[i]["category"] == "주류"){
+            product[i].style.display = "block";
+          }else{
+            product[i].style.display = "none";
+          }
+        }
+        break;
     default:
       alert( "" );
   }
