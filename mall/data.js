@@ -258,38 +258,38 @@ var pdData = [
         }
       ]
     },
-    {   
-      "category" : "수산&정육",  
-      "name" : "한우 1+ 선물세트 1.2kg",
-        "ddockBiLabel" : false,
-        "discript" : "한우 1+ 꽃등심/안심/채끝 각 300g",
-        "sale" : "",
-        "price" : "219,000원",
-        "link" : "https://notioniframe.com/notion/2krf6n2smab",
-        "shipment" : "당일 발송 혹은 배송일자 지정",
-        "badge" : [
-          {
-            "name" : "특가",
-            "color" : "#12e25f",
-            "show" : true
-          },
-          {
-            "name" : "기업(단체)구매 환영",
-            "color" : "#ff4f4f",
-            "show" : true
-          },
-          {
-            "name" : "무료배송",
-            "color" : "#b3b3b3",
-            "show" : true
-          },
-          {
-            "name" : "인터넷 최저가",
-            "color" : "#fdff00",
-            "show" : false
-          }
-        ]
-      },
+    // {   
+    //   "category" : "수산&정육",  
+    //   "name" : "한우 1+ 선물세트 1.2kg",
+    //     "ddockBiLabel" : false,
+    //     "discript" : "한우 1+ 꽃등심/안심/채끝 각 300g",
+    //     "sale" : "",
+    //     "price" : "219,000원",
+    //     "link" : "https://notioniframe.com/notion/2krf6n2smab",
+    //     "shipment" : "당일 발송 혹은 배송일자 지정",
+    //     "badge" : [
+    //       {
+    //         "name" : "특가",
+    //         "color" : "#12e25f",
+    //         "show" : true
+    //       },
+    //       {
+    //         "name" : "기업(단체)구매 환영",
+    //         "color" : "#ff4f4f",
+    //         "show" : true
+    //       },
+    //       {
+    //         "name" : "무료배송",
+    //         "color" : "#b3b3b3",
+    //         "show" : true
+    //       },
+    //       {
+    //         "name" : "인터넷 최저가",
+    //         "color" : "#fdff00",
+    //         "show" : false
+    //       }
+    //     ]
+    //   },
       {   
         "category" : "수산&정육",  
         "name" : "한우 1등급 선물세트 1.5kg",
