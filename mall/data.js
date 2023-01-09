@@ -127,38 +127,38 @@ var pdData = [
               }
             ]
           },
-          {   
-            "category" : "수산&정육",  
-            "name" : "1++ 한우 구이 세트",
-              "ddockBiLabel" : false,
-              "discript" : "",
-              "sale" : "",
-              "price" : "330,000원",
-              "link" : "https://notioniframe.com/notion/2h0budmsxc7",
-              "shipment" : "당일 발송 혹은 배송일자 지정",
-              "badge" : [
-                {
-                  "name" : "특가",
-                  "color" : "#12e25f",
-                  "show" : true
-                },
-                {
-                  "name" : "기업(단체)구매 환영",
-                  "color" : "#ff4f4f",
-                  "show" : true
-                },
-                {
-                  "name" : "무료배송",
-                  "color" : "#b3b3b3",
-                  "show" : true
-                },
-                {
-                  "name" : "인터넷 최저가",
-                  "color" : "#fdff00",
-                  "show" : false
-                }
-              ]
-            },
+          // {   
+          //   "category" : "수산&정육",  
+          //   "name" : "1++ 한우 구이 세트",
+          //     "ddockBiLabel" : false,
+          //     "discript" : "",
+          //     "sale" : "",
+          //     "price" : "330,000원",
+          //     "link" : "https://notioniframe.com/notion/2h0budmsxc7",
+          //     "shipment" : "당일 발송 혹은 배송일자 지정",
+          //     "badge" : [
+          //       {
+          //         "name" : "특가",
+          //         "color" : "#12e25f",
+          //         "show" : true
+          //       },
+          //       {
+          //         "name" : "기업(단체)구매 환영",
+          //         "color" : "#ff4f4f",
+          //         "show" : true
+          //       },
+          //       {
+          //         "name" : "무료배송",
+          //         "color" : "#b3b3b3",
+          //         "show" : true
+          //       },
+          //       {
+          //         "name" : "인터넷 최저가",
+          //         "color" : "#fdff00",
+          //         "show" : false
+          //       }
+          //     ]
+          //   },
           //////
           {   
             "category" : "과일",  
@@ -353,38 +353,38 @@ var pdData = [
                           }
                         ]
                       },
-                      {   
-                        "category" : "과일",  
-                        "name" : "나주배 선물세트 7.5Kg",
-                          "ddockBiLabel" : false,
-                          "discript" : "9-11개",
-                          "sale" : "",
-                          "price" : "41,400원",
-                          "link" : "https://notioniframe.com/notion/sb4jfc706i",
-                          "shipment" : "당일 발송 혹은 배송일자 지정",
-                          "badge" : [
-                            {
-                              "name" : "특가",
-                              "color" : "#12e25f",
-                              "show" : true
-                            },
-                            {
-                              "name" : "기업(단체)구매 환영",
-                              "color" : "#ff4f4f",
-                              "show" : true
-                            },
-                            {
-                              "name" : "무료배송",
-                              "color" : "#b3b3b3",
-                              "show" : false
-                            },
-                            {
-                              "name" : "보자기 포장(추가금액)",
-                              "color" : "#fdff00",
-                              "show" : true
-                            }
-                          ]
-                        },
+                      // {   
+                      //   "category" : "과일",  
+                      //   "name" : "나주배 선물세트 7.5Kg",
+                      //     "ddockBiLabel" : false,
+                      //     "discript" : "9-11개",
+                      //     "sale" : "",
+                      //     "price" : "41,400원",
+                      //     "link" : "https://notioniframe.com/notion/sb4jfc706i",
+                      //     "shipment" : "당일 발송 혹은 배송일자 지정",
+                      //     "badge" : [
+                      //       {
+                      //         "name" : "특가",
+                      //         "color" : "#12e25f",
+                      //         "show" : true
+                      //       },
+                      //       {
+                      //         "name" : "기업(단체)구매 환영",
+                      //         "color" : "#ff4f4f",
+                      //         "show" : true
+                      //       },
+                      //       {
+                      //         "name" : "무료배송",
+                      //         "color" : "#b3b3b3",
+                      //         "show" : false
+                      //       },
+                      //       {
+                      //         "name" : "보자기 포장(추가금액)",
+                      //         "color" : "#fdff00",
+                      //         "show" : true
+                      //       }
+                      //     ]
+                      //   },
                         
   ////////////////
   {   
