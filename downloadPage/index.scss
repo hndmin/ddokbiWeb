@@ -39,11 +39,16 @@ body{
     height: 100%;
 
     display: flex; 
+    flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
 }
 
 #ImgArea{
-    background: url(./img/bg.jpg) no-repeat 100px;
+    background: url(./img/bg.jpg) no-repeat;
     background-position-x: left;
     background-position-y: bottom;
     background-size: 840px;
@@ -53,6 +58,16 @@ body{
 
     //max-width: 840px;
     margin-top: 2rem;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+
+        background-position-x: 2rem;
+        background-position-y: 2.25rem;
+        background-size: 130%;
+
+        margin-top: 1.5rem;
+    }
 }
 #InfoArea{
     width: 100%;
@@ -74,6 +89,16 @@ body{
         justify-content: center;
         align-items: center;
     }
+
+
+    @media (max-width: 992px) {
+        align-items: center;
+        height: fit-content;
+        padding: 3rem 0rem 0rem;
+        margin-bottom: 0rem;
+
+        background-color: transparent;
+    }
 }
 
 #Title{
@@ -84,10 +109,21 @@ body{
 
     padding: 0 1rem;
     margin-bottom: 5rem;
+
+    @media (max-width: 992px) {
+        padding: 0 0.5rem;
+        margin-bottom: 1.5rem;
+    }
     .upperText{
         margin-bottom: 0.75rem;
+        @media (max-width: 992px) {
+            margin-bottom: 1rem;
+        }
         p{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            @media (max-width: 992px) {
+                font-size: 1.4rem;
+            }
             span{
                 font-weight: 700;
             }
@@ -95,10 +131,19 @@ body{
         .highlight{
             display: flex;
             margin-top: -1rem;
-            margin-left: 156px;
+            margin-left: 133px;
             background-color: #9FD800;
-            width: 230px;
+            width: 200px;
             height: 1rem;
+
+            @media (max-width: 992px) {
+                display: flex;
+                margin-top: -1rem;
+                margin-left: 105px;
+                background-color: #9FD800;
+                width: 153px;
+                height: 1rem;
+            }
         }
     }
     .logo{
@@ -114,6 +159,16 @@ body{
             font-size: 6.5rem;
             font-weight: 800;
         }
+
+        @media (max-width: 992px) {
+            img{
+                width: 80px;
+                margin-right: 0.75rem;
+            }
+            h1{
+                font-size: 4rem;
+            }
+        }
     }
 }
 
@@ -125,6 +180,10 @@ body{
     
     width: 100%;
 
+    @media (max-width: 992px) {
+
+    }
+
     h2{
         font-size: 2.5rem;
         font-weight: 500;
@@ -132,9 +191,21 @@ body{
             font-weight: 800;
         }
 
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+
+        @media (max-width: 992px) {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    a{
+        width: 100%;
+        cursor: pointer;
     }
     .downBtn{
+        cursor: pointer;
+        
         background-color: black;
         overflow: hidden;
         border-radius: 1.25rem;
@@ -156,9 +227,18 @@ body{
             transition: 0.2s;
             box-shadow: 0 8px 20px rgba(22,28,45,0.45);
         }
+        @media (max-width: 992px) {
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+            padding-left: 0.75rem;
+            
+        }
 
         img{
             width: 200px;
+            @media (max-width: 992px) {
+                width: 180px;
+            }
         }
         .qrcode{
             margin-left: 1rem;
@@ -173,6 +253,23 @@ body{
             img{
                 width: 72px;
             }
+
+            @media (max-width: 992px) {
+                display: none;
+                img{
+
+                }
+            }
         }
     }
+}
+
+
+.copyright{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    color: rgba(0,0,0,0.5);
+    font-size: 0.55rem;
 }
