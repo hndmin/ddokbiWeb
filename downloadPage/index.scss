@@ -63,10 +63,10 @@ body{
         flex-direction: column;
 
         background-position-x: 2rem;
-        background-position-y: 2.25rem;
-        background-size: 130%;
+        background-position-y: 1.25rem;
+        background-size: 140%;
 
-        margin-top: 1.5rem;
+        margin-top: 0rem;
     }
 }
 #InfoArea{
@@ -154,6 +154,9 @@ body{
             width: 140px;
             //height: 200px;
             margin-right: 1.5rem;
+            border-radius: 2rem;
+
+            box-shadow: 0 4px 20px rgba(22,28,45,0.25);
         }
         h1{
             font-size: 6.5rem;
@@ -164,6 +167,7 @@ body{
             img{
                 width: 80px;
                 margin-right: 0.75rem;
+                border-radius: 1rem;
             }
             h1{
                 font-size: 4rem;
@@ -181,7 +185,16 @@ body{
     width: 100%;
 
     @media (max-width: 992px) {
-
+        position: fixed;
+        bottom: 0;
+        
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+        
+        width: 84vw;
+        padding: 8vw;
+        padding-top: 10rem;
+        padding-bottom: 3.75rem;
+    
     }
 
     h2{
@@ -195,7 +208,7 @@ body{
 
         @media (max-width: 992px) {
             font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.85rem;
         }
     }
 
@@ -232,6 +245,7 @@ body{
             padding: 0.5rem;
             padding-left: 0.75rem;
             
+            box-shadow: 0 4px 20px rgba(22,28,45,0.45);
         }
 
         img{
@@ -262,6 +276,18 @@ body{
             }
         }
     }
+    .ios{
+        color: rgba(0,0,0,0.75);
+        font-weight: 500;
+
+        margin-top: 0.85rem;
+        font-size: 1.1rem;
+
+        @media (max-width: 992px) {
+            margin-top: 0.85rem;
+            font-size: 1.1rem;
+        }
+    }
 }
 
 
@@ -272,4 +298,9 @@ body{
 
     color: rgba(0,0,0,0.5);
     font-size: 0.55rem;
+
+    @media (max-width: 992px) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

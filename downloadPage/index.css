@@ -1,17 +1,14 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 * {
   word-break: keep-all;
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
 }
-
 * body {
   margin: 0;
 }
-
 * h1, * h2, * p, * dl, * dt, * dd {
   margin: 0;
 }
-
 * button {
   border: none;
   padding: 0;
@@ -25,39 +22,21 @@ html {
 body {
   overflow: hidden;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .wrap {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 @media (max-width: 992px) {
   .wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -70,17 +49,13 @@ body {
   height: 100%;
   margin-top: 2rem;
 }
-
 @media (max-width: 992px) {
   #ImgArea {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-position-x: 2rem;
-    background-position-y: 2.25rem;
-    background-size: 130%;
-    margin-top: 1.5rem;
+    background-position-y: 1.25rem;
+    background-size: 140%;
+    margin-top: 0rem;
   }
 }
 
@@ -89,43 +64,20 @@ body {
   height: 100%;
   padding: 0 6rem;
   margin-bottom: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
-
 #InfoArea .infoWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 @media (max-width: 992px) {
   #InfoArea {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: -webkit-fit-content;
+    align-items: center;
     height: -moz-fit-content;
     height: fit-content;
     padding: 3rem 0rem 0rem;
@@ -135,57 +87,39 @@ body {
 }
 
 #Title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0 1rem;
   margin-bottom: 5rem;
 }
-
 @media (max-width: 992px) {
   #Title {
     padding: 0 0.5rem;
     margin-bottom: 1.5rem;
   }
 }
-
 #Title .upperText {
   margin-bottom: 0.75rem;
 }
-
 @media (max-width: 992px) {
   #Title .upperText {
     margin-bottom: 1rem;
   }
 }
-
 #Title .upperText p {
   font-size: 1.8rem;
 }
-
 @media (max-width: 992px) {
   #Title .upperText p {
     font-size: 1.4rem;
   }
 }
-
 #Title .upperText p span {
   font-weight: 700;
 }
-
 #Title .upperText .highlight {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: -1rem;
   margin-left: 133px;
@@ -193,11 +127,8 @@ body {
   width: 200px;
   height: 1rem;
 }
-
 @media (max-width: 992px) {
   #Title .upperText .highlight {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: -1rem;
     margin-left: 105px;
@@ -206,30 +137,25 @@ body {
     height: 1rem;
   }
 }
-
 #Title .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #Title .logo img {
   width: 140px;
   margin-right: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 20px rgba(22, 28, 45, 0.25);
 }
-
 #Title .logo h1 {
   font-size: 6.5rem;
   font-weight: 800;
 }
-
 @media (max-width: 992px) {
   #Title .logo img {
     width: 80px;
     margin-right: 0.75rem;
+    border-radius: 1rem;
   }
   #Title .logo h1 {
     font-size: 4rem;
@@ -237,112 +163,101 @@ body {
 }
 
 #Download {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
-
+@media (max-width: 992px) {
+  #Download {
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+    width: 84vw;
+    padding: 8vw;
+    padding-top: 10rem;
+    padding-bottom: 3.75rem;
+  }
+}
 #Download h2 {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-
 #Download h2 .bold {
   font-weight: 800;
 }
-
 @media (max-width: 992px) {
   #Download h2 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.85rem;
   }
 }
-
 #Download a {
   width: 100%;
   cursor: pointer;
 }
-
 #Download .downBtn {
   cursor: pointer;
   background-color: black;
   overflow: hidden;
   border-radius: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 0.75rem;
   padding-left: 1rem;
-  -webkit-box-shadow: 0 4px 20px rgba(22, 28, 45, 0.25);
-          box-shadow: 0 4px 20px rgba(22, 28, 45, 0.25);
-  -webkit-transition: 0.2s;
+  box-shadow: 0 4px 20px rgba(22, 28, 45, 0.25);
   transition: 0.2s;
 }
-
 #Download .downBtn:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: 0 8px 20px rgba(22, 28, 45, 0.45);
-          box-shadow: 0 8px 20px rgba(22, 28, 45, 0.45);
+  box-shadow: 0 8px 20px rgba(22, 28, 45, 0.45);
 }
-
 @media (max-width: 992px) {
   #Download .downBtn {
     border-radius: 0.75rem;
     padding: 0.5rem;
     padding-left: 0.75rem;
+    box-shadow: 0 4px 20px rgba(22, 28, 45, 0.45);
   }
 }
-
 #Download .downBtn img {
   width: 200px;
 }
-
 @media (max-width: 992px) {
   #Download .downBtn img {
     width: 180px;
   }
 }
-
 #Download .downBtn .qrcode {
   margin-left: 1rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
   padding: 0.35rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #Download .downBtn .qrcode img {
   width: 72px;
 }
-
 @media (max-width: 992px) {
   #Download .downBtn .qrcode {
     display: none;
+  }
+}
+#Download .ios {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 500;
+  margin-top: 0.85rem;
+  font-size: 1.1rem;
+}
+@media (max-width: 992px) {
+  #Download .ios {
+    margin-top: 0.85rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -353,4 +268,9 @@ body {
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.55rem;
 }
-/*# sourceMappingURL=index.css.map */
+@media (max-width: 992px) {
+  .copyright {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=index.css.map */
