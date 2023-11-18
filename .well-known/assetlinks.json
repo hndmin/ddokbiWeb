@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.rabbitoad.ddokbi",
+        "sha256_cert_fingerprints": [
+          "7D:70:A5:D6:94:A7:A3:8B:04:33:F0:FB:9B:69:18:FE:28:75:43:5C:A3:AE:41:7C:9F:C0:10:41:7D:3E:E7:60"
+        ]
+      }
+    }
+  ]
