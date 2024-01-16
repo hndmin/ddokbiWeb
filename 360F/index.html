@@ -25,6 +25,10 @@
           content="메트라이프 360Future 회원만을 위한 똑비 개인비서 서비스"
     />
     
+
+    <link rel="stylesheet" href="../custom.css" />
+
+
     <!-- Title -->
     <title>MetLife x 똑비</title>
     
@@ -33,7 +37,6 @@
   </head>
   <body>
 
-    <!-- MODALS -->
     
 
     <!-- NAVBAR -->
@@ -1021,6 +1024,25 @@
       </div> <!-- / .container -->
     </footer>
 
+
+
+    <!-- MODALS -->
+    <div id="Modal">
+      <div class="modalPlate">
+        <button class="btnCloseTop" onclick="closeModal()"><img src="../assets/img/icons/close.png" alt=""></button>
+        <img src="../assets/img/event.jpg" alt="">
+        <a href="https://forms.gle/96qmiA7Fd6YS2Eug6" target="_blank">
+          <button class="btnLink">참여하러 가기</button>
+        </a>
+        
+        <!-- <button class="btnCloseBottom">오늘 그만보기</button> -->
+      </div>
+      <button class="btnCloseBottom" onclick="closeModal()">
+        <p>이벤트창 닫기</p>
+        <img src="../assets/img/icons/close.png" alt="">
+      </button>
+    </div>
+
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
@@ -1044,6 +1066,12 @@
 
       //const func = require('../js/user.js');
       //import{checkRadioA} from '../js/user.js';
+
+      function closeModal(){
+        document.getElementById("Modal").style.display = "none";
+      }
+
+
 
       // SCREEN SIZE DETECTION ////////////////////////////////////////////////////////
       var screenWidth = window.innerWidth;

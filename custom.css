@@ -1,0 +1,141 @@
+#Modal {
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Modal button {
+  background-color: transparent;
+  border: none;
+}
+
+#Modal .btnCloseBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.75;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#Modal .btnCloseBottom:hover {
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#Modal .btnCloseBottom img {
+  width: 2rem;
+}
+
+#Modal .btnCloseBottom p {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 0.25rem;
+}
+
+#Modal .modalPlate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5);
+  margin: 2rem 0 2rem;
+}
+
+#Modal .modalPlate img {
+  width: 100%;
+}
+
+#Modal .modalPlate a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1rem 0 2.5rem;
+}
+
+#Modal .modalPlate a:hover {
+  text-decoration: none;
+}
+
+#Modal .modalPlate a .btnLink {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#Modal .modalPlate a .btnLink:hover {
+  background-color: #1fb9ee;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#Modal .modalPlate .btnCloseTop {
+  position: absolute;
+  width: 80%;
+  max-width: 500px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem;
+}
+
+#Modal .modalPlate .btnCloseTop img {
+  width: 3.5rem;
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#Modal .modalPlate .btnCloseTop img:hover {
+  -webkit-filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.7));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=custom.css.map */
