@@ -1056,7 +1056,8 @@
 
       function useDdokbi(name){
         //console.log('https://ddokbi.app.link/'+ name);
-        const platform = (navigator.userAgentData?.platform || navigator.platform)?.toLowerCase();
+        // const platform = (navigator.userAgentData?.platform || navigator.platform)?.toLowerCase();
+        const platform = navigator.platform.toLowerCase();
  
         // if(platform.startsWith("win")) return console.log("windows");
         // if(platform.startsWith("mac")) return console.log("macos");
@@ -1068,7 +1069,7 @@
 
         if(platform.startsWith("android")){
           window.location.href = 'https://ddokbi.app.link/'+ name;
-        }else if(platform.startsWith("ios")){
+        }else if(platform.startsWith("iphone")){
           if(name == geps){
             window.alert("안드로이드 휴대폰에서 이용해주세요!");
           }else{
