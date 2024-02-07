@@ -80,9 +80,9 @@
           <!-- E R A S E D -->
     
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn- ms-auto" href="https://ddokbi.app.link/metlife" target="_blank">
+          <button onclick="useDdokbi('metlife')" class="navbar-btn btn btn-sm btn- ms-auto" target="_blank">
             똑비 바로가기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-          </a>
+          </button>
     
         </div>
     
@@ -123,9 +123,9 @@
 
             <!-- Buttons -->
             <div class="text-center text-md-center">
-              <a href="https://ddokbi.app.link/metlife" class="btn btn-primary shadow lift me-1" target="_blank">
+              <button onclick="useDdokbi('metlife')" class="btn btn-primary shadow lift me-1" target="_blank">
                 똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-              </a>
+              </button>
               <!-- <a href="docs/index.html" class="btn btn-secondary lift">
                 Documentation
               </a> -->
@@ -885,10 +885,10 @@
             </p> -->
 
             <!-- Button -->
-            <a href="https://ddokbi.app.link/metlife" target="_blank" class="btn btn-success lift">
+            <button onclick="useDdokbi('metlife')" target="_blank" class="btn btn-success lift">
               똑비 바로 이용하기
               <i class="fe fe-arrow-right"></i>
-            </a>
+            </button>
 
           </div>
           <div class="copyright col-12">
@@ -1003,7 +1003,7 @@
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://ddokbi.app.link/metlife" class="text-reset">
+                <a onclick="useDdokbi('metlife')"  class="text-reset">
                   똑비 이용하기
                 </a>
               </li>
@@ -1053,6 +1053,34 @@
     <!-- Theme JS -->
     <script src="../assets/js/theme.bundle.js"></script>
     <script type="text/javascript">
+
+
+
+      function useDdokbi(name){
+        //console.log('https://ddokbi.app.link/'+ name);
+        const platform = (navigator.userAgentData?.platform || navigator.platform)?.toLowerCase();
+ 
+        // if(platform.startsWith("win")) return console.log("windows");
+        // if(platform.startsWith("mac")) return console.log("macos");
+        // if(platform.startsWith("ios")) return console.log("ios");
+        // if(platform.startsWith("android")) return console.log("android");
+        // if(platform.startsWith("linux")) return console.log("linux");
+        // console.log("unknown")
+
+
+        if(platform.startsWith("android")){
+          window.location.href = 'https://ddokbi.app.link/'+ name;
+        }else if(platform.startsWith("ios")){
+          if(name == geps){
+            window.alert("안드로이드 휴대폰에서 이용해주세요!");
+          }else{
+            window.location.href = 'https://ddokbi.app.link/'+ name;
+          }
+        }else{
+          window.alert("모바일에서 이용해주세요!");
+        }
+        
+      }
 
       // var desiredUrl = "../360F.html";
       // window.location.replace(desiredUrl);
