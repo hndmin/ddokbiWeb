@@ -1,10 +1,10 @@
 var links = {
-    '360f': 'metlife',
+    '360F': 'metlife',
     'geps': 'geps',
 }
 
 function redirect(uri) {
-    if (uri === '360f') {
+    if (uri === '360F') {
         return window.open('https://ddokbi.app.link/metlife');
     }
     return alert('현재는 안드로이드 버전만 지원됩니다.');
@@ -72,7 +72,7 @@ function useDdokbi() {
     // f#$%$% slash
     if (uri === '') uri = parsedURL[parsedURL.length - 2];
     // just in case query param exists
-    const targetURI = uri.split('?')[0].lower();
+    const targetURI = uri.split('?')[0];
 
     switch (os) {
         case 'Android':
