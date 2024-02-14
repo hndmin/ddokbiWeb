@@ -4,7 +4,7 @@ var links = {
 }
 
 function redirect(uri) {
-    if (uri === '360f') {
+    if (uri.lower() === '360f') {
         return window.open('https://ddokbi.app.link/metlife');
     }
     return alert('현재는 안드로이드 버전만 지원됩니다.');
