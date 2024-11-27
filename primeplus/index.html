@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.bundle.css" />
+    
+    <!-- OpenGraphProtocol -->
+    <meta property="og:title" content="MetLife x 똑비" />
+    <meta property="og:url" content="../360F/index.html/" />
+    <meta property="og:image" content="../assets/img/prime/ogp.jpg" />
+    <meta
+          property="og:description"
+          content="메트라이프 Prime+ 회원만을 위한 똑비 개인비서 서비스"
+    />
+    
+
+    <link rel="stylesheet" href="../custom_prime.css" />
+
+
+    <!-- Title -->
+    <title>MetLife x 똑비</title>
+    
+  </head>
+  <body>
+
+    
+
+    <!-- NAVBAR -->
+
+    <nav id="navBar" class="metlife navbar navbar-expand-lg ">
+      <div class="cont ">
+        <!-- <div class="null">
+          &nbsp;
+        </div> -->
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/prime/brand.png" class="navbar-brand-img" alt="...">
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#main2">서비스 소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsor">파트너사</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#main4">후기 & FAQ</a>
+            </li>
+          </ul>
+          <!-- E R A S E D -->
+    
+          <!-- Button -->
+          <button onclick="useDdokbi()" class="navbar-btn btn btn-sm btn- ms-auto" target="_blank">
+            똑비 바로가기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+          </button>
+    
+        </div>
+    
+      </div>
+    </nav>
+    
+    
+    
+
+    <!-- WELCOME -->
+    <section id="main" class="metlife pt-0 pt-md-0 pb-8 pb-md-0 jarallax imgBG" data-jarallax data-speed=".8">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="imgBox col-12">
+
+            <!-- Image -->
+            <img src="../assets/img/illustrations/illust_prime.png" class="topImg img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+          </div>
+          <div class="col-12" data-aos="fade-up">
+
+            <!-- Heading -->
+            <h1 class="display-2 text-center text-md-center mb-7">
+              메트라이프 Prime+ 회원만을 위한 <br>
+              <!-- 똑비 개인비서 서비스 -->
+              <!-- 똑똑한 비서 똑비에게<br> -->
+              <!-- <span class="text-primary">똑비에게</span> -->
+              <span class="text-success"><span data-typed='{"strings": ["똑비 개인비서 서비스"]}'></span></span>
+              
+            </h1>
+
+            <!-- Text -->
+            <!-- <p class="lead text-center text-md-start text-muted mb-5 mb-lg-5">
+              급변하는 세상 속 앞서가는 당신의 일상을 <br>
+              똑비가 만들어드립니다. 똑부러지는 비서와 함께 <br>
+              당신의 소비 생활을 똑똑하게 만들어보세요.
+            </p> -->
+
+            <!-- Buttons -->
+            <div class="text-center text-md-center">
+              <button onclick="useDdokbi()" class="btn btn-primary shadow lift me-1" target="_blank">
+                똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+              </button>
+              <!-- <a href="docs/index.html" class="btn btn-secondary lift">
+                Documentation
+              </a> -->
+            </div>
+            <p style="text-align: center; font-size: 0.75rem; line-height: 1.5; padding: 1rem; color: #000000; opacity: 0.5;">
+              똑비 서비스 운영 및 이용과 관련된 책임은<br>
+              (주)토끼와두꺼비에 있습니다.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- ABOUT -->
+    <section id="main2" class="metlife pt-11 pt-md-11 pb-11 pb-md-9 bg-gradient-light-white">
+      <div class="container"> 
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center mb-10">
+
+            <!-- Heading -->
+            <h2 class="display-3">
+              <!-- 💬 📞<br>📸 🎙<br><br> -->
+              시니어 일상의 귀찮고 소소한 요청,
+              똑똑한 비서 똑비에게!
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted">
+              급변하는 세상 속 앞서가는 당신의 일상을 똑비가 만들어드립니다. 똑부러지는 비서와 함께 당신의 소비 생활을 똑똑하게 만들어보세요.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <!----------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------->
+        
+        <!----------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------->
+        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12" style="
+        display: flex;">
+          <div class="index col-12">
+            <span class="badge badge-lg bg-primary">
+              <span class="h5 text-uppercase fw-bold">01</span>
+            </span>
+          </div>
+          <div class="info col-12 col-md-6 order-md-2 order-2 lift" data-aos="fade-left">
+            
+            <!-- Heading -->
+            <div class="heading row">
+              <h2>
+                <span>🛒</span><p>구매를 합니다</p>
+                <!-- <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
+              </h2>
+  
+              <!-- Text -->
+              <p class="fs-lg text-muted mb-6">
+                온라인 플랫폼은 많고, 회원가입이나 결제는 번거롭습니다. 똑비에게 말씀해 주세요. 요청 한 번으로 의류, 식료품 등 원하시는 물품을 받아 보실 수 있습니다.
+              </p>
+            </div>
+
+            <!-- List -->
+            <div class="list row">
+              <div class="col-12">
+
+                <input onclick="updateImg(0,0)" type="radio" class="btn-check" name="radio0" id="a1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="a1">📦&nbsp; 물품 구매</label>
+
+                <input onclick="updateImg(0,1)" type="radio" class="btn-check" name="radio0" id="a2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="a2">🛵&nbsp; 음식 배달</label>
+
+                <input onclick="updateImg(0,2)" type="radio" class="btn-check" name="radio0" id="a3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="a3">📝&nbsp; 장보기</label>
+
+                <input onclick="updateImg(0,3)" type="radio" class="btn-check" name="radio0" id="a4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="a4">🎁&nbsp; 선물</label>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1 order-1 mb-6" data-aos="fade-right">
+
+            <!-- Card -->
+            <!-- card screenCard shadow-light-lg lift lift-lg -->
+            <div id="card0" class="cards">
+
+              <!-- Image -->
+              <img id="screen0" src="" alt="..." class="card-img-top">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <!----------------------------------------------------------------------------->
+        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12" style="
+        display: flex;">
+          <div class="index col-12">
+            <span class="badge badge-lg bg-primary">
+              <span class="h5 text-uppercase fw-bold">02</span>
+            </span>
+          </div>
+          <div class="info col-12 col-md-6 order-md-1 order-2 lift" data-aos="fade-right">
+
+            <!-- Heading -->
+            <div class="heading row">
+              <h2>
+                <span>🎫</span><p>예약 & 예매를 합니다</p>
+                <!-- The most useful resource <br>
+                <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
+              </h2>
+
+              <!-- Text -->
+              <p class="fs-lg text-muted mb-6">
+                까먹기 쉬운 예매일, 일찍 없어지는 좌석, 어려운 가격 비교 역시 걱정 마세요. 똑비에게 요청하여, 원하시는 날짜와 시간에 원하시는 서비스를 누리세요.
+              </p>
+            </div>
+            <!-- List -->
+            <div class="list row">
+              <div class="col-12">
+
+
+                <input onclick="updateImg(1,0)" type="radio" class="btn-check" name="radio1" id="b1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="b1">✈️&nbsp; 비행기, 기차, 버스 탑승권 예매</label>
+                
+
+                <input onclick="updateImg(1,1)" type="radio" class="btn-check" name="radio1" id="b2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="b2">🚕&nbsp; 택시, 콜밴 호출</label>
+
+                
+
+                <input onclick="updateImg(1,2)" type="radio" class="btn-check" name="radio1" id="b3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="b3">🏨&nbsp; 숙소, 렌터카 예약</label>
+
+                <input onclick="updateImg(1,3)" type="radio" class="btn-check" name="radio1" id="b4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="b4">🎤&nbsp; 공연, 전시, 스포츠 티켓 예매</label>
+                
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-2 order-1 mb-6" data-aos="fade-left">
+
+            <!-- Card -->
+            <div id="card1" class="cards">
+
+              <!-- Image -->
+              <img id="screen1" src="" alt="..." class="card-img-top">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <!----------------------------------------------------------------------------->
+        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12">
+          <div class="index col-12">
+            <span class="badge badge-lg bg-primary">
+              <span class="h5 text-uppercase fw-bold">03</span>
+            </span>
+          </div>
+          <div class="info col-12 col-md-6 order-md-2 order-2 lift" data-aos="fade-left">
+
+            <!-- Heading -->
+            <div class="heading row">
+              <h2>
+                <span>🥇</span><p>추천을 합니다</p>
+                <!-- The most useful resource <br>
+                <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
+              </h2>
+
+              <!-- Text -->
+              <p class="fs-lg text-muted mb-6">
+                같은 제품이라도 선택지는 많습니다. 뭐가 좋은지 모르겠고, 찾아보기도 귀찮습니다. “요즘 전시회 어떤 게 있어요?” 대충 말씀해 주셔도 좋습니다. 똑비가 대신 고민하고 구매 및 예약/예매까지 해 드리니까요.
+              </p>
+            </div>
+            <!-- List -->
+            <div class="list row">
+              <div class="col-12">
+
+                <input onclick="updateImg(2,0)" type="radio" class="btn-check" name="radio2" id="c1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="c1">🍽&nbsp; 맛집 추천</label>
+
+                <input onclick="updateImg(2,1)" type="radio" class="btn-check" name="radio2" id="c2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="c2">☕️&nbsp; 카페 추천</label>
+
+                <input onclick="updateImg(2,2)" type="radio" class="btn-check" name="radio2" id="c3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="c3">🏝&nbsp; 여행지 추천</label>
+
+                <input onclick="updateImg(2,3)" type="radio" class="btn-check" name="radio2" id="c4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="c4">🛍&nbsp; 상품 추천</label>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1 order-1 mb-6" data-aos="fade-right">
+
+            <!-- Card -->
+            <div id="card2" class="cards">
+
+              <!-- Image -->
+              <img id="screen2" src="" alt="..." class="card-img-top">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <!----------------------------------------------------------------------------->
+        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-6">
+          <div class="index col-12">
+            <span class="badge badge-lg bg-primary">
+              <span class="h5 text-uppercase fw-bold">04</span>
+            </span>
+          </div>
+          <div class="info col-12 col-md-6 order-md-1 order-2 lift" data-aos="fade-right">
+
+            <!-- Heading -->
+            <div class="heading row">
+              <h2>
+                <span>🔎</span> <p>검색을 합니다</p>
+                <!-- The most useful resource <br>
+                <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
+              </h2>
+
+              <!-- Text -->
+              <p class="fs-lg text-muted mb-6">
+                구매 혹은 예약/예매가 아니어도 좋습니다. 일상의 소소한 궁금증도 부담 없이 물어 보세요. 똑비가 이해하시기 쉽게 정리해 드립니다.
+              </p>
+
+            </div>
+            <!-- List -->
+            <div class="list row">
+              <div class="col-12">
+
+                <input onclick="updateImg(3,0)" type="radio" class="btn-check" name="radio3" id="d1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="d1">👀&nbsp; 취미 및 관심사</label>
+
+                <input onclick="updateImg(3,1)" type="radio" class="btn-check" name="radio3" id="d2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="d2">🚶🏻‍♂️&nbsp; 생활</label>
+
+                <input onclick="updateImg(3,2)" type="radio" class="btn-check" name="radio3" id="d3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="d3"> ⚖️&nbsp; 행정 세무 법률</label>
+
+                <input onclick="updateImg(3,3)" type="radio" class="btn-check" name="radio3" id="d4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="d4">🏥&nbsp; 의료시설 & 의료</label>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-2 order-1 mb-6" data-aos="fade-left">
+
+            <!-- Card -->
+            <div id="card3" class="cards">
+
+              <!-- Image -->
+              <img id="screen3" src="" alt="..." class="card-img-top">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <!----------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+<!-- ABOUT -->
+<section id="sponsor" class="metlife pt-11 pt-md-11 pb-11 pb-md-9 bg-white">
+  <div class="container"> 
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center mb-5">
+
+        <!-- Heading -->
+        <h2 class="display-3">
+          <!-- 💬 📞<br>📸 🎙<br><br> -->
+          파트너사
+        </h2>
+
+        <!-- Text -->
+        <p class="fs-lg text-muted">
+          시니어의 액티브한 라이프 스타일<br>
+          함께 만들어나갑니다.
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+
+          <!-- Card -->
+          <a href="https://www.mashupangels.com/" target="_blank" class="card lift h-100 bg-white rounded-3">
+            <div class="card-body p-5 pb-0 my-auto">
+
+              <!-- Image -->
+              <img class="img-fluid" src="../assets/img/sponsor/0.png" alt="..." style="">
+
+            </div>
+            <div class="card-footer p-5">
+
+              <!-- Heading -->
+              <h3 class="">
+                <p>
+                  매쉬업엔젤스
+                </p>
+              </h3>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+
+          <!-- Card -->
+          <a href="https://secretary.inhatc.ac.kr/secretary/index.do" target="_blank" class="card lift h-100 bg-white rounded-3">
+            <div class="card-body p-5 pb-0 my-auto">
+
+              <!-- Image -->
+              <img class="img-fluid" src="../assets/img/sponsor/1.png" alt="..." style="">
+
+            </div>
+            <div class="card-footer p-5">
+
+              <!-- Heading -->
+              <h3 class="">
+                <p>
+                  인하공업전문대학교<br>
+                  비서학과
+                </p>
+              </h3>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+
+          <!-- Card -->
+          <a href="http://sva.or.kr/" target="_blank" class="card lift h-100 bg-white rounded-3">
+            <div class="card-body p-5 pb-0 my-auto">
+
+              <!-- Image -->
+              <img class="img-fluid" src="../assets/img/sponsor/2.png" alt="..." style="">
+
+            </div>
+            <div class="card-footer p-5">
+
+              <!-- Heading -->
+              <h3 class="">
+                <p>
+                  시니어벤처협회
+                </p>
+              </h3>
+            </div>
+          </a>
+
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+
+          <!-- Card -->
+          <a href="https://cafe.naver.com/sbckorea" target="_blank" class="card lift h-100 bg-white rounded-3">
+            <div class="card-body p-5 pb-0 my-auto">
+
+              <!-- Image -->
+              <img class="img-fluid" src="../assets/img/sponsor/3.png" alt="..." style="">
+
+            </div>
+            <div class="card-footer p-5">
+
+              <!-- Heading -->
+              <h3 class="">
+                <p>
+                  사단법인 코리안시니어즈
+                </p>
+              </h3>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div> <!-- / .row -->
+    <!----------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------->
+    
+
+  </div> <!-- / .container -->
+</section>
+
+    <!-- TESTIMONIALS -->
+    <section id="main4"  class="metlife pt-10 pt-md-12 bg-gradient-light-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h2 class="display-3">
+              똑비와 함께한<br>
+              회원님들 후기
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-7 mb-md-9">
+              똑비를 통해 편리하고 스마트한 삶을
+              경험한 회원님들의 후기입니다.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Card -->
+            <div class=" sliderCard card card-row shadow-light-lg mb-6 h-100 lift">
+              <div class="row gx-0 h-100">
+                <!-- <div class="col-12 col-md-6 h-100">
+
+                  
+                  <div class="card-img-slider h-100" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
+                    <a class="card-img-start w-100 bg-cover" href="#!">
+                      <div class="icon icon-xl text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#335EEA" opacity=".3" d="M12 20.022l-3.527 1.707-1.604-3.575-3.799-.959 1.069-3.77-2.293-3.176 3.241-2.2.285-3.908 3.898.398L12 1.729l2.73 2.81 3.898-.398.285 3.907 3.241 2.201-2.293 3.177 1.069 3.769-3.8.96-1.603 3.574z"/><path fill="#335EEA" d="M14.09 8.603L8.36 14.7 9.71 16.05l5.728-6.099z"/><path d="M10.854 9.175a1.718 1.718 0 11-3.435.002 1.718 1.718 0 013.435-.002M14.864 16.622a1.719 1.719 0 110-3.437 1.719 1.719 0 010 3.437z" fill="#335EEA" opacity=".3"/></g></svg>                      </div>
+                    </a>
+                    <a class="card-img-start w-100 bg-cover" href="#!">
+                      <div class="icon icon-xl text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M8 16a4 4 0 118 0H8zm-4 2h16a1 1 0 010 2H4a1 1 0 010-2z" fill="#335EEA"/><path d="M19.5 13H21a1.5 1.5 0 010 3h-1.5a1.5 1.5 0 010-3zm-3.44-4.129l1.061-1.06a1.5 1.5 0 012.122 2.121l-1.061 1.06a1.5 1.5 0 01-2.121-2.12zM3 13h1.5a1.5 1.5 0 010 3H3a1.5 1.5 0 010-3zm9-8.5A1.5 1.5 0 0113.5 6v1.5a1.5 1.5 0 01-3 0V6A1.5 1.5 0 0112 4.5zM4.81 7.81a1.5 1.5 0 012.122 0l1.06 1.061a1.5 1.5 0 01-2.12 2.122L4.81 9.932a1.5 1.5 0 010-2.121z" fill="#335EEA" opacity=".3"/></g></svg>                      </div>
+                    </a>
+                    <a class="card-img-start w-100 bg-cover" href="#!">
+                      <div class="icon icon-xl text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M16.374 19.939l5.849-8.773A.75.75 0 0021.599 10H17V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 0010.401 14H15v5.523a.75.75 0 001.374.416z" fill="#335EEA"/><path d="M4.5 5h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm0 12h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm-2-6h4a1.5 1.5 0 010 3h-4a1.5 1.5 0 010-3z" fill="#335EEA" opacity=".3"/></g></svg>                      </div>
+                    </a>
+                    <a class="card-img-start w-100 bg-cover" href="#!">
+                      <div class="icon icon-xl text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z" fill="#335EEA" opacity=".3"/><path d="M10.875 15.75a.946.946 0 01-.67-.287l-1.918-1.917a.926.926 0 010-1.342c.384-.383 1.007-.383 1.342 0l1.246 1.246 3.162-3.162a.926.926 0 011.342 0 .926.926 0 010 1.341l-3.833 3.834a.946.946 0 01-.671.287zM11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z" fill="#335EEA"/></g></svg>                      </div>
+                    </a>
+                    <a class="card-img-start w-100 bg-cover" href="#!">
+                      <div class="icon icon-xl text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M20.406 6.736A1 1 0 0121 7.65v8.762a1 1 0 01-.514.874l-8 4.444a1 1 0 01-.972 0l-8-4.444A1 1 0 013 16.412V7.65a1 1 0 01.594-.914l8-3.555a1 1 0 01.812 0l8 3.555z" fill="#335EEA" opacity=".3"/><path fill="#335EEA" d="M14.967 4.224L7.6 8.317v4.589l2 1V9.494l7.655-4.253z"/></g></svg>                      </div>
+                    </a>
+                  </div>
+
+
+                </div> -->
+                <div class="infoArea col-12 col-md-12 position-md-static">
+
+                  <!-- Slider -->
+                  <div class="position-md-static h-100" data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}' id="blogSlider">
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+                              <!-- <div class="img-fluid" style="color: #FF5A5F;">
+                                <img src="assets/img/howTo/i1.png" alt="..." class="">
+                              </div> -->
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            “우리 아들들도 다 찾아봤는데 똑비가 가장 저렴한 걸 찾아주네요. 싸게 살 수 있게 해줘서 고마워요” 
+                          </p>
+
+                          <!-- Footer -->
+                          <footer class="blockquote-footer">
+                            <span class="h4">-최OO, 여, 65세-</span>
+                          </footer>
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+                              <!-- <div class="img-fluid" style="color: #FF5A5F;">
+                                <img src="assets/img/howTo/i1.png" alt="..." class="">
+                              </div> -->
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            “똑비의 따뜻한 출/퇴근 인사에 하루 시작과 마무리가 든든해요. 진짜 이제 똑비 없는 하루가 상상이 안되네요~”
+                          </p>
+
+                          <!-- Footer -->
+                          <footer class="blockquote-footer">
+                            <span class="h4">-정OO, 여, 56세-</span>
+                          </footer>
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+                              <!-- <div class="img-fluid" style="color: #FF5A5F;">
+                                <img src="assets/img/howTo/i1.png" alt="..." class="">
+                              </div> -->
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            쇼핑이랑 예약 할 때 매번 회원가입과 결제할 때 너무 복잡해 포기하기도 했는데, 이제 똑비가 있으니 일상이 편해졌어요. 시간도 아껴주니 제 시간이 더 많아진 느낌이에요!
+                          </p>
+
+                          <!-- Footer -->
+                          <footer class="blockquote-footer">
+                            <span class="h4">-김OO, 여, 62세-</span>
+                          </footer>
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+                              <!-- <div class="img-fluid" style="color: #FF5A5F;">
+                                <img src="assets/img/howTo/i1.png" alt="..." class="">
+                              </div> -->
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            “자식/남편한테 부탁안해도 된다는 생각에 진짜 평생 똑비만 의지하면서 살 수 있겠다 생각이 들어요.”
+                          </p>
+
+                          <!-- Footer -->
+                          <footer class="blockquote-footer">
+                            <span class="h4">-김OO, 여, 63세-</span>
+                          </footer>
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+                              <!-- <div class="img-fluid" style="color: #FF5A5F;">
+                                <img src="assets/img/howTo/i1.png" alt="..." class="">
+                              </div> -->
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            “사고싶은거 인터넷으로 사본적도 없는데, 똑비 덕분에 처음으로 사봤어요. 이젠 말만하면 해주니까 생필품 다 똑비 시키네요”
+                          </p>
+
+                          <!-- Footer -->
+                          <footer class="blockquote-footer">
+                            <span class="h4">-윤OO, 남, 77세-</span>
+                          </footer>
+                        </blockquote>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative mt-n15">
+      <div class="shape shape-bottom shape-fluid-x text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    
+    <!-- FAQ -->
+    <section id="main5" class="metlife pt-15 bg-dark">
+      <div class="container pt-8 pt-md-11">
+        <div class="row">
+          <div class="col-12 badge mb-5">
+            <!-- Badge -->
+            <span class="badge rounded-pill bg-gray-700-soft mb-4">
+              <span class="h6 fw-bold text-uppercase">F A Q</span>
+            </span>
+          </div>
+          <div class="col-12 col-md-6">
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle bg-success">
+                <span>1</span>
+              </div>
+
+              <div class="ms-5">
+
+                <!-- Heading -->
+                <h4 class="text-white">
+                  회원가입은 어떻게 하나요?
+                </h4>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-8">
+                  구글 플레이스토어에서 “똑비”를 검색한 후, 똑비 어플리케이션을 설치해주세요.
+그 후 안내에 따라 회원가입을 진행하시면 됩니다.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle bg-success">
+                <span>2</span>
+              </div>
+
+              <div class="ms-5">
+
+                <!-- Heading -->
+                <h4 class="text-white">
+                  지인에게 추천해주고 싶은데 어떻게 하나요?
+                </h4>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-0">
+                  똑비에게 초대장을 보내달라고 한 뒤, 받은 초대장을 카카오톡 혹은 문자로 전달하시면 됩니다.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6">
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle bg-success">
+                <span>3</span>
+              </div>
+
+              <div class="ms-5">
+
+                <!-- Heading -->
+                <h4 class="text-white">
+                  결제는 어떻게 하나요?
+                </h4>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-8">
+                  구매, 예매 등 결제가 발생할 시, 무통장입금과 카드로 결제 가능합니다.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle bg-success">
+                <span>4</span>
+              </div>
+
+              <div class="ms-5">
+
+                <!-- Heading -->
+                <h4 class="text-white">
+                  주말에도 근무하나요?
+                </h4>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-0">
+                  똑비는 현재 평일 오전 9시부터 오후 6시까지 근무하고 있습니다. 주말/휴일 중 주신 요청은 업무가 시작되자마자 빠르게 답변드립니다.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA -->
+    <section id="bottom" class="metlife py-8 py-md-11 bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center mb-14 mt-8">
+
+            <!-- Badge -->
+            <span class="badge rounded-pill bg-gray-700-soft mb-4">
+              <span class="h6 fw-bold text-uppercase">Get started</span>
+            </span>
+
+            <!-- Heading -->
+            <h1 class="display-4 text-white mb-7">
+              바로 똑비를 만나러 오세요
+            </h1>
+
+            <!-- Text -->
+            <!-- <p class="fs-lg text-muted mb-6 mb-md-8">
+              Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
+            </p> -->
+
+            <!-- Button -->
+            <button onclick="useDdokbi()" target="_blank" class="btn btn-success lift">
+              똑비 바로 이용하기
+              <i class="fe fe-arrow-right"></i>
+            </button>
+
+          </div>
+          <div class="copyright col-12">
+            <p class="text-white">© 2024 토끼와두꺼비. All rights reserved.</p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2">
+            <img src="../assets/img/brand.png" alt="..." class="footer-brand img-fluid mb-2">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <h6 class="fw-bold text-uppercase text-gray-700">
+                  회사명
+                </h6>
+                <h6 class="text-reset">주식회사 토끼와 두꺼비</h6>
+              </li>
+              <li class="mb-3">
+                <h6 class="fw-bold text-uppercase text-gray-700">
+                  대표자
+                </h6>
+                <h6 class="text-reset">함동수</h6>
+              </li>
+              <li class="mb-3">
+                <h6 class="fw-bold text-uppercase text-gray-700">
+                  사업자 등록번호
+                </h6>
+                <h6 class="text-reset">402-88-02634</h6>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2"> 
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <h6 class="fw-bold text-uppercase text-gray-700">
+                  주소
+                </h6>
+                <h6 class="text-reset">서울특별시 강남구 테헤란로 217, 603호(오렌지플래닛)</h6>
+              </li>
+              <li class="mb-3">
+                <h6 class="fw-bold text-uppercase text-gray-700">
+                  전화번호
+                </h6>
+                <h6 class="text-reset">02-392-0530</h6>
+              </li>
+              <li class="mb-3">
+                <h6 class="fw-bold text-uppercase text-gray-700">
+                  이메일
+                </h6>
+                <h6 class="text-reset">info@rabbitoad.com</h6>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              메뉴
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#main2" class="text-reset">
+                  서비스
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#main3" class="text-reset">
+                  팀원
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#main4" class="text-reset">
+                  후기
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#bottom" class="text-reset">
+                  제휴 및 문의
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              똑비
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="/signup" class="text-reset">
+                  회원가입
+                </a>
+              </li>
+              <li class="mb-3">
+                <a onclick="useDdokbi()"  class="text-reset">
+                  똑비 이용하기
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://rabbitoad.github.io/policies/ddokbi/privacy_policy.html" class="text-reset" target="_blank">
+                  개인정보 처리방침
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://rabbitoad.github.io/policies/ddokbi/service.html" class="text-reset" target="_blank">
+                  서비스 이용약관
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+
+
+    <!-- MODALS -->
+    <!-- <div id="Modal">
+      <div class="modalPlate">
+        <button class="btnCloseTop" onclick="closeModal()"><img src="../assets/img/icons/close.png" alt=""></button>
+        <img src="../assets/img/event.jpg" alt="">
+        <a href="https://forms.gle/96qmiA7Fd6YS2Eug6" target="_blank">
+          <button class="btnLink">참여하러 가기</button>
+        </a>
+        
+      </div>
+      <button class="btnCloseBottom" onclick="closeModal()">
+        <p>이벤트창 닫기</p>
+        <img src="../assets/img/icons/close.png" alt="">
+      </button>
+    </div> -->
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="../assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.bundle.js"></script>
+
+    <!-- import click func -->
+    <script src="../assets/js/functions.js"></script>
+
+    <!-- some other functions by hndmin -->
+    <script type="text/javascript">
+      // var desiredUrl = "../360F.html";
+      // window.location.replace(desiredUrl);
+
+
+      // window.onbeforeunload = function() {
+      //   history.pushState(null, null, '360F.html');
+    	// 	console.log("sssssssss");
+    	// };
+
+
+      //const func = require('../js/user.js');
+      //import{checkRadioA} from '../js/user.js';
+
+      function closeModal(){
+        document.getElementById("Modal").style.display = "none";
+      }
+
+
+
+      // SCREEN SIZE DETECTION ////////////////////////////////////////////////////////
+      var screenWidth = window.innerWidth;
+      var screenMode = 0; // Desktop: 0  Mobile: 1
+      function screenSizeDetect(){
+        //768px
+        screenWidth = window.innerWidth;
+        if(screenWidth < 768){
+            //console.log("mobile!");
+            screenMode = 1;
+        }else{
+            //console.log("desktop!");
+            screenMode = 0;
+        }
+      }
+      function applyTempSetting(){
+        if(screenMode == 1){
+            //console.log("mobile!");
+            
+
+        }else{
+            //console.log("desktop!");
+
+        }
+      }
+
+
+
+      function check(){
+          console.log("checkcheck~");
+      }
+
+      // IMAGE UPDATE ////////////////////////////////////////////////////////
+      function updateImg(listIndex, btnIndex){
+          console.log(listIndex + " , "  + btnIndex);
+
+          var screenState;
+          var fileType;
+          if (screenMode == 0){
+              screenState = 'desktop';
+              fileType = 'png';
+          }else{
+              screenState = 'mobile';
+              fileType = 'png';
+          }
+          document.getElementById("screen" + listIndex).src = '../assets/img/screen/' + listIndex + '/' + + btnIndex + '.' + fileType;
+      }
+
+
+
+
+      window.onload = function(){
+        screenSizeDetect();
+
+        var tempList = [4];
+        for (var i = 0; i < 4; i++) {
+          tempList[i] = document.getElementsByClassName("HowToUse")[i];
+          //console.log(tempList[i]);
+
+          for (var j = 3; j > -1; j--) {
+            //console.log("worked");
+            tempList[i].getElementsByClassName("btn-check")[j].classList.add("btn" + j);
+
+            // add click  Event
+            tempList[i].getElementsByClassName("btn")[j].setAttribute("onclick",updateImg(i,j));
+            //tempList[i].getElementsByClassName("btn")[j].onclick = updateImg(i,j);
+            //tempList[i].getElementsByClassName("btn-check")[j]/addEventListener('click', updateImg(i,j));
+            //tempList[i].getElementsByClassName("btn-check")[j].onclick = function(){updateImg(i,j)};
+            //tempList[i].getElementsByClassName("btn-check")[j].addEventListener('click', updateImg(i, j));
+
+
+
+          }
+        }
+      }
+      function live() {
+        screenSizeDetect();
+      }
+      setInterval(live, 100);
+    </script>
+    
+  </body>
+</html>

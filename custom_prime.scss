@@ -1,0 +1,203 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+$pointColor: #a0d702;
+
+*{
+    font-family: 'Pretendard' !important;
+}
+
+#Modal{
+    position: fixed;
+    z-index: 10000000;
+
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,.8);
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    button{
+        background-color: transparent;
+        border: none;
+    }
+
+    .btnCloseBottom{
+        display: flex;
+        align-items: center;
+        
+        opacity: 0.75;
+        transition: 0.2s;
+
+        &:hover{
+            opacity: 1;
+            transition: 0.2s;  
+        }
+
+        img{
+            width: 2rem;
+        }
+        p{
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: bold;
+
+            margin-right: 0.25rem;
+        }
+    }
+
+    
+    
+    
+    
+    .modalPlate{
+        display: flex;
+        flex-direction: column;
+
+        width: 80%;
+        max-width: 500px;
+
+        background-color: #ffffff;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5);
+        margin: 2rem 0 2rem;
+
+
+        
+
+        img{
+            width: 100%;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 1rem 0 2.5rem;
+
+            &:hover{
+                text-decoration: none;
+            }
+           .btnLink{
+                background-color: rgba(0,0,0,.9);
+                border-radius: 0.5rem;
+                padding: 1rem 2rem;
+
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #ffffff;
+
+                transition: 0.3s;
+                
+
+                &:hover{
+                    background-color: #1fb9ee;
+                    transition: 0.3s;
+                }
+           } 
+        }
+        .btnCloseTop{
+            position: absolute;
+
+            width: 80%;
+            max-width: 500px;
+
+            padding: 0;
+
+            display: flex;
+            justify-content: flex-end;
+
+            padding: 1rem;
+            
+            img{
+                width: 3.5rem;
+                filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+                transition: 0.3s;
+
+                &:hover{
+                    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.7));
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+
+.navbar.metlife .cont .navbar-brand-img {
+    max-height: 2.5rem !important;
+}
+
+#main{
+    background: #000 url(./assets/img/conv_adj2.jpg) no-repeat 50% !important;  
+
+    .btn-primary{
+        box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .3) !important;
+    }
+}
+
+
+
+#main2 {
+
+    background-image: none !important;
+    background:
+        linear-gradient(to bottom, transparent 16px , #f8f8f8 16px) 0 0 / 100% 17px repeat-y,
+        linear-gradient(to right, transparent 16px, #f8f8f8 16px) 0 0 / 17px 100% repeat-x
+        #ffffff !important;
+
+
+    .deskTemp{
+        border-bottom: none;
+    }
+
+    .index{
+        margin-bottom: 0;
+
+        .badge {
+            border-radius: 32px !important;
+            color: #fff;
+            height: 64px;
+            width: 64px;
+
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .h5{
+                margin-bottom: 0 !important;
+                text-align: center !important;
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+
+
+    .info {
+        background-color: #2b2b2b;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 2rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2) !important;
+
+        padding: 3rem;
+        transition: .2s;
+
+
+        h2{
+            color: $pointColor;
+        }
+        .text-muted {
+            color: rgba(255,255,255,0.75) !important;
+        }
+    }
+}
