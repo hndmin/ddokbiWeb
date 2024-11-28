@@ -169,7 +169,7 @@ $pointColor: #a0d702;
         border-bottom: none;
 
 
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
             padding: 0 1.5rem;
         }
     }
@@ -207,7 +207,7 @@ $pointColor: #a0d702;
         padding: 3rem;
         transition: .2s;
 
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
             border-radius: 1.5rem;
             padding: 1.5rem 0 1rem 0;
         }
