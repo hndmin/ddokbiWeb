@@ -158,6 +158,9 @@
     justify-content: center !important;
     padding: 0 1.5rem !important;
   }
+  #main2 .index {
+    margin-bottom: 0.75rem;
+  }
   #main2 .info {
     width: -moz-fit-content;
     width: fit-content;
