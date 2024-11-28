@@ -208,8 +208,8 @@ $pointColor: #a0d702;
         transition: .2s;
 
         @media (max-width: 768px) {
-            border-radius: 1.5rem;
-            padding: 1.5rem 0 1rem 0;
+            border-radius: 1.5rem !important;
+            padding: 1.5rem 0 1rem 0 !important;
         }
 
 
@@ -217,20 +217,20 @@ $pointColor: #a0d702;
 
         .list{
             @media (max-width: 768px) {
-                margin: 0 1rem;
+                margin: 0 1rem !important;
 
                 .col-12{
                     border: 1px solid $pointColor;
-                    padding: 0;
-                    border-radius: 0.75rem;
+                    padding: 0 !important;
+                    border-radius: 0.75rem !important;
                     overflow: hidden;
     
                     label{
                         border: none;
                         border-left: 1px solid $pointColor;
 
-                        display: flex;
-                        align-items: center;
+                        display: flex !important;
+                        align-items: center !important;
 
                         height: 100%;
                         line-height: 1.35;
