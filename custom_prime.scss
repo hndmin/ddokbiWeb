@@ -167,11 +167,6 @@ $pointColor: #a0d702;
 
     .deskTemp{
         border-bottom: none;
-
-
-        @media (max-width: 768px) {
-            padding: 0 1.5rem;
-        }
     }
 
     .index{
@@ -207,16 +202,35 @@ $pointColor: #a0d702;
         padding: 3rem;
         transition: .2s;
 
-        @media (max-width: 768px) {
-            border-radius: 1.5rem !important;
-            padding: 1.5rem 0 1rem 0 !important;
+        .list{
+
+        }
+        h2{
+            color: $pointColor;
+        }
+        .text-muted {
+            color: rgba(255,255,255,0.75) !important;
         }
 
+        
+    }
 
+    
 
+    
+}
 
-        .list{
-            @media (max-width: 768px) {
+@media (max-width: 768px) {
+
+    #main2 {
+        .deskTemp{
+            padding: 0 1.5rem !important;
+        }
+        .info {
+            border-radius: 1.5rem !important;
+            padding: 1.5rem 0 1rem 0 !important;
+
+            .list{
                 margin: 0 1rem !important;
 
                 .col-12{
@@ -243,20 +257,8 @@ $pointColor: #a0d702;
                             
                     }
                 }
+
             }
-
         }
-        h2{
-            color: $pointColor;
-        }
-        .text-muted {
-            color: rgba(255,255,255,0.75) !important;
-        }
-
-        
     }
-
-    
-
-    
 }
