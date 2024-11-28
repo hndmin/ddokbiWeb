@@ -172,12 +172,13 @@
   #main2 .info .list .col-12 label {
     border: none;
     border-left: 1px solid #a0d702;
+    border-radius: 0;
     display: flex !important;
     align-items: center !important;
     height: 100%;
-    line-height: 1.35;
     margin: 0 0 0 -1px;
-    border-radius: 0;
+    font-size: 0.75rem;
+    line-height: 1.35;
   }
   #main2 .info .list .col-12 label:first-of-type {
     border-left: none;
