@@ -95,6 +95,12 @@
   transition: 0.3s;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    margin-right: 9rem;
+  }
+}
 .navbar.metlife .cont .navbar-brand-img {
   max-height: 2.5rem !important;
 }
@@ -112,6 +118,11 @@
 }
 #main2 .deskTemp {
   border-bottom: none;
+}
+@media screen and (max-width: 768px) {
+  #main2 .deskTemp {
+    padding: 0 1.5rem;
+  }
 }
 #main2 .index {
   margin-bottom: 0;
@@ -138,6 +149,36 @@
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2) !important;
   padding: 3rem;
   transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+  #main2 .info {
+    border-radius: 1.5rem;
+    padding: 1.5rem 0 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  #main2 .info .list {
+    margin: 0 1rem;
+  }
+  #main2 .info .list .col-12 {
+    border: 1px solid #a0d702;
+    padding: 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+  #main2 .info .list .col-12 label {
+    border: none;
+    border-left: 1px solid #a0d702;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 1.35;
+    margin: 0 0 0 -1px;
+    border-radius: 0;
+  }
+  #main2 .info .list .col-12 label:first-of-type {
+    border-left: none;
+  }
 }
 #main2 .info h2 {
   color: #a0d702;
