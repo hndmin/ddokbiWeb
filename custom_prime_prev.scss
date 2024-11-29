@@ -2,144 +2,10 @@
 
 
 $pointColor: #a0d702;
-$bgColor: #494747;
-$bg2Color: #494747;
 
 *{
     font-family: 'Pretendard' !important;
 }
-
-
-body{
-    background-color: $bgColor;
-    color: #ffffff;
-}
-
-
-#navBar{
-    background-color: $bgColor !important;
-    border-bottom: none !important;
-    color: #ffffff;
-
-    
-
-
-
-    &.metlife{
-        padding: 2rem 2rem 0rem;
-    }
-
-    .navbar-brand {
-        background-color: #ffffff;
-        padding: 0.75rem 1rem;
-        margin-left: 0rem;
-        border-radius: 2rem;
-        box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.1) !important;
-        
-    }
-
-    
-
-    .nav-link{
-        color: rgba(255,255,255,0.5) !important;
-        transition: 0.2s;
-        &:hover{
-            color: rgba(255,255,255,1) !important;
-            transition: 0.2s;
-        }
-    }
-
-    
-
-
-
-    
-
-    //////////////////////////////////////////
-    @media (max-width: 768px) {
-        background-color: #ffffff !important;
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
-        border-radius: 2rem;
-
-        margin: 3rem 2rem 0rem;
-        padding: 0 0.5rem;
-
-    
-
-        &.metlife{
-            padding: 0rem;
-        }
-
-        .navbar-brand {
-            background-color: transparent;
-            box-shadow: none !important;
-            margin-left: 0;
-            padding: 0.7rem 0rem 0.85rem 1.25rem;
-            img{
-                max-height: 2rem !important;
-            }
-        }
-
-
-        .navbar-toggler{
-            padding: 1rem;
-            margin-right: 0.5rem;
-        }
-        .navbar-collapse{
-            *{
-                color: #000;
-            }
-    
-            border-radius: 1rem;
-            margin-top: 0.5rem;
-            .navbar-nav{
-                .nav-item{
-                    .nav-link{
-                        color: #000 !important;
-                        transition: 0.2s;
-                        &:hover{
-                            color: $pointColor;
-                            transition: 0.2s;
-                        }
-                    }
-                }
-            }
-            .navbar-btn{
-                border-radius: 0.5rem;
-            }
-        }
-    }
-}
-
-
-
-
-
-#main{
-    margin: 2rem !important;
-    margin-top: 1.5rem !important;
-    border-radius: 2rem !important;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2) !important;
-
-    h1{
-        text-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.2) !important;
-
-        font-size: 2.25rem;
-    }
-}
-
-#sponsor{
-    background-color: white;
-    color: #000;
-}
-
-#main4{
-    color: #000;
-    @media (max-width: 768px) {
-        margin-bottom: 10rem !important;
-    }
-}
-
 
 #Modal{
     position: fixed;
@@ -293,14 +159,11 @@ body{
 #main2 {
 
     background-image: none !important;
-    background: linear-gradient(to bottom, transparent 16px, #525252 16px) 0 0 / 100% 17px repeat-y, linear-gradient(to right, transparent 16px, #525252 16px) 0 0 / 17px 100% repeat-x #494747 !important;
+    background:
+        linear-gradient(to bottom, transparent 16px , #f8f8f8 16px) 0 0 / 100% 17px repeat-y,
+        linear-gradient(to right, transparent 16px, #f8f8f8 16px) 0 0 / 17px 100% repeat-x
+        #ffffff !important;
 
-    p{
-        &.text-muted{
-            color: rgba(255,255,255,0.6) !important;
-            font-weight: 200;
-        }
-    }
 
     .deskTemp{
         border-bottom: none;

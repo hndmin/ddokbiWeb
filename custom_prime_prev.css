@@ -3,103 +3,6 @@
   font-family: "Pretendard" !important;
 }
 
-body {
-  background-color: #494747;
-  color: #ffffff;
-}
-
-#navBar {
-  background-color: #494747 !important;
-  border-bottom: none !important;
-  color: #ffffff;
-}
-#navBar.metlife {
-  padding: 2rem 2rem 0rem;
-}
-#navBar .navbar-brand {
-  background-color: #ffffff;
-  padding: 0.75rem 1rem;
-  margin-left: 0rem;
-  border-radius: 2rem;
-  box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.1) !important;
-}
-#navBar .nav-link {
-  color: rgba(255, 255, 255, 0.5) !important;
-  transition: 0.2s;
-}
-#navBar .nav-link:hover {
-  color: rgb(255, 255, 255) !important;
-  transition: 0.2s;
-}
-@media (max-width: 768px) {
-  #navBar {
-    background-color: #ffffff !important;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
-    border-radius: 2rem;
-    margin: 3rem 2rem 0rem;
-    padding: 0 0.5rem;
-  }
-  #navBar.metlife {
-    padding: 0rem;
-  }
-  #navBar .navbar-brand {
-    background-color: transparent;
-    box-shadow: none !important;
-    margin-left: 0;
-    padding: 0.7rem 0rem 0.85rem 1.25rem;
-  }
-  #navBar .navbar-brand img {
-    max-height: 2rem !important;
-  }
-  #navBar .navbar-toggler {
-    padding: 1rem;
-    margin-right: 0.5rem;
-  }
-  #navBar .navbar-collapse {
-    border-radius: 1rem;
-    margin-top: 0.5rem;
-  }
-  #navBar .navbar-collapse * {
-    color: #000;
-  }
-  #navBar .navbar-collapse .navbar-nav .nav-item .nav-link {
-    color: #000 !important;
-    transition: 0.2s;
-  }
-  #navBar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    color: #a0d702;
-    transition: 0.2s;
-  }
-  #navBar .navbar-collapse .navbar-btn {
-    border-radius: 0.5rem;
-  }
-}
-
-#main {
-  margin: 2rem !important;
-  margin-top: 1.5rem !important;
-  border-radius: 2rem !important;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2) !important;
-}
-#main h1 {
-  text-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.2) !important;
-  font-size: 2.25rem;
-}
-
-#sponsor {
-  background-color: white;
-  color: #000;
-}
-
-#main4 {
-  color: #000;
-}
-@media (max-width: 768px) {
-  #main4 {
-    margin-bottom: 10rem !important;
-  }
-}
-
 #Modal {
   position: fixed;
   z-index: 10000000;
@@ -211,11 +114,7 @@ body {
 
 #main2 {
   background-image: none !important;
-  background: linear-gradient(to bottom, transparent 16px, #525252 16px) 0 0/100% 17px repeat-y, linear-gradient(to right, transparent 16px, #525252 16px) 0 0/17px 100% repeat-x #494747 !important;
-}
-#main2 p.text-muted {
-  color: rgba(255, 255, 255, 0.6) !important;
-  font-weight: 200;
+  background: linear-gradient(to bottom, transparent 16px, #f8f8f8 16px) 0 0/100% 17px repeat-y, linear-gradient(to right, transparent 16px, #f8f8f8 16px) 0 0/17px 100% repeat-x #ffffff !important;
 }
 #main2 .deskTemp {
   border-bottom: none;
@@ -292,4 +191,4 @@ body {
   #main2 .info .list .col-12 label:first-of-type {
     border-left: none;
   }
-}/*# sourceMappingURL=custom_prime.css.map */
+}/*# sourceMappingURL=custom_prime_prev.css.map */
