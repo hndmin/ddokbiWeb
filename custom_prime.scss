@@ -2,11 +2,15 @@
 
 
 $pointColor: #a0d702;
-$bgColor: #494747;
-$bg2Color: #494747;
+$bgColor: #1a1d21;
+$bg2Color: #1a1d21;
 
 *{
     font-family: 'Pretendard' !important;
+}
+
+.bg-dark {
+    // background-color: #272727 !important;
 }
 
 
@@ -289,8 +293,15 @@ body{
 
 #main2 {
 
-    background-image: none !important;
-    background: linear-gradient(to bottom, transparent 16px, #525252 16px) 0 0 / 100% 17px repeat-y, linear-gradient(to right, transparent 16px, #525252 16px) 0 0 / 17px 100% repeat-x #494747 !important;
+    // background-image: none !important;
+    // background: linear-gradient(to bottom, transparent 16px, #424242 16px) 0 0 / 100% 17px repeat-y, linear-gradient(to right, transparent 16px, #424242 16px) 0 0 / 17px 100% repeat-x #393939 !important;
+    margin: 0;
+    padding: 0;
+    background-color: #393939 !important; /* 어두운 배경색 */
+    background-image: url('/assets/img/prime/pattern.png') !important; /* 업로드한 이미지 경로 */
+    background-repeat: repeat !important; /* 이미지 반복 */
+    background-size: 10%; /* 패턴 크기 (원하는 크기로 조정) */
+
 
     p{
         &.text-muted{
@@ -328,7 +339,7 @@ body{
 
 
     .info {
-        background-color: #2b2b2b;
+        background-color: #393939;
         border: 1px solid rgba(0, 0, 0, .2);
         border-radius: 2rem;
         box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2) !important;
