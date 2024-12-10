@@ -120,7 +120,7 @@ body{
 
 
 #main{
-    background: #000 url(./assets/img/conv_adj3.jpg) no-repeat 50% !important;  
+    background: #000 url(./assets/img/conv_adj4.jpg) no-repeat 50% !important;  
     margin: 2rem !important;
     margin-top: 1.5rem !important;
     border-radius: 2rem !important;
@@ -375,14 +375,18 @@ body{
             width: fit-content;
             border-radius: 1.5rem !important;
             padding: 1.5rem 0 1rem 0 !important;
-
+            h2{
+                p{
+                    text-align: center;
+                }
+            }
             .list{
                 margin: 0 1rem !important;
 
                 .col-12{
                     border: 1px solid $pointColor;
                     padding: 0 !important;
-                    border-radius: 0.75rem !important;
+                    border-radius: 0.5rem !important;
                     overflow: hidden;
     
                     label{
