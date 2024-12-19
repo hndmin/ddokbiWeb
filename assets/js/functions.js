@@ -1,11 +1,15 @@
 var links = {
     '360F': 'metlife',
     'geps': 'geps',
+    'primeplus': 'PJ3zRlzrDlPdtnH',
 }
 
 function redirect(uri) {
     if (uri === '360F') {
         return window.open('https://ddokbi.app.link/metlife');
+    }
+    if (uri === 'primeplus') {
+        return window.open('https://ddokbi.app.link/PJ3zRlzrDlPdtnH');
     }
     return alert('현재는 안드로이드 버전만 지원됩니다.');
 }
@@ -73,6 +77,7 @@ function useDdokbi() {
     if (uri === '') uri = parsedURL[parsedURL.length - 2];
     // just in case query param exists
     const targetURI = uri.split('?')[0];
+    console.log(targetURI);
 
     switch (os) {
         case 'Android':
@@ -80,6 +85,7 @@ function useDdokbi() {
         case 'iOS':
             return redirect(targetURI);
         default:
+            // console.log('https://ddokbi.app.link/' + links[targetURI]);
             alert('모바일에서 사용 해 주세요.');
     }
 }
