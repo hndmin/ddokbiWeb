@@ -103,9 +103,12 @@
           <!-- E R A S E D -->
     
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary ms-auto" href="https://pf.kakao.com/_xhslVb/chat" target="_blank">
+          <!-- <a class="navbar-btn btn btn-sm btn-primary ms-auto" href="https://pf.kakao.com/_xhslVb/chat" target="_blank">
             똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-          </a>
+          </a> -->
+          <button onclick="useDdokbiMain()" class="navbar-btn btn btn-primary btn-sm btn- ms-auto" target="_blank">
+            똑비 바로가기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+          </button>
     
         </div>
     
@@ -143,9 +146,12 @@
 
             <!-- Buttons -->
             <div class="text-center text-md-start">
-              <a href="https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi" class="btn btn-primary shadow lift me-1" target="_blank">
+              <!-- <a href="https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi" class="btn btn-primary shadow lift me-1" target="_blank">
                 똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-              </a>
+              </a> -->
+              <button onclick="useDdokbiMain()" class="btn btn-primary shadow lift me-1" target="_blank">
+                똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+              </button>
               <!-- <a href="docs/index.html" class="btn btn-secondary lift">
                 Documentation
               </a> -->
@@ -1284,10 +1290,14 @@
             </p> -->
 
             <!-- Button -->
-            <a href="https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi" target="_blank" class="btn btn-success lift">
+            <!-- <a href="https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi" target="_blank" class="btn btn-success lift">
               똑비 바로 이용하기
               <i class="fe fe-arrow-right"></i>
-            </a>
+            </a> -->
+            <button onclick="useDdokbiMain()" target="_blank" class="btn btn-success lift">
+              똑비 바로 이용하기
+              <i class="fe fe-arrow-right"></i>
+            </button>
             <a href="mailto:info@rabbitoad.com" target="_blank" class="btn btn-success lift">
               비즈니스 제휴 문의
               <i class="fe fe-arrow-right"></i>
@@ -1406,8 +1416,13 @@
                   회원가입
                 </a>
               </li>
-              <li class="mb-3">
+              <!-- <li class="mb-3">
                 <a href="https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi" class="text-reset">
+                  똑비 이용하기
+                </a>
+              </li> -->
+              <li class="mb-3">
+                <a onclick="useDdokbiMain()"  class="text-reset">
                   똑비 이용하기
                 </a>
               </li>
@@ -1437,7 +1452,21 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- import click func -->
+    <script src="./assets/js/functions.js"></script>
+
+
+
     <script type="text/javascript">
+      // function useDdokbiMain() {
+      //   // window.open("https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi", "_blank");
+      //   window.open("https://ddokbi.app.link/kCMOt2qkyPb", "_blank");
+      // }
+
+
+
+
       //const func = require('../js/user.js');
       //import{checkRadioA} from '../js/user.js';
 
