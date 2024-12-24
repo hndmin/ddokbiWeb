@@ -148,7 +148,7 @@ function useDdokbiMain() {
             return window.open("https://ddokbi.app.link/kCMOt2qkyPb", "_blank");
         default:
             alert('모바일에서 사용 해 주세요.');
-            window.open("https://ddokbi.app.link/kCMOt2qkyPb");
+            location.href = "https://ddokbi.app.link/kCMOt2qkyPb";
     }
   }
 
