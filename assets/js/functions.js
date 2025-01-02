@@ -6,9 +6,11 @@ var links = {
 
 function redirect(uri) {
     if (uri === '360F') {
+        // console.log('360F', uri);
         return window.open('https://ddokbi.app.link/metlife');
     }
     if (uri === 'primeplus') {
+        // console.log('primeplus', uri);
         return window.open('https://ddokbi.app.link/PJ3zRlzrDlPdtnH');
     }
     return alert('현재는 안드로이드 버전만 지원됩니다.');
@@ -148,7 +150,7 @@ function useDdokbiMain() {
             return window.open("https://ddokbi.app.link/kCMOt2qkyPb", "_blank");
         default:
             alert('모바일에서 사용 해 주세요.');
-            location.href = "https://ddokbi.app.link/kCMOt2qkyPb";
+            return location.href = "https://ddokbi.app.link/kCMOt2qkyPb";
     }
   }
 

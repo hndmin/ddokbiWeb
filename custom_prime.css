@@ -75,6 +75,11 @@ body {
     border-radius: 0.5rem;
   }
 }
+@media (max-width: 360px) {
+  #navBar .navbar-brand img {
+    max-height: 1.65rem !important;
+  }
+}
 
 #main {
   background: #000 url(./assets/img/conv_adj4.jpg) no-repeat 50% !important;
