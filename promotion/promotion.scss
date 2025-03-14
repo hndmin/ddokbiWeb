@@ -39,9 +39,16 @@ body{
 }
 
 #Action{
+    // opacity: 0;
+    bottom: -128px;
+    transition: 0.5s;
+    &.active{
+        bottom: 0;
+        transition: 0.5s;
+    }
+
     position: fixed;
     z-index: 100;
-    bottom: 0;
     
 
     display: flex;

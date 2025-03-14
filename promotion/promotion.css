@@ -20,14 +20,19 @@ body {
 }
 
 #Action {
+  bottom: -128px;
+  transition: 0.5s;
   position: fixed;
   z-index: 100;
-  bottom: 0;
   display: flex;
   justify-content: center;
   padding: 1.5rem 0.5rem;
   width: 100%;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+#Action.active {
+  bottom: 0;
+  transition: 0.5s;
 }
 #Action .btn {
   width: 100%;

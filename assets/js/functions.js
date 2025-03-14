@@ -5,11 +5,11 @@ var links = {
 }
 
 const promotionLinks ={
-    '17': 'TLlYOevTFRb',
-    '19': 'JwSxYPCTFRb',
-    '21': 'DPiLA4ETFRb',
-    '24': 'vDhPBQJTFRb',
-    '26': 'vDhPBQJTFRb',
+    17: 'TLlYOevTFRb',
+    19: 'JwSxYPCTFRb',
+    21: 'DPiLA4ETFRb',
+    24: 'vDhPBQJTFRb',
+    26: 'vDhPBQJTFRb',
 }
 
 function redirect(uri) {
@@ -168,29 +168,69 @@ function useDdokbiMain() {
         os = 'Windows';
     }
 
-    // // checks current url as a List
-    // const parsedURL = window.location.href.split('/');
-    // console.log(parsedURL, parsedURL.length);
 
-    // // .html 앞 부분 가져오기
-    // let uri = parsedURL[parsedURL.length - 2];
-    // console.log(uri);
-
-
-
-    // f#$%$% slash
-    // if (uri === '') uri = parsedURL[parsedURL.length - 2];
-
-    // just in case query param exists
-    // const targetURI = uri.split('?')[0];
-    // console.log(targetURI);
+    
+    
 
     switch (os) {
         case 'iOS':
-            return window.open('https://ddokbi.app.link/' + promotionLinks[17]);
+            // return window.open('https://ddokbi.app.link/' + promotionLinks[getTime('date')]);
+            return promotionDateManager();
         case 'Android':
-            return window.open('https://ddokbi.app.link/' + promotionLinks[17]);
+            // return window.open('https://ddokbi.app.link/' + promotionLinks[getTime('date')]);
+            return promotionDateManager();
         default:
             alert('모바일에서 사용 해 주세요.');
+    }
+}
+
+
+function getTime(option){
+    const currentDate = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }));
+    // const koreaTimeOffset = 1; // KST is UTC+9
+    // const koreaDate = new Date(currentDate.getTime() + (koreaTimeOffset * 60 * 1000));
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth() + 1; // Months are zero-based
+    const date = currentDate.getDate();
+    // console.log('Korea Date:', currentDate);
+    // console.log('Year:', year);
+    // console.log('Month:', month);
+    // console.log('Date:', date);
+
+    switch (option) {
+        case 'date':
+            return date;
+        case 'month':
+            return month;
+        case 'year':
+            return year;
+        default:
+            return currentDate;
+    }
+}
+
+function promotionDateManager(){
+    let date = getTime('date');
+    // let resultDate;
+    
+    if(date < 17){
+        alert('프로모션이 곧 시작됩니다.');
+    } else if (date >= 17 && date < 19) {
+        //resultDate = 17;
+        window.open('https://ddokbi.app.link/' + promotionLinks[17]);
+    } else if (date >= 19 && date < 21) {
+        //resultDate = 19;
+        window.open('https://ddokbi.app.link/' + promotionLinks[19]);
+    } else if (date >= 21 && date < 24) {
+        //resultDate = 21;
+        window.open('https://ddokbi.app.link/' + promotionLinks[21]);
+    } else if (date >= 24 && date < 26) {
+        //resultDate = 24;
+        window.open('https://ddokbi.app.link/' + promotionLinks[24]);
+    } else if (date >= 26) {
+        //resultDate = 26; 
+        window.open('https://ddokbi.app.link/' + promotionLinks[26]);
+    }else {
+        alert('현재 프로모션 기간이 종료되었습니다.');
     }
 }
