@@ -217,18 +217,23 @@ function promotionDateManager(){
         alert('프로모션이 곧 시작됩니다.');
     } else if (date >= 17 && date < 19) {
         //resultDate = 17;
+        console.log('17');
         window.open('https://ddokbi.app.link/' + promotionLinks[17]);
     } else if (date >= 19 && date < 21) {
         //resultDate = 19;
+        console.log('19');
         window.open('https://ddokbi.app.link/' + promotionLinks[19]);
     } else if (date >= 21 && date < 24) {
         //resultDate = 21;
+        console.log('21');
         window.open('https://ddokbi.app.link/' + promotionLinks[21]);
     } else if (date >= 24 && date < 26) {
         //resultDate = 24;
+        console.log('24');
         window.open('https://ddokbi.app.link/' + promotionLinks[24]);
     } else if (date >= 26) {
         //resultDate = 26; 
+        console.log('26');
         window.open('https://ddokbi.app.link/' + promotionLinks[26]);
     }else {
         alert('현재 프로모션 기간이 종료되었습니다.');
