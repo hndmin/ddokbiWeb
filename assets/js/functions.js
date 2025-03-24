@@ -9,7 +9,7 @@ const promotionLinks ={
     19: 'JwSxYPCTFRb',
     21: 'DPiLA4ETFRb',
     24: 'vDhPBQJTFRb',
-    26: 'vDhPBQJTFRb',
+    26: 'wLEfrZLTFRb',
 }
 
 function redirect(uri) {
