@@ -312,12 +312,19 @@ function useDdokbiPromotion_0401(){
 
 
 function setPromotionPages(){
+    const imgLength = {
+        'fomo': 9,
+        'save': 10,
+        'children': 10,
+        'discount': 9,
+        'category': 9,
+    }
     const youtubePoint = {
-        'fomo':'6WvAv9Bu7Rb',
-        'save':'aEHodR4u7Rb',
-        'category':'bkKBScmv7Rb',
-        'discount':'KPxAWwBv7Rb',
-        'children':'WTfMreGv7Rb',
+        'fomo': 4,
+        'save': 5,
+        'children': 5,
+        'discount': 7,
+        'category': 7,
     }
 
     const parsedURL = window.location.href.split('/');
@@ -330,14 +337,51 @@ function setPromotionPages(){
         target = uri.substring(0, uri.lastIndexOf('_'));
     }
     
-
-    //../assets/20250324/1.jpg
     const imgContainer = document.getElementById('imgContainer');
-    for (let i = 1; i <= 9; i++) {
-        const img = document.createElement('img');
-        img.src = `./${target}/${i}.jpg`; // Replace with the actual path to your images
-        img.alt = `Image ${i}`;
-        imgContainer.appendChild(img);
+    for (let i = 1; i <= imgLength[target]; i++) {
+
+        if(i == youtubePoint[target]){
+            console.log(`${i} / ${imgLength[target]} ==> YOUTUBE: ${youtubePoint[target]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'youtube';
+
+            if (target === 'fomo') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 x 유인경
+                    </dd>
+                    <dt>
+                        <span>유인경 작가</span>도<br>
+                        극찬한 똑비 
+                    </dt>
+                </dl>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/l95vFUo57o4?si=DLESQFURmbd1BTQu" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else{
+            console.log(`${i} / ${imgLength[target]}`);
+            //
+            const img = document.createElement('img');
+            img.src = `./${target}/${i}.jpg`; // Replace with the actual path to your images
+            img.alt = `Image ${i}`;
+            imgContainer.appendChild(img);
+        }
     }
     console.log('page:', target);
 }
