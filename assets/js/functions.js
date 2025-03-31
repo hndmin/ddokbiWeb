@@ -146,7 +146,7 @@ function useDdokbiMain() {
   }
 
 
-  function useDdokbiPromotion() {
+function useDdokbiPromotion() {
     let unknown = '-';
 
     // browser
@@ -238,4 +238,106 @@ function promotionDateManager(){
     }else {
         alert('현재 프로모션 기간이 종료되었습니다.');
     }
+}
+
+
+
+
+
+function useDdokbiPromotion_0401(){
+    const promotion_0401_Links = {
+        'fomo_1':'6WvAv9Bu7Rb',
+        'fomo_2':'jn5bvVYu7Rb',
+        'save_1':'aEHodR4u7Rb',
+        'save_2':'ZtSumDcv7Rb',
+        'category_1':'bkKBScmv7Rb',
+        'category_2':'hR6lRwqv7Rb',
+        'category_3':'DA82bVuv7Rb',
+        'discount_1':'KPxAWwBv7Rb',
+        'discount_2':'lNVqPsFv7Rb',
+        'children_1':'WTfMreGv7Rb',
+        'children_2':'R1nksuQv7Rb',
+    }
+
+
+
+
+
+    // console.log(window.location.href);
+
+    // checks current url as a List
+    const parsedURL = window.location.href.split('/');
+    // console.log(parsedURL, parsedURL.length);
+
+    // .html 앞 부분 가져오기
+    let uri = parsedURL[parsedURL.length - 1];
+    // Remove the part after the last dot in the URI
+    let target = null;
+    if (uri.includes('.')) {
+        target = uri.substring(0, uri.lastIndexOf('.'));
+    }
+    console.log(target, promotion_0401_Links[target]);
+
+
+    let unknown = '-';
+
+    // browser
+    const nAgt = navigator.userAgent;
+
+    // system
+    // Just keeping it for future reference
+    let os = unknown;
+    
+    for (const id in clientStrings) {
+        let cs = clientStrings[id];
+        if (cs.r.test(nAgt)) {
+            os = cs.s;
+            break;
+        }
+    }
+
+    if (/Windows/.test(os)) {
+        os = 'Windows';
+    }
+    
+    switch (os) {
+        case 'iOS':
+            return window.open('https://ddokbi.app.link/' + promotion_0401_Links[target]);
+        case 'Android':
+            return window.open('https://ddokbi.app.link/' + promotion_0401_Links[target]);
+        default:
+            alert('모바일에서 사용 해 주세요.');
+    }
+}
+
+
+function setPromotionPages(){
+    const youtubePoint = {
+        'fomo':'6WvAv9Bu7Rb',
+        'save':'aEHodR4u7Rb',
+        'category':'bkKBScmv7Rb',
+        'discount':'KPxAWwBv7Rb',
+        'children':'WTfMreGv7Rb',
+    }
+
+    const parsedURL = window.location.href.split('/');
+    let uri = parsedURL[parsedURL.length - 1];
+    let target = null;
+    if (uri.includes('.')) {
+        target = uri.substring(0, uri.lastIndexOf('.'));
+    }
+    if (uri.includes('_')) {
+        target = uri.substring(0, uri.lastIndexOf('_'));
+    }
+    
+
+    //../assets/20250324/1.jpg
+    const imgContainer = document.getElementById('imgContainer');
+    for (let i = 1; i <= 9; i++) {
+        const img = document.createElement('img');
+        img.src = `./${target}/${i}.jpg`; // Replace with the actual path to your images
+        img.alt = `Image ${i}`;
+        imgContainer.appendChild(img);
+    }
+    console.log('page:', target);
 }
