@@ -100,7 +100,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
 }
 #youtube dl dt {
-  font-size: 4rem;
+  font-size: 300%;
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 1rem;
