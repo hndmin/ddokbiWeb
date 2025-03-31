@@ -1,23 +1,34 @@
+https://ddokbi.com
+
+
 <category>
+\/promotion\/20250401\/category_([0-9])\.html
 https://ddokbi.com/promotion/20250401/category_1.html
 https://ddokbi.com/promotion/20250401/category_2.html
 https://ddokbi.com/promotion/20250401/category_3.html
 
 
 <children>
+\/promotion\/20250401\/children_([0-9])\.html
 https://ddokbi.com/promotion/20250401/children_1.html
 https://ddokbi.com/promotion/20250401/children_2.html
 
 <discount>
+\/promotion\/20250401\/discount_([0-9])\.html
 https://ddokbi.com/promotion/20250401/discount_1.html
 https://ddokbi.com/promotion/20250401/discount_2.html
 
 
 <fomo>
+\/promotion\/20250401\/fomo_([0-9])\.html
 https://ddokbi.com/promotion/20250401/fomo_1.html
 https://ddokbi.com/promotion/20250401/fomo_2.html
 
 
 <save>
+\/promotion\/20250401\/save_([0-9])\.html
 https://ddokbi.com/promotion/20250401/save_1.html
 https://ddokbi.com/promotion/20250401/save_2.html
+
+
+
