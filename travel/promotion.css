@@ -1,0 +1,119 @@
+@charset "UTF-8";
+body {
+  background-color: #e9ebee;
+}
+
+#Contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Contents .container_pc {
+  max-width: 640px;
+  padding: 0;
+}
+#Contents .container_pc .container_mo {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Contents .container_pc .container_mo img {
+  width: 100%;
+}
+
+#Action {
+  bottom: -128px;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+#Action.active {
+  bottom: 0;
+  transition: 0.5s;
+}
+#Action .btn {
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1.2rem 2rem;
+  background-color: black;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#List {
+  background-color: #ffffff;
+}
+#List ul {
+  padding: 0;
+}
+#List ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+#youtube {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+}
+#youtube .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 비율 */
+  height: 0;
+  overflow: hidden;
+}
+#youtube .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+#youtube dl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#youtube dl dd {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  background-color: #8BC34A;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
+}
+#youtube dl dt {
+  font-size: 300%;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#youtube dl dt span {
+  color: #7CB342;
+}
+#youtube.dark {
+  background-color: #0D3B10;
+}
+#youtube.dark dl dt {
+  color: #ffffff;
+}
+#youtube.dark dl dt span {
+  color: #B3F400;
+}/*# sourceMappingURL=promotion.css.map */
