@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.bundle.css" />
+    
+    <!-- OpenGraphProtocol -->
+    <meta property="og:title" content="똑비 멤버십 1주년 프로모션" />
+    <meta property="og:url" content="../promotion/index.html/" />
+    <meta property="og:image" content="../assets/img/ogp_promotion.jpg" />
+    <meta
+          property="og:description"
+          content="지금 가입하면 똑비 가격 인상 없이 평생 지금 가격 그대로!"
+    />
+    
+    <link rel="stylesheet" href="../custom.css" />
+    <link rel="stylesheet" href="./promotion.css" />
+
+    <!-- <link rel="stylesheet" href="../custom_prime.css" /> -->
+
+
+    <!-- Title -->
+    <title>똑비 멤버십 1주년 프로모션</title>
+
+    
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDBWMP9MGX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RDBWMP9MGX');
+  </script>
+
+<style>
+  body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  .post {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 15px;
+  }
+  .post img {
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .post-content {
+    flex: 1;
+  }
+  .post-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0077cc;
+    text-decoration: none;
+  }
+  .post-date {
+    font-size: 12px;
+    color: #888;
+  }
+  .post-desc {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+</style>
+
+  
+
+
+  <body>
+
+    
+    <section>
+      <h2>블로그 글 불러오기 테스트</h2>
+      <div id="posts">불러오는 중...</div>
+    </section>
+
+    
+    <script>
+      window.onload = function() {
+        loadPost('여행');
+      };
+
+      function loadPost(primaryTag){
+        fetch("http://localhost:3000/api/posts")
+          .then(res => res.json())
+          .then(data => {
+            const matchedPosts = data.posts.filter(post => {
+              if (!post.tag) return false;
+              const tags = post.tag.split(',').map(t => t.trim());
+              return tags.includes(primaryTag);
+            });
+
+            // ✅ 필터링된 포스트 localStorage에 저장
+            localStorage.setItem('filteredPosts', JSON.stringify(matchedPosts));
+            console.log('Filtered posts saved to localStorage:', matchedPosts);
+
+            // 화면에 그리기
+            renderPosts(matchedPosts, data.blogTitle);
+          })
+          .catch(err => {
+            document.getElementById('posts').innerHTML = '블로그 글을 불러오는 데 실패했어요 😢';
+            console.error(err);
+          });
+      }
+
+
+      function renderPosts(posts, blogTitle = "저장된 블로그 글") {
+        const postsDiv = document.getElementById('posts');
+        postsDiv.innerHTML = `<h3>${blogTitle}</h3>`;
+
+        if (posts.length === 0) {
+          postsDiv.innerHTML += `<p>일치하는 글이 없습니다.</p>`;
+          return;
+        }
+
+        posts.forEach(post => {
+          postsDiv.innerHTML += `
+            <a href="${post.link}" target="_blank" class="post">
+              ${post.image ? `<img src="${post.image}" alt="thumbnail">` : ''}
+              <div class="post-content">
+                <h5 class="post-title">${post.title}</h5>
+                <div class="post-date">${new Date(post.date).toLocaleDateString()}</div>
+                <div class="post-desc">${post.description || ''}</div>
+              </div>
+            </a>
+          `;
+        });
+      }
+
+      function renderFromLocalStorage() {
+        const data = localStorage.getItem('filteredPosts');
+        if (!data) {
+          document.getElementById('posts').innerHTML = '저장된 글이 없습니다.';
+          return;
+        }
+
+        const posts = JSON.parse(data);
+        renderPosts(posts);
+      }
+
+
+
+
+    </script>
+
+
+
+
+    
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="../assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <!-- <script src="../assets/js/theme.bundle.js"></script> -->
+
+    <!-- import click func -->
+    <script src="../assets/js/functions.js"></script>
+
+    
+    <script type="text/javascript">
+      (function(w, d, a){
+          w.__beusablerumclient__ = {
+              load : function(src){
+                  var b = d.createElement("script");
+                  b.src = src; b.async=true; b.type = "text/javascript";
+                  d.getElementsByTagName("head")[0].appendChild(b);
+              }
+          };w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+      })(window, document, "//rum.beusable.net/load/b250319e182136u382");
+    </script>
+  </body>
+</html>
