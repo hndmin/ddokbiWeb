@@ -353,11 +353,11 @@ function setPromotionPages(){
             section.innerHTML = `
                 <dl>
                     <dd>
-                        똑비 x 유인경
+                        똑비 in YouTube
                     </dd>
                     <dt>
-                        <span>유인경 작가</span>도<br>
-                        극찬한 똑비 
+                        <span>유명인</span>도<br>
+                        극찬한 똑비
                     </dt>
                 </dl>
                 <div class="video-container">
