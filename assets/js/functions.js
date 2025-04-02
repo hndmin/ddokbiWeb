@@ -356,7 +356,7 @@ function setPromotionPages(){
                         똑비 in YouTube
                     </dd>
                     <dt>
-                        <span>유명인</span>도<br>
+                        <span>유명 방송인</span>도<br>
                         극찬한 똑비
                     </dt>
                 </dl>
