@@ -257,6 +257,11 @@ function useDdokbiPromotion_0401(){
         'discount_2':'lNVqPsFv7Rb',
         'children_1':'WTfMreGv7Rb',
         'children_2':'R1nksuQv7Rb',
+        'forbes_1':'d7d6YTw4hSb',
+        'forbes_2':'fdx4h4A4hSb',
+        'skin_1':'WiyYXlM3hSb',
+        'skin_2':'koYanjO3hSb',
+        'skin_3':'EbllkY83hSb',
     }
 
 
@@ -318,6 +323,8 @@ function setPromotionPages(){
         'children': 10,
         'discount': 9,
         'category': 9,
+        'forbes' : 9,
+        'skin' : 10,
     }
     const youtubePoint = {
         'fomo': 4,
@@ -325,6 +332,8 @@ function setPromotionPages(){
         'children': 5,
         'discount': 7,
         'category': 7,
+        'forbes' : 9,
+        'skin' : 10,
     }
 
     const parsedURL = window.location.href.split('/');
@@ -347,6 +356,111 @@ function setPromotionPages(){
             section.id = 'youtube';
 
             if (target === 'fomo') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in YouTube
+                    </dd>
+                    <dt>
+                        <span>유명 방송인</span>도<br>
+                        극찬한 똑비
+                    </dt>
+                </dl>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/l95vFUo57o4?si=DLESQFURmbd1BTQu" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else{
+            console.log(`${i} / ${imgLength[target]}`);
+            //
+            const img = document.createElement('img');
+            img.src = `./${target}/${i}.jpg`; // Replace with the actual path to your images
+            img.alt = `Image ${i}`;
+            imgContainer.appendChild(img);
+        }
+    }
+    console.log('page:', target);
+}
+
+
+
+function setPromotionPages_20250404(){
+    const imgLength = {
+        'forbes' : 9,
+        'skin' : 10,
+    }
+    const forbesPoint = {
+        'forbes' : 4,
+        'skin' : 4,
+    }
+    const youtubePoint = {
+        'forbes' : 5,
+        'skin' : 5,
+    }
+
+    const parsedURL = window.location.href.split('/');
+    let uri = parsedURL[parsedURL.length - 1];
+    let target = null;
+    if (uri.includes('.')) {
+        target = uri.substring(0, uri.lastIndexOf('.'));
+    }
+    if (uri.includes('_')) {
+        target = uri.substring(0, uri.lastIndexOf('_'));
+    }
+    
+    const imgContainer = document.getElementById('imgContainer');
+    for (let i = 1; i <= imgLength[target]; i++) {
+
+        if(i == forbesPoint[target]){
+            console.log(`${i} / ${imgLength[target]} ==> FORBES: ${youtubePoint[target]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'forbes';
+
+            if (target === 'skin') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in Forbes
+                    </dd>
+                    <dt>
+                        <span>포브스</span>에<br>
+                        소개된 똑비
+                    </dt>
+                </dl>
+                <div class="img-container">
+                    <img src="./forbes.png" alt="Forbes"/>
+                    <a href="https://jmagazine.joins.com/forbes/view/340959" target="_blank">
+                        <button>
+                            기사 보기
+                        </button>    
+                    </a>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else if(i == youtubePoint[target]){
+            console.log(`${i} / ${imgLength[target]} ==> YOUTUBE: ${youtubePoint[target]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'youtube';
+
+            if (target === 'forbes') {
                 section.classList.add('dark');
             }
 

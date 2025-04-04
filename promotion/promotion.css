@@ -32,7 +32,6 @@ body {
   justify-content: center;
   padding: 1.5rem 0.5rem;
   width: 100%;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 }
 #Action.active {
   bottom: 0;
@@ -62,20 +61,20 @@ body {
   padding-bottom: 0.5rem;
 }
 
-#youtube {
+#youtube, #forbes {
   width: 100%;
   text-align: center;
   padding: 5rem 2rem;
   background-color: #ffffff;
 }
-#youtube .video-container {
+#youtube .video-container, #forbes .video-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; /* 16:9 비율 */
   height: 0;
   overflow: hidden;
 }
-#youtube .video-container iframe {
+#youtube .video-container iframe, #youtube .video-container img, #forbes .video-container iframe, #forbes .video-container img {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,13 +82,29 @@ body {
   height: 100%;
   border-radius: 1rem;
 }
-#youtube dl {
+#youtube .video-container img, #forbes .video-container img {
+  border-radius: 1rem 1rem 0 0;
+}
+#youtube .img-container img, #forbes .img-container img {
+  border-radius: 1rem 1rem 0 0;
+}
+#youtube .img-container a button, #forbes .img-container a button {
+  background-color: #7CB342;
+  padding: 1rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+#youtube dl, #forbes dl {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#youtube dl dd {
+#youtube dl dd, #forbes dl dd {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -99,21 +114,21 @@ body {
   color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
 }
-#youtube dl dt {
+#youtube dl dt, #forbes dl dt {
   font-size: 300%;
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-#youtube dl dt span {
+#youtube dl dt span, #forbes dl dt span {
   color: #7CB342;
 }
-#youtube.dark {
+#youtube.dark, #forbes.dark {
   background-color: #0D3B10;
 }
-#youtube.dark dl dt {
+#youtube.dark dl dt, #forbes.dark dl dt {
   color: #ffffff;
 }
-#youtube.dark dl dt span {
+#youtube.dark dl dt span, #forbes.dark dl dt span {
   color: #B3F400;
 }/*# sourceMappingURL=promotion.css.map */

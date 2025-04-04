@@ -59,7 +59,7 @@ body{
     padding: 1.5rem 0.5rem;
     width: 100%;
 
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    // background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
 
 
     .btn{
@@ -124,7 +124,7 @@ body{
 
 
 
-#youtube{
+#youtube, #forbes{
     width: 100%;
     text-align: center;
     padding: 5rem 2rem;
@@ -135,7 +135,7 @@ body{
         height: 0;
         overflow: hidden;
 
-        iframe{
+        iframe, img{
             position: absolute;
             top: 0;
             left: 0;
@@ -143,6 +143,28 @@ body{
             height: 100%;
 
             border-radius: 1rem;
+        }
+        img{
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+    .img-container{
+        img{
+            border-radius: 1rem 1rem 0 0;
+        }
+        a{
+            button{
+                background-color: #7CB342;
+
+                padding: 1rem 0;
+                width: 100%;
+                border: none;
+                border-radius: 0 0 1rem 1rem;
+
+                color: #ffffff;
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
         }
     }
 
