@@ -259,16 +259,12 @@ function useDdokbiPromotion_0401(){
         'children_2':'R1nksuQv7Rb',
         'forbes_1':'d7d6YTw4hSb',
         'forbes_2':'fdx4h4A4hSb',
+        'forbes_3':'13UtZ7C3mSb',
         'skin_1':'WiyYXlM3hSb',
         'skin_2':'koYanjO3hSb',
         'skin_3':'EbllkY83hSb',
     }
 
-
-
-
-
-    // console.log(window.location.href);
 
     // checks current url as a List
     const parsedURL = window.location.href.split('/');
