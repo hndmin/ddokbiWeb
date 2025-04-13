@@ -312,7 +312,7 @@ function useDdokbiPromotion_0401(){
 }
 
 
-function setPromotionPages(){
+function setPromotionPages_0324(){
     const imgLength = {
         'fomo': 9,
         'save': 10,
@@ -494,4 +494,231 @@ function setPromotionPages_20250404(){
         }
     }
     console.log('page:', target);
+}
+
+
+//////////////////////////////////////
+
+function getQueryArray(){
+    const queryParams = new URLSearchParams(window.location.search);
+    const queryArray = [];
+    queryParams.forEach((value, key) => {
+        queryArray.push({ key, value });
+    });
+    // console.log('Query Parameters:', queryArray, getQueryValue(queryArray, 'category'), getQueryValue(queryArray, 'type'), getQueryValue(queryArray, 'path'));
+
+    return queryArray;
+}
+
+function getQueryValue(queryArray, keyString) {
+    return queryArray.find(param => param.key === keyString)?.value
+}
+
+
+function setPromotionPages_20250414(){
+    const imgLength = {
+        'category' : 8,
+        'fomo' : 8,
+        'skin' : 8,
+    }
+
+    const point = {
+        "forbes" : {
+            "category" : 4,
+            "fomo" : 4,
+            "skin" : 4,
+        },
+        "youtube" : {
+            "category" : 5,
+            "fomo" : 5,
+            "skin" : 5,
+        },
+        "var" : {
+            "category" : 6,
+            "fomo" : 6,
+            "skin" : 6,
+        }
+    }
+
+
+    // GET QUERY-PARAMS
+    const queryArray = getQueryArray();
+
+    let date = getQueryValue(queryArray, 'date');
+    let category = getQueryValue(queryArray, 'category');
+    let type = getQueryValue(queryArray, 'type');
+    // let path = getQueryValue(queryArray, 'path');
+
+
+    const imgContainer = document.getElementById('imgContainer');
+    for (let i = 1; i <= imgLength[category]; i++) {
+
+        if(i == point.var[category]){
+            console.log(`${i} / ${imgLength[category]} ==> VAR: ${point.var[category]}`);
+            //
+            const img = document.createElement('img');
+            img.src = `./${date}/${category}/${type}.jpg`;
+            img.alt = `Image ${type}`;
+            imgContainer.appendChild(img);
+        }else if(i == point.forbes[category]){
+            console.log(`${i} / ${imgLength[category]} ==> FORBES: ${point.forbes[category]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'forbes';
+
+            if (category === 'skin') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in Forbes
+                    </dd>
+                    <dt>
+                        <span>포브스</span>에<br>
+                        소개된 똑비
+                    </dt>
+                </dl>
+                <div class="img-container">
+                    <img src="../../../assets/img/forbes.png" alt="Forbes"/>
+                    <a href="https://jmagazine.joins.com/forbes/view/340959" category="_blank">
+                        <button>
+                            기사 보기
+                        </button>    
+                    </a>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else if(i == point.youtube[category]){
+            console.log(`${i} / ${imgLength[category]} ==> YOUTUBE: ${point.youtube[category]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'youtube';
+
+            if (category === 'forbes') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in YouTube
+                    </dd>
+                    <dt>
+                        <span>유명 방송인</span>도<br>
+                        극찬한 똑비
+                    </dt>
+                </dl>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/l95vFUo57o4?si=DLESQFURmbd1BTQu" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else{
+            console.log(`${i} / ${imgLength[category]}`);
+            //
+            const img = document.createElement('img');
+            img.src = `./${date}/${category}/${i}.jpg`; // Replace with the actual path to your images
+            img.alt = `Image ${i}`;
+            imgContainer.appendChild(img);
+        }
+    }
+    // console.log('page:', category);
+
+}
+
+
+function useDdokbiPromotion_20250414(){
+    const queryArray = getQueryArray();
+    //
+    const query_category = getQueryValue(queryArray, 'category');
+    const query_type = getQueryValue(queryArray, 'type');
+    const query_path = getQueryValue(queryArray, 'path');
+    //
+    const LINKS = 
+        {
+            "category": {
+                "a": {
+                    "1": "CATE-aaa111",
+                    "2": "CATE-aaa222",
+                    "3": "CATE-aaa333",
+                    "4": "CATE-aaa444"
+                },
+                "b": {
+                    "1": "CATE-bbb111",
+                    "2": "CATE-bbb222",
+                    "3": "CATE-bbb333",
+                    "4": "CATE-bbb444",
+                }
+            },
+            "fomo": {
+                "a": {
+                    "1": "FOMO-aaa111",
+                    "2": "FOMO-aaa222"
+                },
+                "b": {
+                    "1": "FOMO-bbb111",
+                    "2": "FOMO-bbb222"
+                }
+            },
+            "skin": {
+                "a": {
+                    "1": "SKIN-aaa111",
+                    "2": "SKIN-aaa222",
+                    "3": "SKIN-aaa333",
+                },
+                "b": {
+                    "1": "SKIN-bbb111",
+                    "2": "SKIN-bbb222",
+                    "3": "SKIN-bbb333",
+                }
+            },
+        }
+    
+
+
+
+    const deepLink = LINKS[query_category]?.[query_type]?.[query_path];
+    console.log('DEEEEEP: ',deepLink);
+
+
+    let unknown = '-';
+
+    // browser
+    const nAgt = navigator.userAgent;
+
+    // system
+    // Just keeping it for future reference
+    let os = unknown;
+    
+    for (const id in clientStrings) {
+        let cs = clientStrings[id];
+        if (cs.r.test(nAgt)) {
+            os = cs.s;
+            break;
+        }
+    }
+
+    if (/Windows/.test(os)) {
+        os = 'Windows';
+    }
+    
+    switch (os) {
+        case 'iOS':
+            return window.open('https://ddokbi.app.link/' + deepLink);
+        case 'Android':
+            return window.open('https://ddokbi.app.link/' + deepLink);
+        default:
+            alert('모바일에서 사용 해 주세요.');
+    }
 }
