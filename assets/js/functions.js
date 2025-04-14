@@ -168,10 +168,6 @@ function useDdokbiPromotion() {
         os = 'Windows';
     }
 
-
-    
-    
-
     switch (os) {
         case 'iOS':
             // return window.open('https://ddokbi.app.link/' + promotionLinks[getTime('date')]);
@@ -243,153 +239,152 @@ function promotionDateManager(){
 
 
 
-
-function useDdokbiPromotion_0401(){
-    const promotion_0401_Links = {
-        'fomo_1':'6WvAv9Bu7Rb',
-        'fomo_2':'jn5bvVYu7Rb',
-        'save_1':'aEHodR4u7Rb',
-        'save_2':'ZtSumDcv7Rb',
-        'category_1':'bkKBScmv7Rb',
-        'category_2':'hR6lRwqv7Rb',
-        'category_3':'DA82bVuv7Rb',
-        'discount_1':'KPxAWwBv7Rb',
-        'discount_2':'lNVqPsFv7Rb',
-        'children_1':'WTfMreGv7Rb',
-        'children_2':'R1nksuQv7Rb',
-        'forbes_1':'d7d6YTw4hSb',
-        'forbes_2':'fdx4h4A4hSb',
-        'forbes_3':'13UtZ7C3mSb',
-        'skin_1':'WiyYXlM3hSb',
-        'skin_2':'koYanjO3hSb',
-        'skin_3':'EbllkY83hSb',
-    }
-
-
-    // checks current url as a List
-    const parsedURL = window.location.href.split('/');
-    // console.log(parsedURL, parsedURL.length);
-
-    // .html 앞 부분 가져오기
-    let uri = parsedURL[parsedURL.length - 1];
-    // Remove the part after the last dot in the URI
-    let target = null;
-    if (uri.includes('.')) {
-        target = uri.substring(0, uri.lastIndexOf('.'));
-    }
-    console.log(target, promotion_0401_Links[target]);
+// function useDdokbiPromotion_0401(){ // 2024.04.01
+//     const promotion_0401_Links = {
+//         'fomo_1':'6WvAv9Bu7Rb',
+//         'fomo_2':'jn5bvVYu7Rb',
+//         'save_1':'aEHodR4u7Rb',
+//         'save_2':'ZtSumDcv7Rb',
+//         'category_1':'bkKBScmv7Rb',
+//         'category_2':'hR6lRwqv7Rb',
+//         'category_3':'DA82bVuv7Rb',
+//         'discount_1':'KPxAWwBv7Rb',
+//         'discount_2':'lNVqPsFv7Rb',
+//         'children_1':'WTfMreGv7Rb',
+//         'children_2':'R1nksuQv7Rb',
+//         'forbes_1':'d7d6YTw4hSb',
+//         'forbes_2':'fdx4h4A4hSb',
+//         'forbes_3':'13UtZ7C3mSb',
+//         'skin_1':'WiyYXlM3hSb',
+//         'skin_2':'koYanjO3hSb',
+//         'skin_3':'EbllkY83hSb',
+//     }
 
 
-    let unknown = '-';
+//     // checks current url as a List
+//     const parsedURL = window.location.href.split('/');
+//     // console.log(parsedURL, parsedURL.length);
 
-    // browser
-    const nAgt = navigator.userAgent;
+//     // .html 앞 부분 가져오기
+//     let uri = parsedURL[parsedURL.length - 1];
+//     // Remove the part after the last dot in the URI
+//     let target = null;
+//     if (uri.includes('.')) {
+//         target = uri.substring(0, uri.lastIndexOf('.'));
+//     }
+//     console.log(target, promotion_0401_Links[target]);
 
-    // system
-    // Just keeping it for future reference
-    let os = unknown;
+
+//     let unknown = '-';
+
+//     // browser
+//     const nAgt = navigator.userAgent;
+
+//     // system
+//     // Just keeping it for future reference
+//     let os = unknown;
     
-    for (const id in clientStrings) {
-        let cs = clientStrings[id];
-        if (cs.r.test(nAgt)) {
-            os = cs.s;
-            break;
-        }
-    }
+//     for (const id in clientStrings) {
+//         let cs = clientStrings[id];
+//         if (cs.r.test(nAgt)) {
+//             os = cs.s;
+//             break;
+//         }
+//     }
 
-    if (/Windows/.test(os)) {
-        os = 'Windows';
-    }
+//     if (/Windows/.test(os)) {
+//         os = 'Windows';
+//     }
     
-    switch (os) {
-        case 'iOS':
-            return window.open('https://ddokbi.app.link/' + promotion_0401_Links[target]);
-        case 'Android':
-            return window.open('https://ddokbi.app.link/' + promotion_0401_Links[target]);
-        default:
-            alert('모바일에서 사용 해 주세요.');
-    }
-}
+//     switch (os) {
+//         case 'iOS':
+//             return window.open('https://ddokbi.app.link/' + promotion_0401_Links[target]);
+//         case 'Android':
+//             return window.open('https://ddokbi.app.link/' + promotion_0401_Links[target]);
+//         default:
+//             alert('모바일에서 사용 해 주세요.');
+//     }
+// }
 
 
-function setPromotionPages_0324(){
-    const imgLength = {
-        'fomo': 9,
-        'save': 10,
-        'children': 10,
-        'discount': 9,
-        'category': 9,
-        'forbes' : 9,
-        'skin' : 10,
-    }
-    const youtubePoint = {
-        'fomo': 4,
-        'save': 5,
-        'children': 5,
-        'discount': 7,
-        'category': 7,
-        'forbes' : 9,
-        'skin' : 10,
-    }
+// function setPromotionPages_0324(){
+//     const imgLength = {
+//         'fomo': 9,
+//         'save': 10,
+//         'children': 10,
+//         'discount': 9,
+//         'category': 9,
+//         'forbes' : 9,
+//         'skin' : 10,
+//     }
+//     const youtubePoint = {
+//         'fomo': 4,
+//         'save': 5,
+//         'children': 5,
+//         'discount': 7,
+//         'category': 7,
+//         'forbes' : 9,
+//         'skin' : 10,
+//     }
 
-    const parsedURL = window.location.href.split('/');
-    let uri = parsedURL[parsedURL.length - 1];
-    let target = null;
-    if (uri.includes('.')) {
-        target = uri.substring(0, uri.lastIndexOf('.'));
-    }
-    if (uri.includes('_')) {
-        target = uri.substring(0, uri.lastIndexOf('_'));
-    }
+//     const parsedURL = window.location.href.split('/');
+//     let uri = parsedURL[parsedURL.length - 1];
+//     let target = null;
+//     if (uri.includes('.')) {
+//         target = uri.substring(0, uri.lastIndexOf('.'));
+//     }
+//     if (uri.includes('_')) {
+//         target = uri.substring(0, uri.lastIndexOf('_'));
+//     }
     
-    const imgContainer = document.getElementById('imgContainer');
-    for (let i = 1; i <= imgLength[target]; i++) {
+//     const imgContainer = document.getElementById('imgContainer');
+//     for (let i = 1; i <= imgLength[target]; i++) {
 
-        if(i == youtubePoint[target]){
-            console.log(`${i} / ${imgLength[target]} ==> YOUTUBE: ${youtubePoint[target]}`);
-            //
-            const section = document.createElement('section');
-            section.id = 'youtube';
+//         if(i == youtubePoint[target]){
+//             console.log(`${i} / ${imgLength[target]} ==> YOUTUBE: ${youtubePoint[target]}`);
+//             //
+//             const section = document.createElement('section');
+//             section.id = 'youtube';
 
-            if (target === 'fomo') {
-                section.classList.add('dark');
-            }
+//             if (target === 'fomo') {
+//                 section.classList.add('dark');
+//             }
 
-            section.innerHTML = `
-                <dl>
-                    <dd>
-                        똑비 in YouTube
-                    </dd>
-                    <dt>
-                        <span>유명 방송인</span>도<br>
-                        극찬한 똑비
-                    </dt>
-                </dl>
-                <div class="video-container">
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/l95vFUo57o4?si=DLESQFURmbd1BTQu" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                    </iframe>
-                <div>
-            `;
-            imgContainer.appendChild(section);
-        }else{
-            console.log(`${i} / ${imgLength[target]}`);
-            //
-            const img = document.createElement('img');
-            img.src = `./${target}/${i}.jpg`; // Replace with the actual path to your images
-            img.alt = `Image ${i}`;
-            imgContainer.appendChild(img);
-        }
-    }
-    console.log('page:', target);
-}
+//             section.innerHTML = `
+//                 <dl>
+//                     <dd>
+//                         똑비 in YouTube
+//                     </dd>
+//                     <dt>
+//                         <span>유명 방송인</span>도<br>
+//                         극찬한 똑비
+//                     </dt>
+//                 </dl>
+//                 <div class="video-container">
+//                     <iframe 
+//                         width="560" 
+//                         height="315" 
+//                         src="https://www.youtube.com/embed/l95vFUo57o4?si=DLESQFURmbd1BTQu" 
+//                         title="YouTube video player" 
+//                         frameborder="0" 
+//                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+//                         referrerpolicy="strict-origin-when-cross-origin" 
+//                         allowfullscreen>
+//                     </iframe>
+//                 <div>
+//             `;
+//             imgContainer.appendChild(section);
+//         }else{
+//             console.log(`${i} / ${imgLength[target]}`);
+//             //
+//             const img = document.createElement('img');
+//             img.src = `./${target}/${i}.jpg`; // Replace with the actual path to your images
+//             img.alt = `Image ${i}`;
+//             imgContainer.appendChild(img);
+//         }
+//     }
+//     console.log('page:', target);
+// }
 
 
 
@@ -518,24 +513,24 @@ function getQueryValue(queryArray, keyString) {
 function setPromotionPages_20250414(){
     const imgLength = {
         'category' : 8,
-        'fomo' : 8,
+        'woman' : 8,
         'skin' : 8,
     }
 
     const point = {
         "forbes" : {
             "category" : 4,
-            "fomo" : 4,
+            "woman" : 4,
             "skin" : 4,
         },
         "youtube" : {
             "category" : 5,
-            "fomo" : 5,
+            "woman" : 5,
             "skin" : 5,
         },
         "var" : {
             "category" : 6,
-            "fomo" : 6,
+            "woman" : 6,
             "skin" : 6,
         }
     }
@@ -548,6 +543,16 @@ function setPromotionPages_20250414(){
     let category = getQueryValue(queryArray, 'category');
     let type = getQueryValue(queryArray, 'type');
     // let path = getQueryValue(queryArray, 'path');
+
+
+
+
+    // set Btn txt
+    if(type == 'a'){
+        document.querySelector('#ActionBtn').innerHTML = '무료로 이용하기';
+    }else if (type == 'b'){
+        document.querySelector('#ActionBtn').innerHTML = '똑비 시작하기';
+    }
 
 
     const imgContainer = document.getElementById('imgContainer');
@@ -646,44 +651,44 @@ function useDdokbiPromotion_20250414(){
     const query_path = getQueryValue(queryArray, 'path');
     //
     const LINKS = 
-        {
-            "category": {
-                "a": {
-                    "1": "CATE-aaa111",
-                    "2": "CATE-aaa222",
-                    "3": "CATE-aaa333",
-                    "4": "CATE-aaa444"
-                },
-                "b": {
-                    "1": "CATE-bbb111",
-                    "2": "CATE-bbb222",
-                    "3": "CATE-bbb333",
-                    "4": "CATE-bbb444",
-                }
+    {
+        "category": {
+            "a": {
+                "1": "I1biRcCXxSb",
+                "2": "ZWXKfiSXxSb",
+                "3": "jB4RVk4XxSb",
+                "4": "JzCvOgBYxSb",
             },
-            "fomo": {
-                "a": {
-                    "1": "FOMO-aaa111",
-                    "2": "FOMO-aaa222"
-                },
-                "b": {
-                    "1": "FOMO-bbb111",
-                    "2": "FOMO-bbb222"
-                }
+            "b": {
+                "1": "V1bcG2LXxSb",
+                "2": "2UVLrVXXxSb",
+                "3": "4dbdS1kYxSb",
+                "4": "24Jz5UFYxSb",
+            }
+        },
+        "woman": {
+            "a": {
+                "1": "Dw5N0XZYxSb",
+                "2": "2OgADaeZxSb",
             },
-            "skin": {
-                "a": {
-                    "1": "SKIN-aaa111",
-                    "2": "SKIN-aaa222",
-                    "3": "SKIN-aaa333",
-                },
-                "b": {
-                    "1": "SKIN-bbb111",
-                    "2": "SKIN-bbb222",
-                    "3": "SKIN-bbb333",
-                }
+            "b": {
+                "1": "0FaaNq3YxSb",
+                "2": "LC63i9gZxSb",
+            }
+        },
+        "skin": {
+            "a": {
+                "1": "YZXHR4pZxSb",
+                "2": "owOBb0CZxSb",
+                "3": "ORu40yNZxSb",
             },
-        }
+            "b": {
+                "1": "nvGY1PuZxSb",
+                "2": "x8gArgHZxSb",
+                "3": "uT4rZoRZxSb",
+            }
+        },
+    }
     
 
 
