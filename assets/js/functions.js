@@ -512,9 +512,9 @@ function getQueryValue(queryArray, keyString) {
 
 function setPromotionPages_20250414(){
     const imgLength = {
-        'category' : 8,
-        'woman' : 8,
-        'skin' : 8,
+        'category' : 9,
+        'woman' : 9,
+        'skin' : 9,
     }
 
     const point = {
