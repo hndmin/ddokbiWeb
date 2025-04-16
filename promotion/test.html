@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../assets/favicon/favicon.ico" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../../assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../../assets/css/theme.bundle.css" />
+    
+    <!-- OpenGraphProtocol -->
+    <meta property="og:title" content="똑비 멤버십 1주년 프로모션" />
+    <meta property="og:url" content="../promotion/index.html/" />
+    <meta property="og:image" content="../assets/img/ogp_promotion.jpg" />
+    <meta
+          property="og:description"
+          content="지금 가입하면 똑비 가격 인상 없이 평생 지금 가격 그대로!"
+    />
+    
+    <link rel="stylesheet" href="../../custom.css" />
+    <link rel="stylesheet" href="./promotion.css" />
+
+    <!-- <link rel="stylesheet" href="../custom_prime.css" /> -->
+
+
+    <!-- Title -->
+    <title>똑비 멤버십 1주년 프로모션</title>
+
+    <!-- Firebase Compat CDN -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore-compat.js"></script> -->
+
+    
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDBWMP9MGX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RDBWMP9MGX');
+  </script>
+
+  <body>
+
+    <section id="Form">
+        <h1>연락처 입력</h1>
+        <form id="contactForm">
+            <label for="name">이름:</label><br />
+            <input type="text" id="name" value="dongmin" required /><br /><br />
+            <label for="phone">전화번호:</label><br />
+            <input type="tel" id="phone" value="0001000" required /><br /><br />
+            <button type="submit">저장</button>
+        </form>
+    </section>
+
+    <section id="Contents">
+      <div class="container_pc">
+        <div id="imgContainer" class="container_mo">
+          <!-- <img src="./category/1.jpg" alt=""> -->
+          
+        </div>
+      </div>
+      
+    </section>
+
+    
+
+    <section id="Action">
+      
+        <button onclick="useDdokbiPromotion_20250414()" id="ActionBtn" class="btn btn-primary lift orange pulse-text" target="_blank">
+          가입하기
+        </button>
+      
+    </section>
+    
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="../../assets/js/vendor.bundle.js"></script>
+
+    <!-- import click func -->
+    <script src="../../assets/js/functions.js"></script>
+
+    <!-- some other functions by hndmin -->
+    <script type="text/javascript">
+
+      window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        if(scrollPosition > 100){
+          document.getElementById("Action").classList.add("active");
+        }else{
+          document.getElementById("Action").classList.remove("active");
+        }
+        // console.log('Current scroll position:', scrollPosition);
+      });
+
+
+      window.onload = function() {
+        // console.log("Page has fully loaded.");
+        setPromotionPages_20250414();
+      };
+
+
+
+    </script>
+
+<script type="text/javascript">
+  (function(w, d, a){
+      w.__beusablerumclient__ = {
+          load : function(src){
+              var b = d.createElement("script");
+              b.src = src; b.async=true; b.type = "text/javascript";
+              d.getElementsByTagName("head")[0].appendChild(b);
+          }
+      };w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+  })(window, document, "//rum.beusable.net/load/b250319e182136u382");
+  </script>
+  </body>
+
+  <script>
+    const test = 'test';
+  </script>
+  <script type="module">
+    
+    // const currentUrl = window.location.href; // 현재 URL 불러오기
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+    import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBnd24FsfDWlnZbUU3RxCwjOEj5ulo4r_E",
+      authDomain: "ddokbi-promotion.firebaseapp.com",
+      projectId: "ddokbi-promotion",
+      storageBucket: "ddokbi-promotion.firebasestorage.app",
+      messagingSenderId: "1053820523541",
+      appId: "1:1053820523541:web:fa72b844b7f00cddee2a1c",
+      measurementId: "G-T6DVYZKQQQ"
+    };
+  
+    // 2) 초기화
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // 3) 폼 제출
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+
+      try {
+        // Firestore에 저장
+        await addDoc(collection(db, 'contacts'), {
+          name,
+          phone,
+          timestamp: new Date(),
+        });
+        alert('저장 완료!');
+        form.reset();
+      } catch (error) {
+        console.error('저장 실패:', error);
+        alert('저장 중 오류 발생');
+      }
+
+    });
+
+
+    // 🔴 Read 테스트
+    // async function testRead() {
+    //   try {
+    //     const querySnapshot = await getDocs(collection(db, "contacts"));
+    //     querySnapshot.forEach(doc => {
+    //       console.log(`${doc.id} =>`, doc.data());
+    //     });
+    //     alert("읽기 성공 (예상과 다름)");
+    //   } catch (error) {
+    //     console.error("읽기 실패! 예상된 결과입니다 ✅", error);
+    //     alert("읽기 실패: 보안 규칙이 read를 차단하고 있습니다.");
+    //   }
+    // }
+    // // 테스트 실행
+    // window.onload = testRead;
+
+
+    // console.log(test);
+
+    
+  </script>
+</html>
