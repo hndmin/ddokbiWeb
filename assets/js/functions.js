@@ -727,3 +727,198 @@ function useDdokbiPromotion_20250414(){
             alert('모바일에서 사용 해 주세요.');
     }
 }
+
+
+
+
+
+
+// Load promotion data from JSON file
+async function loadPromotionData(eventID) {
+    eventID = String(eventID);
+    try {
+        const response = await fetch('../../assets/js/promotionData.json');
+        if (!response.ok) {
+            throw new Error('Failed to load promotion data');
+        }
+        const loadedJson = await response.json();
+
+        
+        const promotionData = loadedJson.promotions;
+        // console.log('Promotion Data:', promotionData, promotionData[0][eventID], loadedJson.promotions[0][eventID]);
+        console.log('Promotion Data:', promotionData[0][eventID]);
+
+
+        return promotionData[0][eventID];
+    } catch (error) {
+        console.error('Error loading promotion data:', error);
+    }
+}
+
+
+
+function setPromotionPages_withForm(){
+
+
+    // Call the function to load data
+    // const promotionData = loadPromotionData(20250414);
+    // console.log(promotionData);
+
+
+
+    const imgLength = {
+        'category' : 10,
+        'woman' : 10,
+        'skin' : 10,
+    }
+
+    const point = {
+        "forbes" : {
+            "category" : 4,
+            "woman" : 4,
+            "skin" : 4,
+        },
+        "youtube" : {
+            "category" : 5,
+            "woman" : 5,
+            "skin" : 5,
+        },
+        "var" : {
+            "category" : 6,
+            "woman" : 6,
+            "skin" : 6,
+        },
+        "form" : {
+            "category" : [0,10],
+            "woman" : [0,10],
+            "skin" : [0,10],
+        }
+    }
+
+
+    // GET QUERY-PARAMS
+    const queryArray = getQueryArray();
+
+    let date = getQueryValue(queryArray, 'date');
+    let category = getQueryValue(queryArray, 'category');
+    let type = getQueryValue(queryArray, 'type');
+    // let path = getQueryValue(queryArray, 'path');
+
+
+
+
+    // set Btn txt
+    if(type == 'a'){
+        document.querySelector('#ActionBtn').innerHTML = '무료로 이용하기';
+    }else if (type == 'b'){
+        document.querySelector('#ActionBtn').innerHTML = '똑비 시작하기';
+    }
+
+
+    const imgContainer = document.getElementById('imgContainer');
+    // for (let i = 1; i <= imgLength[category]; i++) {
+    for (let i = 0; i <= imgLength[category]; i++) {
+
+        if(point.form[category].includes(i)){
+            // console.log(`${i} / ${imgLength[category]} ==> FORM: ${point.form[category]}`);
+            //
+            const section = document.createElement('section');
+            section.classList.add('formSection');
+
+            section.innerHTML = `
+                <h1>연락처 입력</h1>
+                <form id="promotionForm-${i}">
+                    <label for="name-${i}">이름:</label><br />
+                    <input type="text" id="name-${i}" value="dongmin" required /><br /><br />
+                    <label for="phone-${i}">전화번호:</label><br />
+                    <input type="tel" id="phone-${i}" value="0001000" required /><br /><br />
+                    <button type="submit" id="sendBtn-${i}">저장</button>
+                </form>
+            `;
+            imgContainer.appendChild(section);
+        }else if(i == point.var[category]){
+            console.log(`${i} / ${imgLength[category]} ==> VAR: ${point.var[category]}`);
+            //
+            const img = document.createElement('img');
+            img.src = `./${date}/${category}/${type}.jpg`;
+            img.alt = `Image ${type}`;
+            imgContainer.appendChild(img);
+        }else if(i == point.forbes[category]){
+            console.log(`${i} / ${imgLength[category]} ==> FORBES: ${point.forbes[category]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'forbes';
+
+            if (category === 'skin') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in Forbes
+                    </dd>
+                    <dt>
+                        <span>포브스</span>에<br>
+                        소개된 똑비
+                    </dt>
+                </dl>
+                <div class="img-container">
+                    <img src="../../../assets/img/forbes.png" alt="Forbes"/>
+                    <a href="https://jmagazine.joins.com/forbes/view/340959" category="_blank">
+                        <button>
+                            기사 보기
+                        </button>    
+                    </a>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else if(i == point.youtube[category]){
+            console.log(`${i} / ${imgLength[category]} ==> YOUTUBE: ${point.youtube[category]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'youtube';
+
+            if (category === 'forbes') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in YouTube
+                    </dd>
+                    <dt>
+                        <span>유명 방송인</span>도<br>
+                        극찬한 똑비
+                    </dt>
+                </dl>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/l95vFUo57o4?si=DLESQFURmbd1BTQu" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else{
+            console.log(`${i} / ${imgLength[category]}`);
+            //
+            const img = document.createElement('img');
+            img.src = `./${date}/${category}/${i}.jpg`; // Replace with the actual path to your images
+            img.alt = `Image ${i}`;
+            imgContainer.appendChild(img);
+        }
+    }
+    // console.log('page:', category);
+
+}
+
+
+

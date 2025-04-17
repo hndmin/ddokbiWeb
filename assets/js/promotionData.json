@@ -1,0 +1,76 @@
+{
+    "promotions": [
+        {
+            "20250414": [
+                {
+                    "category": "category",
+                    "imgLength": 10,
+                    "point":[
+                        {
+                            "name": "youtube",
+                            "order": 4
+                        },
+                        {
+                            "name": "forbes",
+                            "order": 5
+                        },
+                        {
+                            "name": "youtube",
+                            "order": 6
+                        },
+                        {
+                            "name": "form",
+                            "order": [0,10]
+                        }
+                    ]
+                },
+                {
+                    "category": "woman",
+                    "imgLength": 10,
+                    "point":[
+                        {
+                            "name": "youtube",
+                            "order": 4
+                        },
+                        {
+                            "name": "forbes",
+                            "order": 5
+                        },
+                        {
+                            "name": "youtube",
+                            "order": 6
+                        },
+                        {
+                            "name": "form",
+                            "order": [0,10]
+                        }
+                    ]
+                },
+                {
+                    "category": "skin",
+                    "imgLength": 10,
+                    "point":[
+                        {
+                            "name": "youtube",
+                            "order": 4
+                        },
+                        {
+                            "name": "forbes",
+                            "order": 5
+                        },
+                        {
+                            "name": "youtube",
+                            "order": 6
+                        },
+                        {
+                            "name": "form",
+                            "order": [0,10]
+                        }
+                    ]
+                }
+            ]
+        }
+
+
+    ]
+}
