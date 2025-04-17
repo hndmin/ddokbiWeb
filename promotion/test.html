@@ -108,10 +108,10 @@
       });
 
 
-      window.onload = function() {
-        // console.log("Page has fully loaded.");
-        setPromotionPages_withForm();
-      };
+    //   window.onload = function() {
+    //     // console.log("Page has fully loaded.");
+    //     setPromotionPages_withForm();
+    //   };
 
 
 
@@ -135,12 +135,17 @@
         import {
         initializeFirebase,
         submitContactForm,
+        submitContactForm_onclick
         } from "../../assets/js/form.js"; // 파일 경로 맞게 수정
 
         // 초기화
         initializeFirebase();
 
-        // 폼 제출 핸들링
-        submitContactForm();
+
+        window.onload = function() {
+            setPromotionPages_withForm();
+            // 폼 제출 핸들링
+            submitContactForm();
+        };
     </script>
 </html>

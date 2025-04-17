@@ -158,4 +158,8 @@ body {
 }
 #youtube.dark dl dt span, #forbes.dark dl dt span {
   color: #B3F400;
+}
+
+.formSection {
+  padding: 10rem 0;
 }/*# sourceMappingURL=promotion.css.map */

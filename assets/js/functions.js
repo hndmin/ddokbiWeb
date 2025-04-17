@@ -827,11 +827,19 @@ function setPromotionPages_withForm(){
 
             section.innerHTML = `
                 <h1>연락처 입력</h1>
-                <form id="promotionForm-${i}">
+                <form id="promotionForm-${i}" class="promotionForm">
                     <label for="name-${i}">이름:</label><br />
                     <input type="text" id="name-${i}" value="dongmin" required /><br /><br />
                     <label for="phone-${i}">전화번호:</label><br />
                     <input type="tel" id="phone-${i}" value="0001000" required /><br /><br />
+                    <label>
+                        <input type="checkbox" id="agree-Age-${i}" required />
+                        45세 이상입니다.
+                    </label><br />
+                    <label>
+                        <input type="checkbox" id="agree-Privacy-${i}" required />
+                        개인정보 처리방침에 동의합니다.
+                    </label><br /><br />
                     <button type="submit" id="sendBtn-${i}">저장</button>
                 </form>
             `;
