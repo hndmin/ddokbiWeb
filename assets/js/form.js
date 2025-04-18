@@ -75,7 +75,7 @@ export async function submitContactForm() {
                             return acc;
                             }, {}),
                     });
-                    alert("저장 완료!");
+                    alert("안내 신청이 완료되었습니다!");
                     form.reset();
                 } catch (error) {
                     console.error("저장 실패:", error);

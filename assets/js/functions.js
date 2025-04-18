@@ -767,31 +767,26 @@ function setPromotionPages_withForm(){
 
 
     const imgLength = {
-        'category' : 10,
-        'woman' : 10,
-        'skin' : 10,
+        'category' : 11,
+        'fomo' : 10,
     }
 
     const point = {
         "forbes" : {
-            "category" : 4,
-            "woman" : 4,
-            "skin" : 4,
+            "category" : 6,
+            "fomo" : 5
         },
         "youtube" : {
-            "category" : 5,
-            "woman" : 5,
-            "skin" : 5,
+            "category" : 7,
+            "fomo" : 6
         },
         "var" : {
-            "category" : 6,
-            "woman" : 6,
-            "skin" : 6,
+            "category" : 0,
+            "fomo" : 0
         },
         "form" : {
-            "category" : [0,10],
-            "woman" : [0,10],
-            "skin" : [0,10],
+            "category" : [2,11],
+            "fomo" : [2,10]
         }
     }
 
@@ -801,23 +796,23 @@ function setPromotionPages_withForm(){
 
     let date = getQueryValue(queryArray, 'date');
     let category = getQueryValue(queryArray, 'category');
-    let type = getQueryValue(queryArray, 'type');
+    // let type = getQueryValue(queryArray, 'type');
     // let path = getQueryValue(queryArray, 'path');
 
 
 
 
     // set Btn txt
-    if(type == 'a'){
-        document.querySelector('#ActionBtn').innerHTML = '무료로 이용하기';
-    }else if (type == 'b'){
-        document.querySelector('#ActionBtn').innerHTML = '똑비 시작하기';
-    }
+    // if(type == 'a'){
+    //     document.querySelector('#ActionBtn').innerHTML = '무료로 이용하기';
+    // }else if (type == 'b'){
+    //     document.querySelector('#ActionBtn').innerHTML = '똑비 시작하기';
+    // }
 
 
     const imgContainer = document.getElementById('imgContainer');
     // for (let i = 1; i <= imgLength[category]; i++) {
-    for (let i = 0; i <= imgLength[category]; i++) {
+    for (let i = 1; i <= imgLength[category]; i++) {
 
         if(point.form[category].includes(i)){
             // console.log(`${i} / ${imgLength[category]} ==> FORM: ${point.form[category]}`);
@@ -826,38 +821,53 @@ function setPromotionPages_withForm(){
             section.classList.add('formSection');
 
             section.innerHTML = `
-                <h1>연락처 입력</h1>
-                <form id="promotionForm-${i}" class="promotionForm">
-                    <label for="name-${i}">이름:</label><br />
-                    <input type="text" id="name-${i}" value="dongmin" required /><br /><br />
-                    <label for="phone-${i}">전화번호:</label><br />
-                    <input type="tel" id="phone-${i}" value="0001000" required /><br /><br />
-                    <label>
-                        <input type="checkbox" id="agree-Age-${i}" required />
-                        45세 이상입니다.
-                    </label><br />
-                    <label>
-                        <input type="checkbox" id="agree-Privacy-${i}" required />
-                        개인정보 처리방침에 동의합니다.
-                    </label><br /><br />
-                    <button type="submit" id="sendBtn-${i}">저장</button>
-                </form>
+                <div class="formContainer">
+                    <dl>
+                        <dt>똑비 신청하기</dt>
+                        <dd>
+                            연락처를 남기시면, 당신만의 전담 비서가 직접 서비스 내용과 혜택을 상세히 안내드립니다. 바로 신청해보세요. 
+                        </dd>
+                    </dl>
+
+                    <form  id="promotionForm-${i}" class="promotionForm">
+                        <div class="mb-3 inputWrap">
+                            <label for="name-${i}" class="form-label">성함</label>
+                            <input type="name" class="form-control" id="name-${i}" placeholder="홍길동" required>
+                        </div>
+                        <div class="mb-4 inputWrap">
+                            <label for="phone-${i}" class="form-label">전화번호</label>
+                            <input type="text" class="form-control" id="phone-${i}" placeholder="010-0000-0000" required oninput="validateInput(this)" aria-describedby="phoneHelp">
+                            <div id="phoneHelp" class="form-text">&nbsp;* 숫자 혹은 - 만 입력 가능합니다.</div>
+                        </div>
+                        <div class="mb-3 form-check" onclick="this.classList.toggle('checked')">
+                            <input type="checkbox" class="form-check-input" id="agree-Age-${i}">
+                            <label class="form-check-label" for="agree-Age-${i}" required>(필수) 저는 만 45세 (1980년 이전 출생자) 이상입니다.</label>
+                        </div>
+                        <div class="mb-3 form-check" onclick="this.classList.toggle('checked')">
+                            <input type="checkbox" class="form-check-input" id="agree-Privacy-${i}">
+                            <label class="form-check-label" for="agree-Privacy-${i}" required>(필수) 위 정보는 상담 용도로만 이용되며 상담 후 즉시 폐기됩니다. 이에 동의합니다.</label>
+                        </div>
+                        <button type="submit" id="sendBtn-${i}" class="btn btn-primary pulse-text">똑비 멤버십 안내 받기 </button>
+                    </form>
+                </div>
             `;
             imgContainer.appendChild(section);
-        }else if(i == point.var[category]){
-            console.log(`${i} / ${imgLength[category]} ==> VAR: ${point.var[category]}`);
-            //
-            const img = document.createElement('img');
-            img.src = `./${date}/${category}/${type}.jpg`;
-            img.alt = `Image ${type}`;
-            imgContainer.appendChild(img);
-        }else if(i == point.forbes[category]){
+        }
+        // else if(i == point.var[category]){ // ABTest
+        //     console.log(`${i} / ${imgLength[category]} ==> VAR: ${point.var[category]}`);
+        //     //
+        //     const img = document.createElement('img');
+        //     img.src = `./${date}/${category}/${type}.jpg`;
+        //     img.alt = `Image ${type}`;
+        //     imgContainer.appendChild(img);
+        // }
+        else if(i == point.forbes[category]){
             console.log(`${i} / ${imgLength[category]} ==> FORBES: ${point.forbes[category]}`);
             //
             const section = document.createElement('section');
             section.id = 'forbes';
 
-            if (category === 'skin') {
+            if (category === 'fomo') {
                 section.classList.add('dark');
             }
 
@@ -927,6 +937,10 @@ function setPromotionPages_withForm(){
     // console.log('page:', category);
 
 }
+
+function validateInput(input) {
+    input.value = input.value.replace(/[^0-9\-]/g, '');
+  }
 
 
 
