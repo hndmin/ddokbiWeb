@@ -1076,11 +1076,11 @@ function useDdokbiPromotion_20250421(){
     //
     const LINKS = 
     {
-        "category": {
+        "fomo": {
             "1": "gHst1AQXJSb",
             "2": "oSdhiWYXJSb",
         },
-        "fomo": {
+        "category": {
             "1": "swhIvT2XJSb"
         },
     }
