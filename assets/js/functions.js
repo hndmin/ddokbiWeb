@@ -943,4 +943,180 @@ function validateInput(input) {
   }
 
 
+///////////////////////////////////////////////////////////////
 
+
+function setPromotionPages_20250421(){
+
+    const imgLength = {
+        'category' : 9,
+        'fomo' : 9,
+    }
+
+    const point = {
+        "forbes" : {
+            "category" : 5,
+            "fomo" : 4
+        },
+        "youtube" : {
+            "category" : 6,
+            "fomo" : 5
+        },
+    }
+
+
+    // GET QUERY-PARAMS
+    const queryArray = getQueryArray();
+
+    let date = getQueryValue(queryArray, 'date');
+    let category = getQueryValue(queryArray, 'category');
+    // let type = getQueryValue(queryArray, 'type');
+    // let path = getQueryValue(queryArray, 'path');
+
+
+
+
+    // set Btn txt
+    // if(type == 'a'){
+    //     document.querySelector('#ActionBtn').innerHTML = '무료로 이용하기';
+    // }else if (type == 'b'){
+    //     document.querySelector('#ActionBtn').innerHTML = '똑비 시작하기';
+    // }
+
+
+    const imgContainer = document.getElementById('imgContainer');
+    // for (let i = 1; i <= imgLength[category]; i++) {
+    for (let i = 1; i <= imgLength[category]; i++) {
+
+        if(i == point.forbes[category]){
+            console.log(`${i} / ${imgLength[category]} ==> FORBES: ${point.forbes[category]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'forbes';
+
+            if (category === 'fomo') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in Forbes
+                    </dd>
+                    <dt>
+                        <span>포브스</span>에<br>
+                        소개된 똑비
+                    </dt>
+                </dl>
+                <div class="img-container">
+                    <img src="../../../assets/img/forbes.png" alt="Forbes"/>
+                    <a href="https://jmagazine.joins.com/forbes/view/340959" category="_blank">
+                        <button>
+                            기사 보기
+                        </button>    
+                    </a>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else if(i == point.youtube[category]){
+            console.log(`${i} / ${imgLength[category]} ==> YOUTUBE: ${point.youtube[category]}`);
+            //
+            const section = document.createElement('section');
+            section.id = 'youtube';
+
+            if (category === 'forbes') {
+                section.classList.add('dark');
+            }
+
+            section.innerHTML = `
+                <dl>
+                    <dd>
+                        똑비 in YouTube
+                    </dd>
+                    <dt>
+                        <span>유명 방송인</span>도<br>
+                        극찬한 똑비
+                    </dt>
+                </dl>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/l95vFUo57o4?si=DLESQFURmbd1BTQu" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                <div>
+            `;
+            imgContainer.appendChild(section);
+        }else{
+            console.log(`${i} / ${imgLength[category]}`);
+            //
+            const img = document.createElement('img');
+            img.src = `./${date}/${category}/${i}.jpg`; // Replace with the actual path to your images
+            img.alt = `Image ${i}`;
+            imgContainer.appendChild(img);
+        }
+    }
+    // console.log('page:', category);
+
+}
+
+
+function useDdokbiPromotion_20250421(){
+
+    const queryArray = getQueryArray();
+    //
+    const query_category = getQueryValue(queryArray, 'category');
+    const query_type = getQueryValue(queryArray, 'type');
+    const query_path = getQueryValue(queryArray, 'path');
+    //
+    const LINKS = 
+    {
+        "category": {
+            "1": "gHst1AQXJSb",
+            "2": "oSdhiWYXJSb",
+        },
+        "fomo": {
+            "1": "swhIvT2XJSb"
+        },
+    }
+    
+    
+    const deepLink = LINKS[query_category]?.[query_path];
+    console.log('DEEEEEP: ',deepLink);
+
+
+    let unknown = '-';
+
+    // browser
+    const nAgt = navigator.userAgent;
+
+    // system
+    // Just keeping it for future reference
+    let os = unknown;
+    
+    for (const id in clientStrings) {
+        let cs = clientStrings[id];
+        if (cs.r.test(nAgt)) {
+            os = cs.s;
+            break;
+        }
+    }
+
+    if (/Windows/.test(os)) {
+        os = 'Windows';
+    }
+    
+    switch (os) {
+        case 'iOS':
+            return window.open('https://ddokbi.app.link/' + deepLink);
+        case 'Android':
+            return window.open('https://ddokbi.app.link/' + deepLink);
+        default:
+            alert('모바일에서 사용 해 주세요.');
+    }
+}
