@@ -950,7 +950,7 @@ function setPromotionPages_20250421(){
 
     const imgLength = {
         'category' : 9,
-        'fomo' : 9,
+        'fomo' : 8,
     }
 
     const point = {
