@@ -119,9 +119,9 @@ https://ddokbi.com/promotion/20250418.html?date=20250418&category=fomo&path=3
 https://ddokbi.com
 
 <fomo>
-https://ddokbi.com/promotion/20250421.html?date=20250421&category=fomo&path=1
-https://ddokbi.com/promotion/20250421.html?date=20250421&category=fomo&path=2
+20250421_fomo_kakaobanner:   https://ddokbi.com/promotion/20250421.html?date=20250421&category=fomo&path=1
+20250421_fomo_instagram:     https://ddokbi.com/promotion/20250421.html?date=20250421&category=fomo&path=2
 
 
 <category>
-https://ddokbi.com/promotion/20250421.html?date=20250421&category=category&path=1
+20250421_category_kakaobanner: 	https://ddokbi.com/promotion/20250421.html?date=20250421&category=category&path=1
