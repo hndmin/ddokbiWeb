@@ -38,6 +38,9 @@ body {
   bottom: 0;
   transition: 0.5s;
 }
+#Action a {
+  width: 100%;
+}
 #Action .btn {
   width: 100%;
   color: white;
