@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>똑비 사용환경 확인</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+
+            overflow: hidden;
+        }
+        .btn {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 1.25rem 2.5rem 1.1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5rem;
+            cursor: pointer;
+
+
+            border-radius: 1rem;
+        }
+        .btn:hover {
+            background-color: #555555;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="check()">눌러라</button>
+    <button class="btn" onclick="check()">사용환경 확인</button>
 <script>
     const clientStrings = [
     { s: 'Windows 10', r: /(Windows 10.0|Windows NT 10.0)/ },
