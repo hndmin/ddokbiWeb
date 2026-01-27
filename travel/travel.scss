@@ -1,6 +1,5 @@
 // @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
-
 // $pointColor: #a0d702;
 // $bgColor: #393939;
 // $bg2Color: #393939;
@@ -10,92 +9,99 @@
 // }
 
 .bg-dark {
-    // background-color: #272727 !important;
+  // background-color: #272727 !important;
 }
 
-
-body{
-    background-color: #e9ebee;
-    // color: #ffffff;
+body {
+  background-color: #e9ebee;
+  // color: #ffffff;
 }
 
-
-
-#Contents{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .container_pc{
-        max-width: 640px;
-        padding: 0;
-        .container_mo{
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img{
-                width: 100%;
-            }
-        }
+#Contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .container_pc {
+    max-width: 640px;
+    padding: 0;
+    .container_mo {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+      }
     }
+  }
 }
 
-#Action{
-    // opacity: 0;
-    bottom: -128px;
+#Action {
+  // opacity: 0;
+  bottom: -128px;
+  transition: 0.5s;
+  &.active {
+    bottom: 0;
     transition: 0.5s;
-    &.active{
-        bottom: 0;
-        transition: 0.5s;
-    }
+  }
 
-    position: fixed;
-    z-index: 100;
-    
+  position: fixed;
+  z-index: 100;
 
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1rem 1.5rem;
+  width: 100%;
+  gap: 10px; // 버튼 사이 간격 추가
+
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0)
+  );
+
+  a {
+    flex: 1;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 2.5rem 1rem 1.5rem;
-    width: 100%;
+    align-items: center;
 
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    color: white;
+    font-size: 1.25rem; // 버튼 2개 배치에 맞춰 폰트 사이즈 조절
+    font-weight: 500;
+    border-radius: 1rem;
 
-    a{
-        width: 100%;
-    }
-    .btn{
-        width: 100%;
+    padding: 1rem; // 패딩 조절
 
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 500;
-        border-radius: 1rem;
+    border: none;
+    // background-color: #A77C40;
+    background-image: linear-gradient(-45deg, #a77c40, #d1ab77);
+    box-shadow: (0px 2px 2px rgba(0, 0, 0, 0.25));
 
-        padding: 1rem 2rem;
-
-        border: none;
-        // background-color: #A77C40;
-        background-image: linear-gradient(-45deg, #A77C40, #D1AB77);
-        box-shadow: (0px 2px 2px rgba(0, 0, 0, 0.25));
-    }
+    // a 태그일 경우 밑줄 제거
+    text-decoration: none;
+  }
 }
 
+#List {
+  background-color: #ffffff;
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      text-align: center;
 
-#List{
-    background-color: #ffffff;
-    ul{
-        padding: 0;
-        li{
-            list-style: none;
-            text-align: center;
-
-            font-size: 2rem;
-            padding-bottom: 0.5rem;
-        }
+      font-size: 2rem;
+      padding-bottom: 0.5rem;
     }
+  }
 }
-
 
 // @media (min-width: 640px) {
 //     .container_pc {
@@ -125,75 +131,70 @@ body{
 //     }
 // }
 
-
-
-#youtube{
+#youtube {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 2rem;
+  .video-container {
+    position: relative;
     width: 100%;
-    text-align: center;
-    padding: 5rem 2rem;
-    .video-container{
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* 16:9 비율 */
-        height: 0;
-        overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 비율 */
+    height: 0;
+    overflow: hidden;
 
-        iframe{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
 
-            border-radius: 1rem;
-        }
+      border-radius: 1rem;
     }
+  }
 
+  background-color: #ffffff;
+  dl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    background-color: #ffffff;
-    dl{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    dd {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
 
-        dd{
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
+      padding: 0.5rem 2rem;
+      border-radius: 5rem;
 
-            padding: 0.5rem 2rem;
-            border-radius: 5rem;
-            
-
-            background-color: #8BC34A;
-            color: #ffffff;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
-        }
-        dt{
-            font-size: 300%;
-            line-height: 1.2;
-            font-weight: 700;
-            margin-bottom: 1rem;
-
-            span{
-                color: #7CB342;
-            }
-        }
+      background-color: #8bc34a;
+      color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
     }
+    dt {
+      font-size: 300%;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 1rem;
 
-    &.dark{
-        background-color: #0D3B10;
-        dl{
-            dd{
-
-            }
-            dt{
-                color: #ffffff;
-                span{
-                    color: #B3F400;
-                }
-            }
-        }
+      span {
+        color: #7cb342;
+      }
     }
+  }
+
+  &.dark {
+    background-color: #0d3b10;
+    dl {
+      dd {
+      }
+      dt {
+        color: #ffffff;
+        span {
+          color: #b3f400;
+        }
+      }
+    }
+  }
 }
