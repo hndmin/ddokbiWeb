@@ -3,94 +3,120 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-    
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
     <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
+
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    
+
     <!--------- OpenGraphProtocol -->
     <meta property="og:title" content="똑비" />
     <meta property="og:url" content="./" />
     <meta property="og:image" content=".//assets/img/ogp.jpg" />
     <meta
-          property="og:description"
-          content="급변하는 세상 속 앞서가는 당신의 일상을 똑비가 만들어드립니다. 똑부러지는 비서와 함께 당신의 소비 생활을 똑똑하게 만들어보세요."
+      property="og:description"
+      content="급변하는 세상 속 앞서가는 당신의 일상을 똑비가 만들어드립니다. 똑부러지는 비서와 함께 당신의 소비 생활을 똑똑하게 만들어보세요."
     />
 
     <link rel="stylesheet" href="./custom.css" />
 
     <link rel="stylesheet" href="./custom_prime_prev.css" />
-    
+
     <!-- Title -->
     <title>똑비</title>
 
-
     <style>
-
-      *{
-          font-family: 'Pretendard' !important;
+      * {
+        font-family: "Pretendard" !important;
       }
-      .memberProfile{
+      .memberProfile {
         max-width: 80px;
       }
-      #main3 .card .card-body{
+      #main3 .card .card-body {
         width: 100%;
         padding-right: 1rem !important;
       }
       @media (max-width: 360px) {
-        .memberProfile{
+        .memberProfile {
           max-width: 50px;
-      }
-      #main4 .infoArea .card-body {
-            max-width: 100%;
+        }
+        #main4 .infoArea .card-body {
+          max-width: 100%;
         }
       }
     </style>
   </head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDBWMP9MGX"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-RDBWMP9MGX"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-RDBWMP9MGX');
+    gtag("config", "G-RDBWMP9MGX");
   </script>
   <body>
-
     <!-- MODALS -->
-    
 
     <!-- NAVBAR -->
     <nav id="navBar" class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-    
         <!-- Brand -->
         <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/brand.png" class="navbar-brand-img" alt="...">
+          <img
+            src="./assets/img/brand.png"
+            class="navbar-brand-img"
+            alt="..."
+          />
         </a>
-    
+
         <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-    
           <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <i class="fe fe-x"></i>
           </button>
-    
+
           <!-- Navigation -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -113,40 +139,53 @@
             </li> -->
           </ul>
           <!-- E R A S E D -->
-    
+
           <!-- Button -->
           <!-- <a class="navbar-btn btn btn-sm btn-primary ms-auto" href="https://pf.kakao.com/_xhslVb/chat" target="_blank">
             똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
           </a> -->
-          <button onclick="useDdokbiMain()" class="navbar-btn btn btn-primary btn-sm btn- ms-auto" target="_blank">
-            똑비 바로가기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+          <button
+            onclick="useDdokbiMain()"
+            class="navbar-btn btn btn-primary btn-sm btn- ms-auto"
+            target="_blank"
+          >
+            똑비 바로가기
+            <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
           </button>
-    
         </div>
-    
       </div>
     </nav>
-    
-    
 
     <!-- WELCOME -->
-    <section id="main" class="pt-0 pt-md-0 pb-8 pb-md-0 jarallax imgBG" data-jarallax data-speed=".8">
+    <section
+      id="main"
+      class="pt-0 pt-md-0 pb-8 pb-md-0 jarallax imgBG"
+      data-jarallax
+      data-speed=".8"
+    >
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
-
             <!-- Image -->
-            <img src="assets/img/illustrations/illust.png" class="topImg img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
-
+            <img
+              src="assets/img/illustrations/illust.png"
+              class="topImg img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0"
+              alt="..."
+              data-aos="fade-up"
+              data-aos-delay="100"
+            />
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-
             <!-- Heading -->
             <h1 class="display-2 text-center text-md-start mb-7">
-              시니어 라이프의 <br>
-              소소한 니즈, <br>
+              시니어 라이프의 <br />
+              소소한 니즈, <br />
               <!-- <span class="text-primary">똑비에게</span> -->
-               <span class="text-success"><span data-typed='{"strings": ["똑똑한 비서", "똑비에게"]}'></span></span>
+              <span class="text-success"
+                ><span
+                  data-typed='{"strings": ["똑똑한 비서", "똑비에게"]}'
+                ></span
+              ></span>
             </h1>
 
             <!-- Text -->
@@ -161,21 +200,27 @@
               <!-- <a href="https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi" class="btn btn-primary shadow lift me-1" target="_blank">
                 똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
               </a> -->
-              <button onclick="useDdokbiMain()" class="btn btn-primary shadow lift me-1" target="_blank">
-                똑비 이용하기 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+              <button
+                onclick="useDdokbiMain()"
+                class="btn btn-primary shadow lift me-1"
+                target="_blank"
+              >
+                똑비 이용하기
+                <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
               </button>
               <!-- <a href="docs/index.html" class="btn btn-secondary lift">
                 Documentation
               </a> -->
             </div>
-
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </section>
 
     <!-- FEATURES -->
-<!--     
+    <!--     
     <section class="py-8 py-md-11 border-bottom">
       <div class="container">
         <div class="row">
@@ -227,15 +272,15 @@
         </div> 
       </div>
     </section> -->
-    
-
 
     <!-- ABOUT -->
-    <section id="main2" class="pt-11 pt-md-11 pb-11 pb-md-9 bg-gradient-light-white">
-      <div class="container"> 
+    <section
+      id="main2"
+      class="pt-11 pt-md-11 pb-11 pb-md-9 bg-gradient-light-white"
+    >
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center mb-10">
-
             <!-- Heading -->
             <h2 class="display-3">
               <!-- 💬 📞<br>📸 🎙<br><br> -->
@@ -244,246 +289,406 @@
 
             <!-- Text -->
             <p class="fs-lg text-muted">
-              급변하는 세상 속 앞서가는 당신의 일상을 똑비가 만들어드립니다. 똑부러지는 비서와 함께 당신의 소비 생활을 똑똑하게 만들어보세요.
+              급변하는 세상 속 앞서가는 당신의 일상을 똑비가 만들어드립니다.
+              똑부러지는 비서와 함께 당신의 소비 생활을 똑똑하게 만들어보세요.
             </p>
-
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
         <!----------------------------------------------------------------------------->
         <!----------------------------------------------------------------------------->
-        
+
         <!----------------------------------------------------------------------------->
         <!----------------------------------------------------------------------------->
-        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12">
+        <div
+          class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12"
+        >
           <div class="index col-12">
             <span class="badge badge-lg bg-primary">
               <span class="h5 text-uppercase fw-bold">01</span>
             </span>
           </div>
-          <div class="info col-12 col-md-6 order-md-2 order-2 lift" data-aos="fade-left">
-            
+          <div
+            class="info col-12 col-md-6 order-md-2 order-2 lift"
+            data-aos="fade-left"
+          >
             <!-- Heading -->
             <div class="heading row">
               <h2>
-                <span>🛒</span><p>구매를 합니다</p>
+                <span>🛒</span>
+                <p>구매를 합니다</p>
                 <!-- <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
               </h2>
-  
+
               <!-- Text -->
               <p class="fs-lg text-muted mb-6">
-                온라인 플랫폼은 많고, 회원가입이나 결제는 번거롭습니다. 똑비에게 말씀해 주세요. 요청 한 번으로 의류, 식료품 등 원하시는 물품을 받아 보실 수 있습니다.
+                온라인 플랫폼은 많고, 회원가입이나 결제는 번거롭습니다. 똑비에게
+                말씀해 주세요. 요청 한 번으로 의류, 식료품 등 원하시는 물품을
+                받아 보실 수 있습니다.
               </p>
             </div>
 
             <!-- List -->
             <div class="list row">
               <div class="col-12">
+                <input
+                  onclick="updateImg(0, 0)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio0"
+                  id="a1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn btn-outline-primary" for="a1"
+                  >📦&nbsp; 물품 구매</label
+                >
 
-                <input onclick="updateImg(0,0)" type="radio" class="btn-check" name="radio0" id="a1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="a1">📦&nbsp; 물품 구매</label>
+                <input
+                  onclick="updateImg(0, 1)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio0"
+                  id="a2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="a2"
+                  >🛵&nbsp; 음식 배달</label
+                >
 
-                <input onclick="updateImg(0,1)" type="radio" class="btn-check" name="radio0" id="a2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="a2">🛵&nbsp; 음식 배달</label>
+                <input
+                  onclick="updateImg(0, 2)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio0"
+                  id="a3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="a3"
+                  >📝&nbsp; 장보기</label
+                >
 
-                <input onclick="updateImg(0,2)" type="radio" class="btn-check" name="radio0" id="a3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="a3">📝&nbsp; 장보기</label>
-
-                <input onclick="updateImg(0,3)" type="radio" class="btn-check" name="radio0" id="a4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="a4">🎁&nbsp; 선물</label>
-
+                <input
+                  onclick="updateImg(0, 3)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio0"
+                  id="a4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="a4"
+                  >🎁&nbsp; 선물</label
+                >
               </div>
-            </div> <!-- / .row -->
-
+            </div>
+            <!-- / .row -->
           </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-1 order-1 mb-6" data-aos="fade-right">
-
+          <div
+            class="col-12 col-md-6 col-lg-5 order-md-1 order-1 mb-6"
+            data-aos="fade-right"
+          >
             <!-- Card -->
             <!-- card screenCard shadow-light-lg lift lift-lg -->
             <div id="card0" class="cards">
-
               <!-- Image -->
-              <img id="screen0" src="" alt="..." class="card-img-top">
-
+              <img id="screen0" src="" alt="..." class="card-img-top" />
             </div>
-
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
         <!----------------------------------------------------------------------------->
-        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12">
+        <div
+          class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12"
+        >
           <div class="index col-12">
             <span class="badge badge-lg bg-primary">
               <span class="h5 text-uppercase fw-bold">02</span>
             </span>
           </div>
-          <div class="info col-12 col-md-6 order-md-1 order-2 lift" data-aos="fade-right">
-
+          <div
+            class="info col-12 col-md-6 order-md-1 order-2 lift"
+            data-aos="fade-right"
+          >
             <!-- Heading -->
             <div class="heading row">
               <h2>
-                <span>🎫</span><p>예약 & 예매를 합니다</p>
+                <span>🎫</span>
+                <p>예약 & 예매를 합니다</p>
                 <!-- The most useful resource <br>
                 <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
               </h2>
 
               <!-- Text -->
               <p class="fs-lg text-muted mb-6">
-                까먹기 쉬운 예매일, 일찍 없어지는 좌석, 어려운 가격 비교 역시 걱정 마세요. 똑비에게 요청하여, 원하시는 날짜와 시간에 원하시는 서비스를 누리세요.
+                까먹기 쉬운 예매일, 일찍 없어지는 좌석, 어려운 가격 비교 역시
+                걱정 마세요. 똑비에게 요청하여, 원하시는 날짜와 시간에 원하시는
+                서비스를 누리세요.
               </p>
             </div>
             <!-- List -->
             <div class="list row">
               <div class="col-12">
+                <input
+                  onclick="updateImg(1, 0)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio1"
+                  id="b1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn btn-outline-primary" for="b1"
+                  >✈️&nbsp; 비행기, 기차, 버스 탑승권 예매</label
+                >
 
+                <input
+                  onclick="updateImg(1, 1)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio1"
+                  id="b2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="b2"
+                  >🚕&nbsp; 택시, 콜밴 호출</label
+                >
 
-                <input onclick="updateImg(1,0)" type="radio" class="btn-check" name="radio1" id="b1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="b1">✈️&nbsp; 비행기, 기차, 버스 탑승권 예매</label>
-                
+                <input
+                  onclick="updateImg(1, 2)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio1"
+                  id="b3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="b3"
+                  >🏨&nbsp; 숙소, 렌터카 예약</label
+                >
 
-                <input onclick="updateImg(1,1)" type="radio" class="btn-check" name="radio1" id="b2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="b2">🚕&nbsp; 택시, 콜밴 호출</label>
-
-                
-
-                <input onclick="updateImg(1,2)" type="radio" class="btn-check" name="radio1" id="b3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="b3">🏨&nbsp; 숙소, 렌터카 예약</label>
-
-                <input onclick="updateImg(1,3)" type="radio" class="btn-check" name="radio1" id="b4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="b4">🎤&nbsp; 공연, 전시, 스포츠 티켓 예매</label>
-                
-
+                <input
+                  onclick="updateImg(1, 3)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio1"
+                  id="b4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="b4"
+                  >🎤&nbsp; 공연, 전시, 스포츠 티켓 예매</label
+                >
               </div>
-            </div> <!-- / .row -->
-
+            </div>
+            <!-- / .row -->
           </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-2 order-1 mb-6" data-aos="fade-left">
-
+          <div
+            class="col-12 col-md-6 col-lg-5 order-md-2 order-1 mb-6"
+            data-aos="fade-left"
+          >
             <!-- Card -->
             <div id="card1" class="cards">
-
               <!-- Image -->
-              <img id="screen1" src="" alt="..." class="card-img-top">
-
+              <img id="screen1" src="" alt="..." class="card-img-top" />
             </div>
-
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
         <!----------------------------------------------------------------------------->
-        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12">
+        <div
+          class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-12"
+        >
           <div class="index col-12">
             <span class="badge badge-lg bg-primary">
               <span class="h5 text-uppercase fw-bold">03</span>
             </span>
           </div>
-          <div class="info col-12 col-md-6 order-md-2 order-2 lift" data-aos="fade-left">
-
+          <div
+            class="info col-12 col-md-6 order-md-2 order-2 lift"
+            data-aos="fade-left"
+          >
             <!-- Heading -->
             <div class="heading row">
               <h2>
-                <span>🥇</span><p>추천을 합니다</p>
+                <span>🥇</span>
+                <p>추천을 합니다</p>
                 <!-- The most useful resource <br>
                 <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
               </h2>
 
               <!-- Text -->
               <p class="fs-lg text-muted mb-6">
-                같은 제품이라도 선택지는 많습니다. 뭐가 좋은지 모르겠고, 찾아보기도 귀찮습니다. “요즘 전시회 어떤 게 있어요?” 대충 말씀해 주셔도 좋습니다. 똑비가 대신 고민하고 구매 및 예약/예매까지 해 드리니까요.
+                같은 제품이라도 선택지는 많습니다. 뭐가 좋은지 모르겠고,
+                찾아보기도 귀찮습니다. “요즘 전시회 어떤 게 있어요?” 대충 말씀해
+                주셔도 좋습니다. 똑비가 대신 고민하고 구매 및 예약/예매까지 해
+                드리니까요.
               </p>
             </div>
             <!-- List -->
             <div class="list row">
               <div class="col-12">
+                <input
+                  onclick="updateImg(2, 0)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio2"
+                  id="c1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn btn-outline-primary" for="c1"
+                  >🍽&nbsp; 맛집 추천</label
+                >
 
-                <input onclick="updateImg(2,0)" type="radio" class="btn-check" name="radio2" id="c1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="c1">🍽&nbsp; 맛집 추천</label>
+                <input
+                  onclick="updateImg(2, 1)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio2"
+                  id="c2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="c2"
+                  >☕️&nbsp; 카페 추천</label
+                >
 
-                <input onclick="updateImg(2,1)" type="radio" class="btn-check" name="radio2" id="c2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="c2">☕️&nbsp; 카페 추천</label>
+                <input
+                  onclick="updateImg(2, 2)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio2"
+                  id="c3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="c3"
+                  >🏝&nbsp; 여행지 추천</label
+                >
 
-                <input onclick="updateImg(2,2)" type="radio" class="btn-check" name="radio2" id="c3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="c3">🏝&nbsp; 여행지 추천</label>
-
-                <input onclick="updateImg(2,3)" type="radio" class="btn-check" name="radio2" id="c4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="c4">🛍&nbsp; 상품 추천</label>
-
+                <input
+                  onclick="updateImg(2, 3)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio2"
+                  id="c4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="c4"
+                  >🛍&nbsp; 상품 추천</label
+                >
               </div>
-            </div> <!-- / .row -->
-
+            </div>
+            <!-- / .row -->
           </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-1 order-1 mb-6" data-aos="fade-right">
-
+          <div
+            class="col-12 col-md-6 col-lg-5 order-md-1 order-1 mb-6"
+            data-aos="fade-right"
+          >
             <!-- Card -->
             <div id="card2" class="cards">
-
               <!-- Image -->
-              <img id="screen2" src="" alt="..." class="card-img-top">
-
+              <img id="screen2" src="" alt="..." class="card-img-top" />
             </div>
-
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
         <!----------------------------------------------------------------------------->
-        <div class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-6">
+        <div
+          class="HowToUse row deskTemp align-items-center justify-content-between mb-12 mb-md-6"
+        >
           <div class="index col-12">
             <span class="badge badge-lg bg-primary">
               <span class="h5 text-uppercase fw-bold">04</span>
             </span>
           </div>
-          <div class="info col-12 col-md-6 order-md-1 order-2 lift" data-aos="fade-right">
-
+          <div
+            class="info col-12 col-md-6 order-md-1 order-2 lift"
+            data-aos="fade-right"
+          >
             <!-- Heading -->
             <div class="heading row">
               <h2>
-                <span>🔎</span> <p>검색을 합니다</p>
+                <span>🔎</span>
+                <p>검색을 합니다</p>
                 <!-- The most useful resource <br>
                 <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span> -->
               </h2>
 
               <!-- Text -->
               <p class="fs-lg text-muted mb-6">
-                구매 혹은 예약/예매가 아니어도 좋습니다. 일상의 소소한 궁금증도 부담 없이 물어 보세요. 똑비가 이해하시기 쉽게 정리해 드립니다.
+                구매 혹은 예약/예매가 아니어도 좋습니다. 일상의 소소한 궁금증도
+                부담 없이 물어 보세요. 똑비가 이해하시기 쉽게 정리해 드립니다.
               </p>
-
             </div>
             <!-- List -->
             <div class="list row">
               <div class="col-12">
+                <input
+                  onclick="updateImg(3, 0)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio3"
+                  id="d1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn btn-outline-primary" for="d1"
+                  >👀&nbsp; 취미 및 관심사</label
+                >
 
-                <input onclick="updateImg(3,0)" type="radio" class="btn-check" name="radio3" id="d1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="d1">👀&nbsp; 취미 및 관심사</label>
+                <input
+                  onclick="updateImg(3, 1)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio3"
+                  id="d2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="d2"
+                  >🚶🏻‍♂️&nbsp; 생활</label
+                >
 
-                <input onclick="updateImg(3,1)" type="radio" class="btn-check" name="radio3" id="d2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="d2">🚶🏻‍♂️&nbsp; 생활</label>
+                <input
+                  onclick="updateImg(3, 2)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio3"
+                  id="d3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="d3">
+                  ⚖️&nbsp; 행정 세무 법률</label
+                >
 
-                <input onclick="updateImg(3,2)" type="radio" class="btn-check" name="radio3" id="d3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="d3"> ⚖️&nbsp; 행정 세무 법률</label>
-
-                <input onclick="updateImg(3,3)" type="radio" class="btn-check" name="radio3" id="d4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="d4">🏥&nbsp; 의료시설 & 의료</label>
-
+                <input
+                  onclick="updateImg(3, 3)"
+                  type="radio"
+                  class="btn-check"
+                  name="radio3"
+                  id="d4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="d4"
+                  >🏥&nbsp; 의료시설 & 의료</label
+                >
               </div>
-            </div> <!-- / .row -->
-
+            </div>
+            <!-- / .row -->
           </div>
-          <div class="col-12 col-md-6 col-lg-5 order-md-2 order-1 mb-6" data-aos="fade-left">
-
+          <div
+            class="col-12 col-md-6 col-lg-5 order-md-2 order-1 mb-6"
+            data-aos="fade-left"
+          >
             <!-- Card -->
             <div id="card3" class="cards">
-
               <!-- Image -->
-              <img id="screen3" src="" alt="..." class="card-img-top">
-
+              <img id="screen3" src="" alt="..." class="card-img-top" />
             </div>
-
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
         <!----------------------------------------------------------------------------->
         <!----------------------------------------------------------------------------->
-      </div> <!-- / .container -->
+      </div>
+      <!-- / .container -->
     </section>
-
-
-
-
 
     <!--
     <section id="main3" class=" py-10 py-md-14">
@@ -841,148 +1046,154 @@
     </section>
     -->
 
-
-<!-- ABOUT -->
-<section id="sponsor" class="pt-11 pt-md-11 pb-11 pb-md-9 bg-white">
-  <div class="container"> 
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8 text-center mb-5">
-
-        <!-- Heading -->
-        <h2 class="display-3">
-          <!-- 💬 📞<br>📸 🎙<br><br> -->
-          파트너사
-        </h2>
-
-        <!-- Text -->
-        <p class="fs-lg text-muted">
-          시니어의 액티브한 라이프 스타일<br>
-          함께 만들어나갑니다.
-        </p>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
-
-          <!-- Card -->
-          <a href="https://www.mashupangels.com/" target="_blank" class="card lift h-100 bg-white rounded-3">
-            <div class="card-body p-5 pb-0 my-auto">
-
-              <!-- Image -->
-              <img class="img-fluid" src="assets/img/sponsor/0.png" alt="..." style="">
-
-            </div>
-            <div class="card-footer p-5">
-
-              <!-- Heading -->
-              <h3 class="">
-                <p>
-                  매쉬업엔젤스
-                </p>
-              </h3>
-            </div>
-          </a>
-
-        </div>
-        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
-
-          <!-- Card -->
-          <a href="https://secretary.inhatc.ac.kr/secretary/index.do" target="_blank" class="card lift h-100 bg-white rounded-3">
-            <div class="card-body p-5 pb-0 my-auto">
-
-              <!-- Image -->
-              <img class="img-fluid" src="assets/img/sponsor/1.png" alt="..." style="">
-
-            </div>
-            <div class="card-footer p-5">
-
-              <!-- Heading -->
-              <h3 class="">
-                <p>
-                  인하공업전문대학교<br>
-                  비서학과
-                </p>
-              </h3>
-            </div>
-          </a>
-
-        </div>
-        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
-
-          <!-- Card -->
-          <a href="http://sva.or.kr/" target="_blank" class="card lift h-100 bg-white rounded-3">
-            <div class="card-body p-5 pb-0 my-auto">
-
-              <!-- Image -->
-              <img class="img-fluid" src="assets/img/sponsor/2.png" alt="..." style="">
-
-            </div>
-            <div class="card-footer p-5">
-
-              <!-- Heading -->
-              <h3 class="">
-                <p>
-                  시니어벤처협회
-                </p>
-              </h3>
-            </div>
-          </a>
-
-        </div>
-        <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
-
-          <!-- Card -->
-          <a href="https://cafe.naver.com/sbckorea" target="_blank" class="card lift h-100 bg-white rounded-3">
-            <div class="card-body p-5 pb-0 my-auto">
-
-              <!-- Image -->
-              <img class="img-fluid" src="assets/img/sponsor/3.png" alt="..." style="">
-
-            </div>
-            <div class="card-footer p-5">
-
-              <!-- Heading -->
-              <h3 class="">
-                <p>
-                  사단법인 코리안시니어즈
-                </p>
-              </h3>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </div> <!-- / .row -->
-    <!----------------------------------------------------------------------------->
-    <!----------------------------------------------------------------------------->
-    
-
-  </div> <!-- / .container -->
-</section>
-
-    <!-- TESTIMONIALS -->
-    <section id="main4"  class="pt-10 pt-md-12 bg-gradient-light-white">
+    <!-- ABOUT -->
+    <section id="sponsor" class="pt-11 pt-md-11 pb-11 pb-md-9 bg-white">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
+          <div class="col-12 col-md-10 col-lg-8 text-center mb-5">
             <!-- Heading -->
             <h2 class="display-3">
-              똑비와 함께한 회원님들 후기
+              <!-- 💬 📞<br>📸 🎙<br><br> -->
+              파트너사
             </h2>
 
             <!-- Text -->
-            <p class="fs-lg text-muted mb-7 mb-md-9">
-              똑비를 통해 편리하고 스마트한 삶을
-              경험한 <br>회원님들의 후기입니다.
+            <p class="fs-lg text-muted">
+              시니어의 액티브한 라이프 스타일<br />
+              함께 만들어나갑니다.
             </p>
-
           </div>
-        </div> <!-- / .row -->
+          <div class="row justify-content-center">
+            <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+              <!-- Card -->
+              <a
+                href="https://www.mashupangels.com/"
+                target="_blank"
+                class="card lift h-100 bg-white rounded-3"
+              >
+                <div class="card-body p-5 pb-0 my-auto">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid"
+                    src="assets/img/sponsor/0.png"
+                    alt="..."
+                    style=""
+                  />
+                </div>
+                <div class="card-footer p-5">
+                  <!-- Heading -->
+                  <h3 class="">
+                    <p>매쉬업엔젤스</p>
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+              <!-- Card -->
+              <a
+                href="https://secretary.inhatc.ac.kr/secretary/index.do"
+                target="_blank"
+                class="card lift h-100 bg-white rounded-3"
+              >
+                <div class="card-body p-5 pb-0 my-auto">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid"
+                    src="assets/img/sponsor/1.png"
+                    alt="..."
+                    style=""
+                  />
+                </div>
+                <div class="card-footer p-5">
+                  <!-- Heading -->
+                  <h3 class="">
+                    <p>
+                      인하공업전문대학교<br />
+                      비서학과
+                    </p>
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+              <!-- Card -->
+              <a
+                href="http://sva.or.kr/"
+                target="_blank"
+                class="card lift h-100 bg-white rounded-3"
+              >
+                <div class="card-body p-5 pb-0 my-auto">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid"
+                    src="assets/img/sponsor/2.png"
+                    alt="..."
+                    style=""
+                  />
+                </div>
+                <div class="card-footer p-5">
+                  <!-- Heading -->
+                  <h3 class="">
+                    <p>시니어벤처협회</p>
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 mt-4 mt-md-7">
+              <!-- Card -->
+              <a
+                href="https://cafe.naver.com/sbckorea"
+                target="_blank"
+                class="card lift h-100 bg-white rounded-3"
+              >
+                <div class="card-body p-5 pb-0 my-auto">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid"
+                    src="assets/img/sponsor/3.png"
+                    alt="..."
+                    style=""
+                  />
+                </div>
+                <div class="card-footer p-5">
+                  <!-- Heading -->
+                  <h3 class="">
+                    <p>사단법인 코리안시니어즈</p>
+                  </h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+        <!----------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="main4" class="pt-10 pt-md-12 bg-gradient-light-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Heading -->
+            <h2 class="display-3">똑비와 함께한 회원님들 후기</h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-7 mb-md-9">
+              똑비를 통해 편리하고 스마트한 삶을 경험한 <br />회원님들의
+              후기입니다.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
         <div class="row">
           <div class="col-12">
-
             <!-- Card -->
-            <div class=" sliderCard card card-row shadow-light-lg mb-6 h-100 lift">
+            <div
+              class="sliderCard card card-row shadow-light-lg mb-6 h-100 lift"
+            >
               <div class="row gx-0 h-100">
                 <!-- <div class="col-12 col-md-6 h-100">
 
@@ -1014,30 +1225,31 @@
 
                 </div> -->
                 <div class="infoArea col-12 col-md-12 position-md-static">
-
                   <!-- Slider -->
-                  <div class="position-md-static h-100" data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}' id="blogSlider">
+                  <div
+                    class="position-md-static h-100"
+                    data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}'
+                    id="blogSlider"
+                  >
                     <div class="w-100">
-
                       <!-- Body -->
                       <div class="card-body">
                         <blockquote class="blockquote text-center mb-0">
-
                           <!-- Brand -->
                           <div class="row justify-content-center mb-5 mb-md-7">
                             <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
                               <!-- Logo -->
                               <!-- <div class="img-fluid" style="color: #FF5A5F;">
                                 <img src="assets/img/howTo/i1.png" alt="..." class="">
                               </div> -->
-
                             </div>
-                          </div> <!-- / .row -->
+                          </div>
+                          <!-- / .row -->
 
                           <!-- Text -->
                           <p class="mb-5 mb-md-7">
-                            “우리 아들들도 다 찾아봤는데 똑비가 가장 저렴한 걸 찾아주네요. 싸게 살 수 있게 해줘서 고마워요” 
+                            “우리 아들들도 다 찾아봤는데 똑비가 가장 저렴한 걸
+                            찾아주네요. 싸게 살 수 있게 해줘서 고마워요”
                           </p>
 
                           <!-- Footer -->
@@ -1046,29 +1258,27 @@
                           </footer>
                         </blockquote>
                       </div>
-
                     </div>
                     <div class="w-100">
-
                       <!-- Body -->
                       <div class="card-body">
                         <blockquote class="blockquote text-center mb-0">
-
                           <!-- Brand -->
                           <div class="row justify-content-center mb-5 mb-md-7">
                             <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
                               <!-- Logo -->
                               <!-- <div class="img-fluid" style="color: #FF5A5F;">
                                 <img src="assets/img/howTo/i1.png" alt="..." class="">
                               </div> -->
-
                             </div>
-                          </div> <!-- / .row -->
+                          </div>
+                          <!-- / .row -->
 
                           <!-- Text -->
                           <p class="mb-5 mb-md-7">
-                            “똑비의 따뜻한 출/퇴근 인사에 하루 시작과 마무리가 든든해요. 진짜 이제 똑비 없는 하루가 상상이 안되네요~”
+                            “똑비의 따뜻한 출/퇴근 인사에 하루 시작과 마무리가
+                            든든해요. 진짜 이제 똑비 없는 하루가 상상이
+                            안되네요~”
                           </p>
 
                           <!-- Footer -->
@@ -1077,29 +1287,28 @@
                           </footer>
                         </blockquote>
                       </div>
-
                     </div>
                     <div class="w-100">
-
                       <!-- Body -->
                       <div class="card-body">
                         <blockquote class="blockquote text-center mb-0">
-
                           <!-- Brand -->
                           <div class="row justify-content-center mb-5 mb-md-7">
                             <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
                               <!-- Logo -->
                               <!-- <div class="img-fluid" style="color: #FF5A5F;">
                                 <img src="assets/img/howTo/i1.png" alt="..." class="">
                               </div> -->
-
                             </div>
-                          </div> <!-- / .row -->
+                          </div>
+                          <!-- / .row -->
 
                           <!-- Text -->
                           <p class="mb-5 mb-md-7">
-                            쇼핑이랑 예약 할 때 매번 회원가입과 결제할 때 너무 복잡해 포기하기도 했는데, 이제 똑비가 있으니 일상이 편해졌어요. 시간도 아껴주니 제 시간이 더 많아진 느낌이에요!
+                            쇼핑이랑 예약 할 때 매번 회원가입과 결제할 때 너무
+                            복잡해 포기하기도 했는데, 이제 똑비가 있으니 일상이
+                            편해졌어요. 시간도 아껴주니 제 시간이 더 많아진
+                            느낌이에요!
                           </p>
 
                           <!-- Footer -->
@@ -1108,29 +1317,26 @@
                           </footer>
                         </blockquote>
                       </div>
-
                     </div>
                     <div class="w-100">
-
                       <!-- Body -->
                       <div class="card-body">
                         <blockquote class="blockquote text-center mb-0">
-
                           <!-- Brand -->
                           <div class="row justify-content-center mb-5 mb-md-7">
                             <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
                               <!-- Logo -->
                               <!-- <div class="img-fluid" style="color: #FF5A5F;">
                                 <img src="assets/img/howTo/i1.png" alt="..." class="">
                               </div> -->
-
                             </div>
-                          </div> <!-- / .row -->
+                          </div>
+                          <!-- / .row -->
 
                           <!-- Text -->
                           <p class="mb-5 mb-md-7">
-                            “자식/남편한테 부탁안해도 된다는 생각에 진짜 평생 똑비만 의지하면서 살 수 있겠다 생각이 들어요.”
+                            “자식/남편한테 부탁안해도 된다는 생각에 진짜 평생
+                            똑비만 의지하면서 살 수 있겠다 생각이 들어요.”
                           </p>
 
                           <!-- Footer -->
@@ -1139,29 +1345,27 @@
                           </footer>
                         </blockquote>
                       </div>
-
                     </div>
                     <div class="w-100">
-
                       <!-- Body -->
                       <div class="card-body">
                         <blockquote class="blockquote text-center mb-0">
-
                           <!-- Brand -->
                           <div class="row justify-content-center mb-5 mb-md-7">
                             <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
                               <!-- Logo -->
                               <!-- <div class="img-fluid" style="color: #FF5A5F;">
                                 <img src="assets/img/howTo/i1.png" alt="..." class="">
                               </div> -->
-
                             </div>
-                          </div> <!-- / .row -->
+                          </div>
+                          <!-- / .row -->
 
                           <!-- Text -->
                           <p class="mb-5 mb-md-7">
-                            “사고싶은거 인터넷으로 사본적도 없는데, 똑비 덕분에 처음으로 사봤어요. 이젠 말만하면 해주니까 생필품 다 똑비 시키네요”
+                            “사고싶은거 인터넷으로 사본적도 없는데, 똑비 덕분에
+                            처음으로 사봤어요. 이젠 말만하면 해주니까 생필품 다
+                            똑비 시키네요”
                           </p>
 
                           <!-- Footer -->
@@ -1170,26 +1374,35 @@
                           </footer>
                         </blockquote>
                       </div>
-
                     </div>
                   </div>
-
                 </div>
-              </div> <!-- / .row -->
+              </div>
+              <!-- / .row -->
             </div>
-
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </section>
 
     <!-- SHAPE -->
     <div class="position-relative mt-n15">
       <div class="shape shape-bottom shape-fluid-x text-dark">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+        <svg
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </div>
 
-    
     <!-- FAQ -->
     <section id="main5" class="pt-15 bg-dark">
       <div class="container pt-8 pt-md-11">
@@ -1201,42 +1414,33 @@
             </span>
           </div>
           <div class="col-12 col-md-6">
-
             <!-- Item -->
             <div class="d-flex">
-
               <!-- Badge -->
               <div class="badge badge-lg badge-rounded-circle bg-success">
                 <span>1</span>
               </div>
 
               <div class="ms-5">
-
                 <!-- Heading -->
-                <h4 class="text-white">
-                  회원가입은 어떻게 하나요?
-                </h4>
+                <h4 class="text-white">회원가입은 어떻게 하나요?</h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  구글 플레이스토어에서 “똑비”를 검색한 후, 똑비 어플리케이션을 설치해주세요.
-그 후 안내에 따라 회원가입을 진행하시면 됩니다.
+                  구글 플레이스토어에서 “똑비”를 검색한 후, 똑비 어플리케이션을
+                  설치해주세요. 그 후 안내에 따라 회원가입을 진행하시면 됩니다.
                 </p>
-
               </div>
-
             </div>
 
             <!-- Item -->
             <div class="d-flex">
-
               <!-- Badge -->
               <div class="badge badge-lg badge-rounded-circle bg-success">
                 <span>2</span>
               </div>
 
               <div class="ms-5">
-
                 <!-- Heading -->
                 <h4 class="text-white">
                   지인에게 추천해주고 싶은데 어떻게 하나요?
@@ -1244,67 +1448,56 @@
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-0">
-                  똑비에게 초대장을 보내달라고 한 뒤, 받은 초대장을 카카오톡 혹은 문자로 전달하시면 됩니다.
+                  똑비에게 초대장을 보내달라고 한 뒤, 받은 초대장을 카카오톡
+                  혹은 문자로 전달하시면 됩니다.
                 </p>
-
               </div>
-
             </div>
-
           </div>
           <div class="col-12 col-md-6">
-
             <!-- Item -->
             <div class="d-flex">
-
               <!-- Badge -->
               <div class="badge badge-lg badge-rounded-circle bg-success">
                 <span>3</span>
               </div>
 
               <div class="ms-5">
-
                 <!-- Heading -->
-                <h4 class="text-white">
-                  결제는 어떻게 하나요?
-                </h4>
+                <h4 class="text-white">결제는 어떻게 하나요?</h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  구매, 예매 등 결제가 발생할 시, 무통장입금과 카드로 결제 가능합니다.
+                  구매, 예매 등 결제가 발생할 시, 무통장입금과 카드로 결제
+                  가능합니다.
                 </p>
-
               </div>
-
             </div>
 
             <!-- Item -->
             <div class="d-flex">
-
               <!-- Badge -->
               <div class="badge badge-lg badge-rounded-circle bg-success">
                 <span>4</span>
               </div>
 
               <div class="ms-5">
-
                 <!-- Heading -->
-                <h4 class="text-white">
-                  주말에도 근무하나요?
-                </h4>
+                <h4 class="text-white">주말에도 근무하나요?</h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-0">
-                  똑비는 현재 평일 오전 9시부터 오후 6시까지 근무하고 있습니다. 주말/휴일 중 주신 요청은 업무가 시작되자마자 빠르게 답변드립니다.
+                  똑비는 현재 평일 오전 9시부터 오후 6시까지 근무하고 있습니다.
+                  주말/휴일 중 주신 요청은 업무가 시작되자마자 빠르게
+                  답변드립니다.
                 </p>
-
               </div>
-
             </div>
-
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </section>
 
     <!-- CTA -->
@@ -1312,16 +1505,13 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center mb-14 mt-8">
-
             <!-- Badge -->
             <span class="badge rounded-pill bg-gray-700-soft mb-4">
               <span class="h6 fw-bold text-uppercase">Get started</span>
             </span>
 
             <!-- Heading -->
-            <h1 class="display-4 text-white mb-7">
-              바로 똑비를 만나러 오세요
-            </h1>
+            <h1 class="display-4 text-white mb-7">바로 똑비를 만나러 오세요</h1>
 
             <!-- Text -->
             <!-- <p class="fs-lg text-muted mb-6 mb-md-8">
@@ -1333,25 +1523,33 @@
               똑비 바로 이용하기
               <i class="fe fe-arrow-right"></i>
             </a> -->
-            <button onclick="useDdokbiMain()" target="_blank" class="btn btn-success lift">
+            <button
+              onclick="useDdokbiMain()"
+              target="_blank"
+              class="btn btn-success lift"
+            >
               똑비 바로 이용하기
               <i class="fe fe-arrow-right"></i>
             </button>
-            <a href="mailto:info@rabbitoad.com" target="_blank" class="btn btn-success lift">
+            <a
+              href="mailto:info@rabbitoad.com"
+              target="_blank"
+              class="btn btn-success lift"
+            >
               비즈니스 제휴 문의
               <i class="fe fe-arrow-right"></i>
             </a>
-
           </div>
           <div class="copyright col-12">
             <p class="text-white">© 2024 토끼와두꺼비. All rights reserved.</p>
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </section>
 
     <!-- SHAPE -->
-
 
     <!-- FOOTER -->
     <!-- FOOTER -->
@@ -1359,21 +1557,21 @@
       <div class="container">
         <div class="row">
           <div class="col-6 col-md-4 col-lg-2">
-            <img src="./assets/img/brand.png" alt="..." class="footer-brand img-fluid mb-2">
+            <img
+              src="./assets/img/brand.png"
+              alt="..."
+              class="footer-brand img-fluid mb-2"
+            />
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <!-- List -->
             <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
-                <h6 class="fw-bold text-uppercase text-gray-700">
-                  회사명
-                </h6>
+                <h6 class="fw-bold text-uppercase text-gray-700">회사명</h6>
                 <h6 class="text-reset">주식회사 토끼와 두꺼비</h6>
               </li>
               <li class="mb-3">
-                <h6 class="fw-bold text-uppercase text-gray-700">
-                  대표자
-                </h6>
+                <h6 class="fw-bold text-uppercase text-gray-700">대표자</h6>
                 <h6 class="text-reset">함동수</h6>
               </li>
               <li class="mb-3">
@@ -1383,77 +1581,54 @@
                 <h6 class="text-reset">402-88-02634</h6>
               </li>
             </ul>
-    
           </div>
-          <div class="col-6 col-md-4 col-lg-2"> 
+          <div class="col-6 col-md-4 col-lg-2">
             <!-- List -->
             <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
-                <h6 class="fw-bold text-uppercase text-gray-700">
-                  주소
+                <h6 class="fw-bold text-uppercase text-gray-700">주소</h6>
+                <h6 class="text-reset">
+                  서울특별시 서대문구 경기대로 11길 26-6, 우진빌딩
                 </h6>
-                <h6 class="text-reset">서울특별시 강남구 테헤란로 217, 603호(오렌지플래닛)</h6>
               </li>
               <li class="mb-3">
-                <h6 class="fw-bold text-uppercase text-gray-700">
-                  전화번호
-                </h6>
+                <h6 class="fw-bold text-uppercase text-gray-700">전화번호</h6>
                 <h6 class="text-reset">02-392-0530</h6>
               </li>
               <li class="mb-3">
-                <h6 class="fw-bold text-uppercase text-gray-700">
-                  이메일
-                </h6>
+                <h6 class="fw-bold text-uppercase text-gray-700">이메일</h6>
                 <h6 class="text-reset">info@rabbitoad.com</h6>
               </li>
             </ul>
-    
           </div>
           <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-    
             <!-- Heading -->
-            <h6 class="fw-bold text-uppercase text-gray-700">
-              메뉴
-            </h6>
-    
+            <h6 class="fw-bold text-uppercase text-gray-700">메뉴</h6>
+
             <!-- List -->
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
-                <a href="#main2" class="text-reset">
-                  서비스
-                </a>
+                <a href="#main2" class="text-reset"> 서비스 </a>
               </li>
               <li class="mb-3">
-                <a href="#main3" class="text-reset">
-                  팀원
-                </a>
+                <a href="#main3" class="text-reset"> 팀원 </a>
               </li>
               <li class="mb-3">
-                <a href="#main4" class="text-reset">
-                  후기
-                </a>
+                <a href="#main4" class="text-reset"> 후기 </a>
               </li>
               <li class="mb-3">
-                <a href="#bottom" class="text-reset">
-                  제휴 및 문의
-                </a>
+                <a href="#bottom" class="text-reset"> 제휴 및 문의 </a>
               </li>
             </ul>
-    
           </div>
           <div class="col-6 col-md-4 col-lg-2">
-    
             <!-- Heading -->
-            <h6 class="fw-bold text-uppercase text-gray-700">
-              똑비
-            </h6>
-    
+            <h6 class="fw-bold text-uppercase text-gray-700">똑비</h6>
+
             <!-- List -->
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
-                <a href="/signup" class="text-reset">
-                  회원가입
-                </a>
+                <a href="/signup" class="text-reset"> 회원가입 </a>
               </li>
               <!-- <li class="mb-3">
                 <a href="https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi" class="text-reset">
@@ -1461,41 +1636,48 @@
                 </a>
               </li> -->
               <li class="mb-3">
-                <a onclick="useDdokbiMain()"  class="text-reset">
+                <a onclick="useDdokbiMain()" class="text-reset">
                   똑비 이용하기
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://rabbitoad.github.io/policies/ddokbi/privacy_policy.html" class="text-reset" target="_blank">
+                <a
+                  href="https://rabbitoad.github.io/policies/ddokbi/privacy_policy.html"
+                  class="text-reset"
+                  target="_blank"
+                >
                   개인정보 처리방침
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://rabbitoad.github.io/policies/ddokbi/service.html" class="text-reset" target="_blank">
+                <a
+                  href="https://rabbitoad.github.io/policies/ddokbi/service.html"
+                  class="text-reset"
+                  target="_blank"
+                >
                   서비스 이용약관
                 </a>
               </li>
             </ul>
-    
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
     </footer>
 
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
-    
+
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
 
     <!-- import click func -->
     <script src="./assets/js/functions.js"></script>
-
-
 
     <script type="text/javascript">
       // function useDdokbiMain() {
@@ -1503,63 +1685,53 @@
       //   window.open("https://ddokbi.app.link/kCMOt2qkyPb", "_blank");
       // }
 
-
-
-
       //const func = require('../js/user.js');
       //import{checkRadioA} from '../js/user.js';
 
       // SCREEN SIZE DETECTION ////////////////////////////////////////////////////////
       var screenWidth = window.innerWidth;
       var screenMode = 0; // Desktop: 0  Mobile: 1
-      function screenSizeDetect(){
+      function screenSizeDetect() {
         //768px
         screenWidth = window.innerWidth;
-        if(screenWidth < 768){
-            //console.log("mobile!");
-            screenMode = 1;
-        }else{
-            //console.log("desktop!");
-            screenMode = 0;
+        if (screenWidth < 768) {
+          //console.log("mobile!");
+          screenMode = 1;
+        } else {
+          //console.log("desktop!");
+          screenMode = 0;
         }
       }
-      function applyTempSetting(){
-        if(screenMode == 1){
-            //console.log("mobile!");
-            
-
-        }else{
-            //console.log("desktop!");
-
+      function applyTempSetting() {
+        if (screenMode == 1) {
+          //console.log("mobile!");
+        } else {
+          //console.log("desktop!");
         }
       }
 
-
-
-      function check(){
-          console.log("checkcheck~");
+      function check() {
+        console.log("checkcheck~");
       }
 
       // IMAGE UPDATE ////////////////////////////////////////////////////////
-      function updateImg(listIndex, btnIndex){
-          console.log(listIndex + " , "  + btnIndex);
+      function updateImg(listIndex, btnIndex) {
+        console.log(listIndex + " , " + btnIndex);
 
-          var screenState;
-          var fileType;
-          if (screenMode == 0){
-              screenState = 'desktop';
-              fileType = 'png';
-          }else{
-              screenState = 'mobile';
-              fileType = 'png';
-          }
-          document.getElementById("screen" + listIndex).src = './assets/img/screen/' + listIndex + '/' + + btnIndex + '.' + fileType;
+        var screenState;
+        var fileType;
+        if (screenMode == 0) {
+          screenState = "desktop";
+          fileType = "png";
+        } else {
+          screenState = "mobile";
+          fileType = "png";
+        }
+        document.getElementById("screen" + listIndex).src =
+          "./assets/img/screen/" + listIndex + "/" + +btnIndex + "." + fileType;
       }
 
-
-
-
-      window.onload = function(){
+      window.onload = function () {
         screenSizeDetect();
 
         var tempList = [4];
@@ -1569,25 +1741,25 @@
 
           for (var j = 3; j > -1; j--) {
             //console.log("worked");
-            tempList[i].getElementsByClassName("btn-check")[j].classList.add("btn" + j);
+            tempList[i]
+              .getElementsByClassName("btn-check")
+              [j].classList.add("btn" + j);
 
             // add click  Event
-            tempList[i].getElementsByClassName("btn")[j].setAttribute("onclick",updateImg(i,j));
+            tempList[i]
+              .getElementsByClassName("btn")
+              [j].setAttribute("onclick", updateImg(i, j));
             //tempList[i].getElementsByClassName("btn")[j].onclick = updateImg(i,j);
             //tempList[i].getElementsByClassName("btn-check")[j]/addEventListener('click', updateImg(i,j));
             //tempList[i].getElementsByClassName("btn-check")[j].onclick = function(){updateImg(i,j)};
             //tempList[i].getElementsByClassName("btn-check")[j].addEventListener('click', updateImg(i, j));
-
-
-
           }
         }
-      }
+      };
       function live() {
         screenSizeDetect();
       }
       setInterval(live, 100);
     </script>
-    
   </body>
 </html>
