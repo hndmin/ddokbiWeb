@@ -25,7 +25,7 @@
 
     <!-- OpenGraphProtocol -->
     <meta property="og:title" content="똑비, 하동/구례 벚꽃 당일치기" />
-    <meta property="og:url" content="../travel/20260304_hadong_ab.html/" />
+    <meta property="og:url" content="../travel/20260304_hadong_ab_2.html/" />
     <meta property="og:image" content="../assets/img/ogp.jpg" />
     <meta property="og:description" content="똑비, 하동/구례 벚꽃 당일치기!" />
 
@@ -104,6 +104,7 @@
         // console.log('Current scroll position:', scrollPosition);
       });
     </script>
+
     <script type="text/javascript">
       (function (w, d, a) {
         w.__beusablerumclient__ = {
@@ -128,22 +129,30 @@
         var storageKey = "20260304_hadong_ab_q";
 
         var stored = localStorage.getItem(storageKey);
+        var hasStored = allowed.indexOf(stored) !== -1;
+        var hasValidQ = allowed.indexOf(q) !== -1;
 
-        if (allowed.indexOf(stored) !== -1 && q !== stored) {
-          var forcedUrl =
-            window.location.pathname + "?q=" + encodeURIComponent(stored);
-          window.location.replace(forcedUrl);
+        if (!q) {
+          var pickMissing = hasStored
+            ? stored
+            : allowed[Math.floor(Math.random() * allowed.length)];
+          window.location.href =
+            window.location.pathname + "?q=" + encodeURIComponent(pickMissing);
           return;
         }
 
-        if (allowed.indexOf(q) === -1) {
-          var pick =
-            allowed.indexOf(stored) !== -1
-              ? stored
-              : allowed[Math.floor(Math.random() * allowed.length)];
-          var nextUrl =
-            window.location.pathname + "?q=" + encodeURIComponent(pick);
-          window.location.replace(nextUrl);
+        if (hasStored && q !== stored) {
+          window.location.href =
+            window.location.pathname + "?q=" + encodeURIComponent(stored);
+          return;
+        }
+
+        if (!hasValidQ) {
+          var pickInvalid = hasStored
+            ? stored
+            : allowed[Math.floor(Math.random() * allowed.length)];
+          window.location.href =
+            window.location.pathname + "?q=" + encodeURIComponent(pickInvalid);
           return;
         }
 
