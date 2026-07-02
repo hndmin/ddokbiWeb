@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Map CSS -->
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!--------- OpenGraphProtocol -->
+    <meta property="og:title" content="똑비" />
+    <meta property="og:url" content="./" />
+    <meta property="og:image" content=".//assets/img/ogp.jpg" />
+    <meta
+      property="og:description"
+      content="급변하는 세상 속 앞서가는 당신의 일상을 똑비가 만들어드립니다."
+    />
+
+    <link rel="stylesheet" href="./custom.css" />
+
+    <link rel="stylesheet" href="./custom_prime_prev.css" />
+
+    <!-- Title -->
+    <title>똑비</title>
+
+    <style>
+      * {
+        font-family: "Pretendard" !important;
+      }
+      .memberProfile {
+        max-width: 80px;
+      }
+      #main3 .card .card-body {
+        width: 100%;
+        padding-right: 1rem !important;
+      }
+      @media (max-width: 360px) {
+        .memberProfile {
+          max-width: 50px;
+        }
+        #main4 .infoArea .card-body {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-RDBWMP9MGX"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-RDBWMP9MGX");
+  </script>
+
+  <script>
+    window.location.replace("https://ddokbitour.com");
+  </script>
+  <body>
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- import click func -->
+    <script src="./assets/js/functions.js"></script>
+
+    <script type="text/javascript">
+      // function useDdokbiMain() {
+      //   // window.open("https://play.google.com/store/apps/details?id=com.rabbitoad.ddokbi", "_blank");
+      //   window.open("https://ddokbi.app.link/kCMOt2qkyPb", "_blank");
+      // }
+
+      //const func = require('../js/user.js');
+      //import{checkRadioA} from '../js/user.js';
+
+      // SCREEN SIZE DETECTION ////////////////////////////////////////////////////////
+      var screenWidth = window.innerWidth;
+      var screenMode = 0; // Desktop: 0  Mobile: 1
+      function screenSizeDetect() {
+        //768px
+        screenWidth = window.innerWidth;
+        if (screenWidth < 768) {
+          //console.log("mobile!");
+          screenMode = 1;
+        } else {
+          //console.log("desktop!");
+          screenMode = 0;
+        }
+      }
+      function applyTempSetting() {
+        if (screenMode == 1) {
+          //console.log("mobile!");
+        } else {
+          //console.log("desktop!");
+        }
+      }
+
+      function check() {
+        console.log("checkcheck~");
+      }
+
+      // IMAGE UPDATE ////////////////////////////////////////////////////////
+      function updateImg(listIndex, btnIndex) {
+        console.log(listIndex + " , " + btnIndex);
+
+        var screenState;
+        var fileType;
+        if (screenMode == 0) {
+          screenState = "desktop";
+          fileType = "png";
+        } else {
+          screenState = "mobile";
+          fileType = "png";
+        }
+        document.getElementById("screen" + listIndex).src =
+          "./assets/img/screen/" + listIndex + "/" + +btnIndex + "." + fileType;
+      }
+
+      window.onload = function () {
+        screenSizeDetect();
+
+        var tempList = [4];
+        for (var i = 0; i < 4; i++) {
+          tempList[i] = document.getElementsByClassName("HowToUse")[i];
+          //console.log(tempList[i]);
+
+          for (var j = 3; j > -1; j--) {
+            //console.log("worked");
+            tempList[i]
+              .getElementsByClassName("btn-check")
+              [j].classList.add("btn" + j);
+
+            // add click  Event
+            tempList[i]
+              .getElementsByClassName("btn")
+              [j].setAttribute("onclick", updateImg(i, j));
+            //tempList[i].getElementsByClassName("btn")[j].onclick = updateImg(i,j);
+            //tempList[i].getElementsByClassName("btn-check")[j]/addEventListener('click', updateImg(i,j));
+            //tempList[i].getElementsByClassName("btn-check")[j].onclick = function(){updateImg(i,j)};
+            //tempList[i].getElementsByClassName("btn-check")[j].addEventListener('click', updateImg(i, j));
+          }
+        }
+      };
+      function live() {
+        screenSizeDetect();
+      }
+      setInterval(live, 100);
+    </script>
+  </body>
+</html>
