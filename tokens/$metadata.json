@@ -1,0 +1,19 @@
+{
+  "tokenSetOrder": [
+    "core",
+    "light",
+    "dark",
+    "theme",
+    "Color System/Mode 1",
+    "Color Token/FlexUI Light",
+    "Color Token/FlexUI Dark",
+    "Color Token/Ex 1 - Light",
+    "Color Token/Ex 2 - Dark",
+    "Spacing/Normal",
+    "Spacing/Large",
+    "Border Radius/Fluxify",
+    "Border Radius/Hard Redius",
+    "Typo/Normal",
+    "Typo/Large"
+  ]
+}

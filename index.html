@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>똑비</title>
+    <meta name="description" content="ddokbitour.com으로 이동합니다." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <meta http-equiv="refresh" content="3; url=https://ddokbitour.com" />
+    <style>
+      @font-face {
+        font-family: "Pretendard";
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2")
+          format("woff2-variations");
+      }
+
+      :root {
+        --primary-500: #5dbf30;
+        --primary-600: #56a133;
+        --primary-50: #e6f7df;
+        --fg: #1e1f21;
+        --fg-muted: #5a5c62;
+        --fg-subtle: #999ba1;
+        --bg: #ffffff;
+        --font-sans:
+          "Pretendard", -apple-system, BlinkMacSystemFont,
+          "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-sans);
+        background: var(--bg);
+        color: var(--fg);
+        text-align: center;
+        padding: 24px;
+      }
+
+      .box {
+        max-width: 420px;
+      }
+
+      .logo {
+        width: 72px;
+        height: auto;
+        margin-bottom: 24px;
+        transform-origin: center bottom;
+        animation: hop 1.25s ease-in-out infinite;
+      }
+
+      @keyframes hop {
+        0% {
+          transform: translateY(0) scaleY(1) scaleX(1);
+        }
+        8% {
+          transform: translateY(0) scaleY(0.92) scaleX(1.05);
+        }
+        26% {
+          transform: translateY(-24px) scaleY(1.04) scaleX(0.97);
+        }
+        42% {
+          transform: translateY(0) scaleY(0.93) scaleX(1.05);
+        }
+        52% {
+          transform: translateY(-8px) scaleY(1.02) scaleX(0.99);
+        }
+        62% {
+          transform: translateY(0) scaleY(0.96) scaleX(1.03);
+        }
+        70% {
+          transform: translateY(0) scaleY(1.01) scaleX(0.995);
+        }
+        100% {
+          transform: translateY(0) scaleY(1) scaleX(1);
+        }
+      }
+
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        letter-spacing: -0.01em;
+      }
+
+      p {
+        font-size: 1rem;
+        /* line-height: 1.2; */
+        color: var(--fg-muted);
+        margin-bottom: 6px;
+      }
+
+      .count {
+        font-weight: 700;
+        color: var(--primary-500);
+      }
+
+      a {
+        color: var(--primary-600);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .spinner {
+        display: none;
+        margin: 28px auto 0;
+        width: 36px;
+        height: 36px;
+        border: 3px solid var(--primary-50);
+        border-top-color: var(--primary-500);
+        border-radius: 50%;
+        animation: spin 0.9s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px 24px;
+        text-align: center;
+        font-size: 0.8125rem;
+        line-height: 1.6;
+        color: var(--fg-subtle);
+      }
+      footer p {
+        margin: 0;
+        color: inherit;
+        font-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img class="logo" src="/assets/logo_only.png" alt="똑비" />
+      <h1>똑비투어로 이동됩니다</h1>
+      <p>
+        <span class="count" id="count">3</span>초 후 새로운 주소로 이동합니다.
+      </p>
+      <p>
+        자동으로 이동하지 않으면 <a href="https://ddokbitour.com">여기</a>를
+        눌러주세요.
+      </p>
+      <div class="spinner" aria-hidden="true"></div>
+    </div>
+    <footer>
+      <p>주식회사 토끼와두꺼비 · 사업자등록번호 402-88-02634</p>
+      <p>© <span id="year">2026</span> 토끼와두꺼비. All rights reserved.</p>
+    </footer>
+    <script>
+      (function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+        var target = "https://ddokbitour.com";
+        var remaining = 3;
+        var el = document.getElementById("count");
+        var timer = setInterval(function () {
+          remaining -= 1;
+          if (el) el.textContent = String(Math.max(remaining, 0));
+          if (remaining <= 0) {
+            clearInterval(timer);
+            window.location.href = target;
+          }
+        }, 1000);
+      })();
+    </script>
+  </body>
+</html>

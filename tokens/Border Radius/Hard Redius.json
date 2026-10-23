@@ -1,0 +1,132 @@
+{
+  "XS": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "SM": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "MD": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "LG": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "XL": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "2 XL": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "3 XL": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "4 XL": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "5 XL": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "6 XL": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "None": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "2XS": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  },
+  "3XS": {
+    "$extensions": {
+      "com.figma.scopes": [
+        "CORNER_RADIUS"
+      ],
+      "com.figma.hiddenFromPublishing": false
+    },
+    "$type": "number",
+    "$value": 0
+  }
+}
