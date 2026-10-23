@@ -241,7 +241,7 @@
     { icon: Clock, q: '주말에도 근무하나요?', a: '평일 오전 9시~오후 6시에 운영하며, 주말·공휴일 요청은 다음 영업일에 신속히 처리해드립니다.' },
   ];
 
-  let openFaq = 0;
+  let openFaq = $state(0);
   const toggle = (i) => (openFaq = openFaq === i ? -1 : i);
 </script>
 
